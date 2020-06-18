@@ -1,0 +1,64 @@
+\documentclass[a4paper,11pt,oneside]{book}
+\usepackage{graphicx}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{float}
+\usepackage[italian]{babel}
+\usepackage{listings}
+%\usepackage{natbib}
+\usepackage{physics}
+\usepackage[a4paper, top=2cm, bottom=2cm, right=2cm, left=2cm]{geometry}
+\usepackage{amsmath}
+\usepackage{amssymb}
+%\usepackage{enumitem}
+\usepackage{hyperref}
+%\usepackage{booktabs}
+\usepackage{subfig}
+\usepackage{blindtext}
+\usepackage{fancyhdr}
+\usepackage{caption}
+\usepackage{biblatex}
+\addbibresource{bibliografia.bib}
+
+\pagestyle{fancy}
+
+%\title{
+
+%    \begin{figure}[H]
+%        \centering
+%    \includegraphics[scale = 0.5 , angle=0]{unipd_logo.png}
+%    \end{figure}
+
+%{La formazione delle caustiche nella struttura su grande scala dell'Universo}\\
+%\large{Università degli studi di Padova}
+%}
+%\author{Laureando: Alessandro Bianchetti}
+%\date{Anno accademico 2019/20}
+
+\begin{document}
+
+    \input{titolo/titolo.tex}
+	    
+    \chapter*{Abstract}
+    \blindtext
+
+
+    \tableofcontents
+
+    \chapter*{Introduzione}
+    \input{capitoli/introduzione.tex}
+
+    \chapter{Capitolo Uno}
+    \input{capitoli/capitolo1.tex}
+
+
+    \chapter{Capitolo Due}
+    \input{capitoli/capitolo2.tex}
+
+
+    \chapter*{Conclusioni}
+    \input{capitoli/conclusioni.tex}
+
+    \printbibliography
+    
+\end{document}

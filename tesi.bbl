@@ -1,0 +1,45 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.1 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nty/global//global/global}
+    \entry{einstein}{article}{}
+      \name{author}{1}{}{%
+        {{hash=27e9815c980edff4906046875cf2a058}{%
+           family={Tizio},
+           familyi={T\bibinitperiod}}}%
+      }
+      \strng{namehash}{27e9815c980edff4906046875cf2a058}
+      \strng{fullhash}{27e9815c980edff4906046875cf2a058}
+      \strng{bibnamehash}{27e9815c980edff4906046875cf2a058}
+      \strng{authorbibnamehash}{27e9815c980edff4906046875cf2a058}
+      \strng{authornamehash}{27e9815c980edff4906046875cf2a058}
+      \strng{authorfullhash}{27e9815c980edff4906046875cf2a058}
+      \field{sortinit}{T}
+      \field{sortinithash}{51f9faf24c60c62ca764a77f78cf5666}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Science}
+      \field{title}{Pippo}
+      \field{year}{1998}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+
