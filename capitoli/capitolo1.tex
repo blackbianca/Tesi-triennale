@@ -4,10 +4,11 @@ Le singolarità sono una caratteristica essenziale di molte discipline, e hanno 
 drammatiche sul modello matematico\dots
 
 In cosmologia, le caustiche sono i processi fondanti della formazione delle strutture cosmologiche
-su larga scala. Le caustiche corrispondono ai punti presso i quali la densità risulta localmente infinita
+su larga scala. Queste corrispondono ai punti presso i quali la densità risulta localmente infinita
 e sono i prodotti del cosiddetto \textit{shell-crossing}, che si verifica all'incrociarsi delle traiettorie
-delle particelle di CDM. (definire meglio caustiche...).
-In particolare con il primo incontro delle lo traiettorie le particelle si muovo dal regime di \textit{single-stream}
+delle particelle di CDM, e corrispondono dunque alle singolarità matematiche che emergono naturalmente
+nel trattare il problema con la dinamica gravitazione Newtoniana.
+In particolare con al primo shell-crossing le particelle si spostano dal regime di \textit{single-stream}
 a quello di \textit{multistreaming}, dove le orbite particellari si intersecano e i fenomeni di shell-crossing
 si moltiplicano, determinando il diramarsi dei flussi.
 
@@ -16,9 +17,71 @@ accelerato dove le particelle procedono imperturbate e a velocità costante (qua
 Tuttavia non appena entriamo in multistreaming l'approssimazione perde di validità, in quanto non prevede
 effetti di accelerazione gravitazionale.
 
-Nella seguente trattazione si fa uso di coordinate Lagrangiane per impostare la descrizione di dell'instabilità
-gravitazionale: in tale cornice l'approssimazione di Zel'dovich rappresenta lo sviluppo di ordine zero delle
-equazioni della fluidodinamica, in particolare dell'equazione di Vlasov, in regime di single-stream.
+Muoviamo innanzitutto dal modello cosmologico Einstein-De Sitter, che pone la curvatura dell'universo
+e la costante cosmologica $\Lambda$ pari a 0 e prevede uno spazio composto sostanzialmente di CDM.
+In tale cornice definiamo una mappa Lagrangiana q $\mapsto$ x(q, $\tau$) che connette la posizione
+iniziale alla posizione corrente x al tempo comovente $\tau$ $\propto$ $t^{\frac{2}{3}}$.
+Inoltre le coordinate x sono coordinate comoventi legate alle coordinate fisiche r dalla relazione
+x = r/$a$, dove $a$ rappresenta il fattore cosmico di scala, che corrisponde a $\tau$ in un universo
+EdS.
+%Definiamo infine $u(x(q, \tau), \tau) = \partial_a x(q, \tau) = \partial_{\tau}(q, \tau) = \dot{x}(q, \tau)$
+Definiamo infine le velocità $\bm{v} = a \dot{\bm{x}}$ e $\bm{w} = \dot{\bm{r}} = H \bm{r} + v$
+
+Adottiamo la descizione Newtoniana di un fluido di materia oscura fredda autogravitante: in particolare
+sposiamo l'ipotesi di entropia costante e di assenza di termini di pressione dal momento che trattiamo 
+la CDM come una polvere non collidente. Il set di equazioni opportuno è dato da
+
+\begin{equation}
+    \label{eqn:continuità}
+    \frac{\partial\rho}{\partial t}\biggr|_{\bm{r}} + \nabla_{\bm{r}}(\rho \bm{w}) = 0
+\end{equation}
+
+\begin{equation}
+    \label{eqn:eulero}
+    \frac{\partial\bm{w}}{\partial t}\biggr|_{\bm{r}} + (\bm{w}\cdot\nabla_{\bm{r}})\bm{w} = - \nabla_{\bm{r}} \Phi
+\end{equation}
+
+\begin{equation}
+    \label{eqn:poisson}
+    \laplacian_{\bm{r}}\Phi = 4\pi G \rho
+\end{equation}
+dove la \ref{eqn:continuità} è l'equazione di continuità che costituisce la conservazione
+della massa, la \ref{eqn:eulero} è l'equazione di Eulero e viene dalla conservazione del
+momento, mentre la \ref{eqn:poisson} rappresenta l'equazione di Poisson relativa
+al potenziale gravitazionale $\Phi$.
+Poniamo inoltre $\rho = \rho_b + \delta\rho$, dove $\rho_b$ è la densità media di background
+e $\delta\rho$ costituisce una deviazione da tale valore medio. $\Phi = \Phi_b + \phi$ invece
+è la somma di un potenziale di background e un potenziale peculiare $\phi$. Grazie a queste due 
+apposizioni possiamo separare l'equazione di Poisson, ottenendo un equazione nella sola coordinata
+comovente x.
+Possiamo riscrivere anche \ref{eqn:eulero} e \ref{eqn:poisson} nelle coordinate x, usando la
+relazione
+
+\begin{equation}
+    \frac{\partial}{\partial t}\biggr|_{\bm{x}} = \frac{\partial}{\partial t}\biggr|_{\bm{r}} + H(\bm{r} \cdot \nabla_{\bm{r}})
+\end{equation}
+
+Si ricava dunque
+
+\begin{equation}
+    \frac{\partial\rho}{\partial t} + 3H\rho +\frac{1}{2}\nabla_{\bm{x}}(\rho\bm{v})
+\end{equation}
+
+\begin{equation}
+    \frac{\partial \bm{v}}{\partial t} + H \bm{v} + \frac{1}{a}(\bm{v}\cdot\nabla_{\bm{x}})\bm{v} = -\frac{1}{a}\nabla_{\bm{x}}\phi
+\end{equation}
+
+\begin{equation}
+    \label{eqn:poissonx}
+    \laplacian_{\bm{x}}\phi = 4\pi G \delta\rho
+\end{equation}
+A questo punto operiamo un cambio di variabili
+
+\section{Parte seconda}
+
+Nella presente trattazione si fa uso di coordinate Lagrangiane per impostare la descrizione di dell'instabilità
+gravitazionale: in tale cornice l'approssimazione di Zel'dovich rappresenta lo sviluppo all'ordine zero delle
+equazioni della fluidodinamica in regime di single-stream.
 Tuttavia gli effetti gravitazionali che emergono con il multistreaming non sono descrivibili nemmeno utilizzando
 ordini superiori della teoria perturbativa lagrangiana, dal momento che le equazioni del fluido cessano di essere
 valide al primo shell-crossing. Pertanto la dinamica della CMD è basata unicamente sull'equazione di Vlasov, che 
@@ -28,8 +91,6 @@ si può giustificare sulla base del fatto che in effetti anche in tre dimensioni
 origine unidimensionale con la formazione dei pancakes (cosa sono, come si legano alle caustiche?...)
 
 Tuttavia l'analisi offerta sarà facilmente estendibile a più dimensioni.
-
-\section{Parte seconda}
 
 
 
