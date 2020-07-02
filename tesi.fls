@@ -131,6 +131,8 @@ INPUT C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tools\xspace.sty
 INPUT C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tools\xspace.sty
 INPUT C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fancyhdr\fancyhdr.sty
 INPUT C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fancyhdr\fancyhdr.sty
+INPUT C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tools\verbatim.sty
+INPUT C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tools\verbatim.sty
 INPUT C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex\latex\biblatex\biblatex.sty
 INPUT C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex\latex\biblatex\biblatex.sty
 INPUT C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex\latex\logreq\logreq.sty
@@ -233,7 +235,6 @@ INPUT c:\Users\User\Desktop\UniPD\Università\III anno\Tesi\tesi\capitoli\capito
 INPUT c:\Users\User\Desktop\UniPD\Università\III anno\Tesi\tesi\capitoli\capitolo1.tex
 INPUT C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\jknappen\ec\ecrm1728.tfm
 INPUT C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\jknappen\ec\ecbx1728.tfm
-INPUT C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\jknappen\ec\ecti1200.tfm
 INPUT c:\Users\User\Desktop\UniPD\Università\III anno\Tesi\tesi\capitoli\capitolo2.tex
 INPUT c:\Users\User\Desktop\UniPD\Università\III anno\Tesi\tesi\capitoli\capitolo2.tex
 INPUT c:\Users\User\Desktop\UniPD\Università\III anno\Tesi\tesi\capitoli\conclusioni.tex
@@ -245,8 +246,6 @@ INPUT c:\Users\User\Desktop\UniPD\Università\III anno\Tesi\tesi\tesi.run.xml
 OUTPUT c:\Users\User\Desktop\UniPD\Università\III anno\Tesi\tesi\tesi.run.xml
 INPUT C:\Users\User\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecsl1200.pk
 INPUT C:\Users\User\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecsl1200.pk
-INPUT C:\Users\User\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecti1200.pk
-INPUT C:\Users\User\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecti1200.pk
 INPUT C:\Users\User\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1728.pk
 INPUT C:\Users\User\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1728.pk
 INPUT C:\Users\User\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1200.pk

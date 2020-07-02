@@ -1,5 +1,7 @@
 \section{Parte prima}
 
+\begin{comment}
+
 Le singolarità sono una caratteristica essenziale di molte discipline, e hanno talvolta conseguenze
 drammatiche sul modello matematico\dots
 
@@ -17,19 +19,36 @@ accelerato dove le particelle procedono imperturbate e a velocità costante (qua
 Tuttavia non appena entriamo in multistreaming l'approssimazione perde di validità, in quanto non prevede
 effetti di accelerazione gravitazionale.
 
-Muoviamo innanzitutto dal modello cosmologico Einstein-De Sitter, che pone la curvatura dell'universo
-e la costante cosmologica $\Lambda$ pari a 0 e prevede uno spazio composto sostanzialmente di CDM.
+\end{comment}
+Partiamo dall'ipotesi di universo primordiale omogeneo, come ci suggerisce lo spettro di CMB.
+Ci muoviamo innanzitutto dal modello cosmologico Einstein-De Sitter, che pone la curvatura dell'universo
+e la costante cosmologica $\Lambda$ pari a 0 e prevede uno spazio composto sostanzialmente di materia
+oscura fredda (CDM).
 In tale cornice definiamo una mappa Lagrangiana q $\mapsto$ x(q, $\tau$) che connette la posizione
-iniziale alla posizione corrente x al tempo comovente $\tau$ $\propto$ $t^{\frac{2}{3}}$.
+iniziale alla posizione corrente x al tempo di scala $\tau$ $\propto$ $t^{\frac{2}{3}}$.
 Inoltre le coordinate x sono coordinate comoventi legate alle coordinate fisiche r dalla relazione
 x = r/$a$, dove $a$ rappresenta il fattore cosmico di scala, che corrisponde a $\tau$ in un universo
 EdS.
 %Definiamo infine $u(x(q, \tau), \tau) = \partial_a x(q, \tau) = \partial_{\tau}(q, \tau) = \dot{x}(q, \tau)$
 Definiamo infine le velocità $\bm{v} = a \dot{\bm{x}}$ e $\bm{w} = \dot{\bm{r}} = H \bm{r} + v$
 
-Adottiamo la descizione Newtoniana di un fluido di materia oscura fredda autogravitante: in particolare
+Per approcciare la dinamica di particelle non collidenti ("polvere"), definiamo una funzione $f(\bm{x}, \bm{p}, t)$ 
+che corrisponde alla densità degli stati nello spazio delle fasi. E' possibile quindi utilizzare il Teorema di 
+Liouville, che afferma che la densità sopra citata si conserva nell'evoluzione di un sistema conservativo: in 
+effetti l'ipotesi di assenza di collisioni ci permette di soddisfare ai requisiti del teorema, e quindi 
+possiamo porre a zero la derivata totale della funzione densità, ricavando l'equazione di Vlasov.
+
+\begin{equation}
+    \label{eqn:vlasov}
+    \frac{\partial f}{\partial t} + \dot{\bm{x}} \nabla_{\bm{x}}f + \dot{\bm{p}} \nabla_{\bm{p}}f 
+\end{equation}
+
+L'equazione di Vlasov è molto difficile da risolvere analiticamente: adottiamo quindi un approccio 
+teorico semplificato, cioè la descizione Newtoniana di un fluido di CDM autogravitante: in particolare
 sposiamo l'ipotesi di entropia costante e di assenza di termini di pressione dal momento che trattiamo 
-la CDM come una polvere non collidente. Il set di equazioni opportuno è dato da
+la CDM come una polvere non collidente. 
+
+Il set di equazioni opportuno è dato da
 
 \begin{equation}
     \label{eqn:continuità}
@@ -49,6 +68,11 @@ dove la \ref{eqn:continuità} è l'equazione di continuità che costituisce la c
 della massa, la \ref{eqn:eulero} è l'equazione di Eulero e viene dalla conservazione del
 momento, mentre la \ref{eqn:poisson} rappresenta l'equazione di Poisson relativa
 al potenziale gravitazionale $\Phi$.
+Le equazioni della fluidodinamica rappresentano in effetti uno sviluppo al primo ordine 
+dell'eqauzione di Vlasov: in particolare l'equazione di continuità si ricava dal momento
+di aspettazione di ordine zero, mentre l'equazione di Eulero dal momento di aspettazione
+di prim'ordine.
+
 Poniamo inoltre $\rho = \rho_b + \delta\rho$, dove $\rho_b$ è la densità media di background
 e $\delta\rho$ costituisce una deviazione da tale valore medio. $\Phi = \Phi_b + \phi$ invece
 è la somma di un potenziale di background e un potenziale peculiare $\phi$. Grazie a queste due 
