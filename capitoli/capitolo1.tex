@@ -1,4 +1,4 @@
-\section{Parte prima}
+\section{Equazioni della fluidodinamica}
 
 \begin{comment}
 
@@ -20,7 +20,8 @@ Tuttavia non appena entriamo in multistreaming l'approssimazione perde di validi
 effetti di accelerazione gravitazionale.
 
 \end{comment}
-Partiamo dall'ipotesi di universo primordiale omogeneo, come ci suggerisce lo spettro di CMB.
+
+Partiamo dall'ipotesi di universo primordiale omogeneo, come ci suggerisce lo spettro di CMB (FIGURA?).
 Ci muoviamo innanzitutto dal modello cosmologico Einstein-De Sitter, che pone la curvatura dell'universo
 e la costante cosmologica $\Lambda$ pari a 0 e prevede uno spazio composto sostanzialmente di materia
 oscura fredda (CDM).
@@ -34,21 +35,21 @@ Definiamo infine le velocità $\bm{v} = a \dot{\bm{x}}$ e $\bm{w} = \dot{\bm{r}}
 
 Per approcciare la dinamica di particelle non collidenti ("polvere"), definiamo una funzione $f(\bm{x}, \bm{p}, t)$ 
 che corrisponde alla densità degli stati nello spazio delle fasi. E' possibile quindi utilizzare il Teorema di 
-Liouville, che afferma che la densità sopra citata si conserva nell'evoluzione di un sistema conservativo: in 
+Liouville, che afferma che la densità sopra citata si conserva nell'evoluzione di un sistema conservativo: in
 effetti l'ipotesi di assenza di collisioni ci permette di soddisfare ai requisiti del teorema, e quindi 
 possiamo porre a zero la derivata totale della funzione densità, ricavando l'equazione di Vlasov.
 
 \begin{equation}
     \label{eqn:vlasov}
-    \frac{\partial f}{\partial t} + \dot{\bm{x}} \nabla_{\bm{x}}f + \dot{\bm{p}} \nabla_{\bm{p}}f 
+    \frac{\partial f}{\partial t} + \dot{\bm{x}} \nabla_{\bm{x}}f + \dot{\bm{p}} \nabla_{\bm{p}}f  = 0
 \end{equation}
 
 L'equazione di Vlasov è molto difficile da risolvere analiticamente: adottiamo quindi un approccio 
-teorico semplificato, cioè la descizione Newtoniana di un fluido di CDM autogravitante: in particolare
-sposiamo l'ipotesi di entropia costante e di assenza di termini di pressione dal momento che trattiamo 
-la CDM come una polvere non collidente. 
+teorico semplificato, cioè la descizione Newtoniana di fluido: in particolare sposiamo l'ipotesi 
+di entropia costante e di assenza di termini di pressione dal momento che trattiamo la CDM come 
+una polvere autogravitante e non collidente.
 
-Il set di equazioni opportuno è dato da
+Il set di equazioni adatto all'approccio fluidodinamico è dato da
 
 \begin{equation}
     \label{eqn:continuità}
@@ -68,10 +69,6 @@ dove la \ref{eqn:continuità} è l'equazione di continuità che costituisce la c
 della massa, la \ref{eqn:eulero} è l'equazione di Eulero e viene dalla conservazione del
 momento, mentre la \ref{eqn:poisson} rappresenta l'equazione di Poisson relativa
 al potenziale gravitazionale $\Phi$.
-Le equazioni della fluidodinamica rappresentano in effetti uno sviluppo al primo ordine 
-dell'eqauzione di Vlasov: in particolare l'equazione di continuità si ricava dal momento
-di aspettazione di ordine zero, mentre l'equazione di Eulero dal momento di aspettazione
-di prim'ordine.
 
 Poniamo inoltre $\rho = \rho_b + \delta\rho$, dove $\rho_b$ è la densità media di background
 e $\delta\rho$ costituisce una deviazione da tale valore medio. $\Phi = \Phi_b + \phi$ invece
@@ -88,20 +85,59 @@ relazione
 Si ricava dunque
 
 \begin{equation}
-    \frac{\partial\rho}{\partial t} + 3H\rho +\frac{1}{2}\nabla_{\bm{x}}(\rho\bm{v})
+    \frac{\partial\rho}{\partial t} + 3H\rho +\frac{1}{2}\nabla_{\bm{x}}(\rho\bm{v}) = 0
 \end{equation}
 
 \begin{equation}
-    \frac{\partial \bm{v}}{\partial t} + H \bm{v} + \frac{1}{a}(\bm{v}\cdot\nabla_{\bm{x}})\bm{v} = -\frac{1}{a}\nabla_{\bm{x}}\phi
+    \frac{\partial \bm{v}}{\partial t} + H \bm{v} + \frac{1}{a}(\bm{v}\cdot\nabla_{\bm{x}})\bm{v} = -\frac{1}{a}\nabla_{\bm{x}}\phi = 0
 \end{equation}
 
 \begin{equation}
     \label{eqn:poissonx}
     \laplacian_{\bm{x}}\phi = 4\pi G \delta\rho
 \end{equation}
-A questo punto operiamo un cambio di variabili
 
-\section{Parte seconda}
+Le equazioni della fluidodinamica rappresentano in effetti uno sviluppo dell'equazione 
+di Vlasov fino al primo ordine. Per spiegare questo passaggio, osserviamo che la densità
+di massa e la velocità sono associate rispettivamente al momento di aspettazione di ordine 
+zero e di primo ordine della densità nello spazio delle fasi $f(\bm{x}, \bm{p}, t)$.
+
+\begin{equation}
+    \label{eqn:rho}
+    \rho(\bm{x}, t) = \frac{m}{a^3}\int d^3p f(\bm{x}, \bm{p}, t)
+\end{equation}
+
+\begin{equation}
+    \label{eqn:vel}
+    \bm{v}(\bm{x}, t) = \frac{m}{a^3}\frac{\int d^3p \bm{p}f(\bm{x}, \bm{p}, t)}{\int d^3p f(\bm{x}, \bm{p}, t)}
+\end{equation}
+Integrando ora l'equazione di Vlasov sul dominio del momento $\bm{p}$, si trova che l'ultimo termine
+dell'integrando rappresenta un'integrale di volume della forza $\partial f$/$\partial p$, che tramite
+il Teorema di Gauss si può riscrivere come un integrale su una superficie all'infinito, dove la forza
+si annulla. Utilizzando poi le definizioni \ref{eqn:rho} e \ref{eqn:vel} si ricava 
+\begin{equation}
+    \frac{\partial}{\partial t}(a^3 \rho) + \frac{1}{a^2}\nabla_x \int d^3 p \bm{p} f = 0
+\end{equation}
+maneggiando opportunamente quest'ultima e utilizzando le definzioni fornite in \ref{eqn:rho} e \ref{eqn:vel}
+si arriva esattamente all'equazione di continuità \ref{eqn:continuità}.
+
+Se invece si moltiplica l'equazione di Vlasov per $\bm{p}$ per poi integrare di nuovo su tale variabile, 
+conviene lavorare sul termine i-esimo e operare un'integrazione per parti sempre sull'ultimo addendo dell'
+integrando.
+
+\begin{equation}
+    \frac{\partial }{\partial t} \int d^3 p p^i f + \frac{1}{ma^2} \partial^i \int d^3 p p_j p_j f + a^3 \rho \partial^i \phi = 0 
+\end{equation}
+
+Manipolando questa espressione e utilizzando l'equazione di continuità, si arriva proprio all'equazione di Eulero
+\ref{eqn:eulero}.
+
+L'approccio fluido sembra dunque adatto a una trattazione semplificata che fornisca soluzioni analitiche,
+come alternativa alla risoluzione dell'equazione di Vlasov, proibitiva analiticamente, possibile con tecniche 
+numeriche.
+A questo punto tuttavia conviene operare un ulteriore cambio di variabili sul set di equazioni ottenute (eta, delta ecc)
+
+\section{Caustiche}
 
 Nella presente trattazione si fa uso di coordinate Lagrangiane per impostare la descrizione di dell'instabilità
 gravitazionale: in tale cornice l'approssimazione di Zel'dovich rappresenta lo sviluppo all'ordine zero delle
