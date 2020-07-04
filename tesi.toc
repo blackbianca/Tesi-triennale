@@ -4,9 +4,9 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {1}Il problema di ricostruzione}{4}{chapter.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.1}Parte prima}{4}{section.1.1}%
+\contentsline {section}{\numberline {1.1}Equazioni della fluidodinamica}{4}{section.1.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.2}Parte seconda}{6}{section.1.2}%
+\contentsline {section}{\numberline {1.2}Approssimazione di Zel'dovich}{6}{section.1.2}%
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {2}Tipi di singolarità nella trattazione Lagrangiana}{7}{chapter.2}%
 \defcounter {refsection}{0}\relax 

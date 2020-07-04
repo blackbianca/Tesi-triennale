@@ -1,25 +1,42 @@
-\section{Equazioni della fluidodinamica}
-
 \begin{comment}
 
-Le singolarità sono una caratteristica essenziale di molte discipline, e hanno talvolta conseguenze
-drammatiche sul modello matematico\dots
+    Le singolarità sono una caratteristica essenziale di molte discipline, e hanno talvolta conseguenze
+    drammatiche sul modello matematico\dots
+    
+    In cosmologia, le caustiche sono i processi fondanti della formazione delle strutture cosmologiche
+    su larga scala. Queste corrispondono ai punti presso i quali la densità risulta localmente infinita
+    e sono i prodotti del cosiddetto \textit{shell-crossing}, che si verifica all'incrociarsi delle traiettorie
+    delle particelle di CDM, e corrispondono dunque alle singolarità matematiche che emergono naturalmente
+    nel trattare il problema con la dinamica gravitazione Newtoniana.
+    In particolare con al primo shell-crossing le particelle si spostano dal regime di \textit{single-stream}
+    a quello di \textit{multistreaming}, dove le orbite particellari si intersecano e i fenomeni di shell-crossing
+    si moltiplicano, determinando il diramarsi dei flussi.
+    
+    Nel regime di single-stream l'approssimazione di Zel'dovich è opportuna, in quanto costitusice un modello non
+    accelerato dove le particelle procedono imperturbate e a velocità costante (quale velocità, comovente?).
+    Tuttavia non appena entriamo in multistreaming l'approssimazione perde di validità, in quanto non prevede
+    effetti di accelerazione gravitazionale.
 
-In cosmologia, le caustiche sono i processi fondanti della formazione delle strutture cosmologiche
-su larga scala. Queste corrispondono ai punti presso i quali la densità risulta localmente infinita
-e sono i prodotti del cosiddetto \textit{shell-crossing}, che si verifica all'incrociarsi delle traiettorie
-delle particelle di CDM, e corrispondono dunque alle singolarità matematiche che emergono naturalmente
-nel trattare il problema con la dinamica gravitazione Newtoniana.
-In particolare con al primo shell-crossing le particelle si spostano dal regime di \textit{single-stream}
-a quello di \textit{multistreaming}, dove le orbite particellari si intersecano e i fenomeni di shell-crossing
-si moltiplicano, determinando il diramarsi dei flussi.
-
-Nel regime di single-stream l'approssimazione di Zel'dovich è opportuna, in quanto costitusice un modello non
-accelerato dove le particelle procedono imperturbate e a velocità costante (quale velocità, comovente?).
-Tuttavia non appena entriamo in multistreaming l'approssimazione perde di validità, in quanto non prevede
-effetti di accelerazione gravitazionale.
-
+    Nella presente trattazione si fa uso di coordinate Lagrangiane per impostare la descrizione di dell'instabilità
+    gravitazionale: in tale cornice l'approssimazione di Zel'dovich rappresenta lo sviluppo all'ordine zero delle
+    equazioni della fluidodinamica in regime di single-stream.
+    Tuttavia gli effetti gravitazionali che emergono con il multistreaming non sono descrivibili nemmeno utilizzando
+    ordini superiori della teoria perturbativa lagrangiana, dal momento che le equazioni del fluido cessano di essere
+    valide al primo shell-crossing. Pertanto la dinamica della CMD è basata unicamente sull'equazione di Vlasov, che 
+    sappiamo corretta ma di difficile risoluzione. Occorre quindi una teoria che risolva tale equazione, identificandone
+    in particolare le singolarità matematiche. Per la risoluzione assumiamo un universo unidimensionale: questa assunzione
+    si può giustificare sulla base del fatto che in effetti anche in tre dimensioni i fenomeni di shell-crossing hanno 
+    origine unidimensionale con la formazione dei pancakes (cosa sono, come si legano alle caustiche?...)
+    
+    Tuttavia l'analisi offerta sarà facilmente estendibile a più dimensioni.
+    
 \end{comment}
+
+
+
+\section{Equazioni della fluidodinamica}
+
+
 
 Partiamo dall'ipotesi di universo primordiale omogeneo, come ci suggerisce lo spettro di CMB (FIGURA?).
 Ci muoviamo innanzitutto dal modello cosmologico Einstein-De Sitter, che pone la curvatura dell'universo
@@ -71,8 +88,8 @@ momento, mentre la \ref{eqn:poisson} rappresenta l'equazione di Poisson relativa
 al potenziale gravitazionale $\Phi$.
 
 Poniamo inoltre $\rho = \rho_b + \delta\rho$, dove $\rho_b$ è la densità media di background
-e $\delta\rho$ costituisce una deviazione da tale valore medio. $\Phi = \Phi_b + \phi$ invece
-è la somma di un potenziale di background e un potenziale peculiare $\phi$. Grazie a queste due 
+e $\delta\rho$ costituisce una deviazione da tale valore medio. $\Phi = \Phi_b + \phi_0$ invece
+è la somma di un potenziale di background e un potenziale peculiare $\phi_0$. Grazie a queste due 
 apposizioni possiamo separare l'equazione di Poisson, ottenendo un equazione nella sola coordinata
 comovente x.
 Possiamo riscrivere anche \ref{eqn:eulero} e \ref{eqn:poisson} nelle coordinate x, usando la
@@ -85,16 +102,18 @@ relazione
 Si ricava dunque
 
 \begin{equation}
+    \label{eqn:continuitax}
     \frac{\partial\rho}{\partial t} + 3H\rho +\frac{1}{2}\nabla_{\bm{x}}(\rho\bm{v}) = 0
 \end{equation}
 
 \begin{equation}
+    \label{eqn:eulerox}
     \frac{\partial \bm{v}}{\partial t} + H \bm{v} + \frac{1}{a}(\bm{v}\cdot\nabla_{\bm{x}})\bm{v} = -\frac{1}{a}\nabla_{\bm{x}}\phi = 0
 \end{equation}
 
 \begin{equation}
     \label{eqn:poissonx}
-    \laplacian_{\bm{x}}\phi = 4\pi G \delta\rho
+    \laplacian_{\bm{x}}\phi_0 = 4\pi G \delta\rho
 \end{equation}
 
 Le equazioni della fluidodinamica rappresentano in effetti uno sviluppo dell'equazione 
@@ -132,25 +151,47 @@ integrando.
 Manipolando questa espressione e utilizzando l'equazione di continuità, si arriva proprio all'equazione di Eulero
 \ref{eqn:eulero}.
 
-L'approccio fluido sembra dunque adatto a una trattazione semplificata che fornisca soluzioni analitiche,
-come alternativa alla risoluzione dell'equazione di Vlasov, proibitiva analiticamente, possibile con tecniche 
-numeriche.
-A questo punto tuttavia conviene operare un ulteriore cambio di variabili sul set di equazioni ottenute (eta, delta ecc)
-
-\section{Caustiche}
-
-Nella presente trattazione si fa uso di coordinate Lagrangiane per impostare la descrizione di dell'instabilità
-gravitazionale: in tale cornice l'approssimazione di Zel'dovich rappresenta lo sviluppo all'ordine zero delle
-equazioni della fluidodinamica in regime di single-stream.
-Tuttavia gli effetti gravitazionali che emergono con il multistreaming non sono descrivibili nemmeno utilizzando
-ordini superiori della teoria perturbativa lagrangiana, dal momento che le equazioni del fluido cessano di essere
-valide al primo shell-crossing. Pertanto la dinamica della CMD è basata unicamente sull'equazione di Vlasov, che 
-sappiamo corretta ma di difficile risoluzione. Occorre quindi una teoria che risolva tale equazione, identificandone
-in particolare le singolarità matematiche. Per la risoluzione assumiamo un universo unidimensionale: questa assunzione
-si può giustificare sulla base del fatto che in effetti anche in tre dimensioni i fenomeni di shell-crossing hanno 
-origine unidimensionale con la formazione dei pancakes (cosa sono, come si legano alle caustiche?...)
-
-Tuttavia l'analisi offerta sarà facilmente estendibile a più dimensioni.
+Le equazioni della fluidodinamica rappresentano dunque i primi termini dello sviluppo dell'equazione di Vlasov,
+e perciò costituiscono una via più facilmente percorribile, offrendo la possibilità di giungere a delle soluzioni
+analitiche altrimenti proibitive.
 
 
+\section{Approssimazione di Zel'dovich}
 
+A questo punto tuttavia conviene operare un ulteriore cambio di variabili sul set di equazioni ottenute \ref{eqn:continuitax},
+\ref{eqn:eulerox} e \ref{eqn:poissonx}. Per farlo si definisce meglio il fattore di scala per mezzo di un'ampiezza $a_{*}$ e
+un tempo caratteristico $t_{*}$, in modo che $a(t) = (t / t_{*})^{2/3}$. Ricordando inoltre $\rho = \rho_b + \delta\rho$ e 
+$\bm{v} = a \dot{\bm{x}}$, facciamo le seguenti sostituzioni
+
+\begin{gather}
+    \rho \mapsto \eta = \frac{\rho}{\rho_b} = 1 + \delta \\
+    \bm{v} \mapsto \bm{u} = \frac{d\bm{x}}{da} = \frac{d\bm{x}}{dt}\frac{dt}{da} = \frac{\bm{v}}{a\dot{a}} \\
+    \phi_0 \mapsto \phi = \frac{3t_{*}^2}{2a_{*}^3}\phi_0
+\end{gather}
+Grazie alla mappatura $(\rho, \bm{v}, \phi_0)\mapsto(\eta, \bm{u}, \phi)$, le equazioni del fluido assumono
+la nuova forma 
+
+\begin{gather}
+    \frac{D\bm{u}}{Da} + \frac{3}{2a}\bm{u} = -\frac{3}{2a}\nabla\phi \\
+    \frac{D\eta}{Da} + \eta \nabla \cdot \bm{u} = 0 \\
+    \laplacian \phi = \frac{\delta}{a}
+\end{gather}
+dove la derivata $D/Da$ si dice \textit{derivata convettiva}.
+Ora usiamo il fatto che in un universo EdS linearizzato, la soluzione \textit{growing mode} è data complessivamente
+da  $\delta \propto t^{\frac{2}{3}}$, $\bm{v} \propto t^{\frac{1}{3}}$ e $\phi = const$. Con questi andamenti, è
+evidente che la nuova coordinata di velocità $\bm{u} = \bm{v} / (a\dot{a}) \approx const$, dal momento che sia 
+$\bm{v}$ che $a\dot{a} \propto t^{2/3} * t^{-1/3}$ hanno lo stesso andamento $t^{1/3}$.
+
+Ma allora il termine $Du/Da$ nell'equazione di Eulero si può considerare nullo
+\begin{equation}
+    \label{eqn:zel}
+    \frac{Du}{Da} = 0
+\end{equation}
+ottenendo così
+
+\begin{equation}
+    \bm{u} = -\nabla\phi
+\end{equation}
+che è la soluzione linearizzata, valida per piccole deviazioni dalla densità di background, ovvero per $\delta < 1$.
+L'approssimazione di Zel'dovich sta nel considerare tale risultato anche oltre il regime di linearità, ossia 
+assumere la validità di \ref{eqn:zel} ovunque.
