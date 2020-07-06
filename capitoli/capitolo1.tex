@@ -42,10 +42,11 @@ Partiamo dall'ipotesi di universo primordiale omogeneo, come ci suggerisce lo sp
 Ci muoviamo innanzitutto dal modello cosmologico Einstein-De Sitter, che pone la curvatura dell'universo
 e la costante cosmologica $\Lambda$ pari a 0 e prevede uno spazio composto sostanzialmente di materia
 oscura fredda (CDM).
-In tale cornice definiamo una mappa Lagrangiana q $\mapsto$ x(q, $\tau$) che connette la posizione
+In tale cornice definiamo una mappa Lagrangiana $\mathbb{M}: \bm{q} \mapsto \bm{x}(\bm{q}, \tau)$ che connette la posizione
 iniziale alla posizione corrente x al tempo di scala $\tau$ $\propto$ $t^{\frac{2}{3}}$.
 Inoltre le coordinate x sono coordinate comoventi legate alle coordinate fisiche r dalla relazione
-x = r/$a$, dove $a$ rappresenta il fattore cosmico di scala, che corrisponde a $\tau$ in un universo
+x = r/$a$, dove $a$ rappresenta il fattore cosm
+ico di scala, che corrisponde a $\tau$ in un universo
 EdS.
 %Definiamo infine $u(x(q, \tau), \tau) = \partial_a x(q, \tau) = \partial_{\tau}(q, \tau) = \dot{x}(q, \tau)$
 Definiamo infine le velocità $\bm{v} = a \dot{\bm{x}}$ e $\bm{w} = \dot{\bm{r}} = H \bm{r} + v$
@@ -88,8 +89,8 @@ momento, mentre la \ref{eqn:poisson} rappresenta l'equazione di Poisson relativa
 al potenziale gravitazionale $\Phi$.
 
 Poniamo inoltre $\rho = \rho_b + \delta\rho$, dove $\rho_b$ è la densità media di background
-e $\delta\rho$ costituisce una deviazione da tale valore medio. $\Phi = \Phi_b + \phi_0$ invece
-è la somma di un potenziale di background e un potenziale peculiare $\phi_0$. Grazie a queste due 
+e $\delta\rho$ costituisce una deviazione da tale valore medio. $\Phi = \Phi_b + \phi{'}$ invece
+è la somma di un potenziale di background e un potenziale peculiare $\phi{'}$. Grazie a queste due 
 apposizioni possiamo separare l'equazione di Poisson, ottenendo un equazione nella sola coordinata
 comovente x.
 Possiamo riscrivere anche \ref{eqn:eulero} e \ref{eqn:poisson} nelle coordinate x, usando la
@@ -113,7 +114,7 @@ Si ricava dunque
 
 \begin{equation}
     \label{eqn:poissonx}
-    \laplacian_{\bm{x}}\phi_0 = 4\pi G \delta\rho
+    \laplacian_{\bm{x}}\phi{'} = 4\pi G \delta\rho
 \end{equation}
 
 Le equazioni della fluidodinamica rappresentano in effetti uno sviluppo dell'equazione 
@@ -166,9 +167,9 @@ $\bm{v} = a \dot{\bm{x}}$, facciamo le seguenti sostituzioni
 \begin{gather}
     \rho \mapsto \eta = \frac{\rho}{\rho_b} = 1 + \delta \\
     \bm{v} \mapsto \bm{u} = \frac{d\bm{x}}{da} = \frac{d\bm{x}}{dt}\frac{dt}{da} = \frac{\bm{v}}{a\dot{a}} \\
-    \phi_0 \mapsto \phi = \frac{3t_{*}^2}{2a_{*}^3}\phi_0
+    \phi{'} \mapsto \phi = \frac{3t_{*}^2}{2a_{*}^3}\phi{'}
 \end{gather}
-Grazie alla mappatura $(\rho, \bm{v}, \phi_0)\mapsto(\eta, \bm{u}, \phi)$, le equazioni del fluido assumono
+Grazie alla mappatura $(\rho, \bm{v}, \phi{'})\mapsto(\eta, \bm{u}, \phi)$, le equazioni del fluido assumono
 la nuova forma 
 
 \begin{gather}
@@ -190,8 +191,31 @@ Ma allora il termine $Du/Da$ nell'equazione di Eulero si può considerare nullo
 ottenendo così
 
 \begin{equation}
+    \label{eqn:zelsol}
     \bm{u} = -\nabla\phi
 \end{equation}
 che è la soluzione linearizzata, valida per piccole deviazioni dalla densità di background, ovvero per $\delta < 1$.
-L'approssimazione di Zel'dovich sta nel considerare tale risultato anche oltre il regime di linearità, ossia 
+L'approssimazione di Zel'dovich sta nel considerare tale risultato legittimo anche oltre il regime di linearità, ossia 
 assumere la validità di \ref{eqn:zel} ovunque.
+Si può inoltre osservare che in queste condizioni l'equazione di Poisson gravitazionale risulta disaccoppiata dalle
+altre due ed è utile per applicare le condizioni iniziali.
+La \ref{eqn:zel} descrive un moto rettilineo uniforme, in cui la particella è soggetta solamente alla propria inerzia
+senza perturbazioni gravitazionali esterne. Quindi se la posizione iniziale è descritta dalla coordinata lagrangiana
+$\bm{q}$, allora per ogni posizione euleriana $\bm{x}$ del moto varrà che 
+
+\begin{equation}
+    \bm{u}(\bm{x}, \tau) = \bm{u}_0(\bm{q})
+\end{equation}
+Le traiettorie delle particelle, rettilinee e a velocità costante $u$, sono descritte da
+
+\begin{equation}
+    \bm{x}(\bm{q, \tau}) = \bm{q} + a u_0(\bm{q})
+\end{equation}
+Ma usando \ref{eqn:zelsol} si ricaverà
+
+\begin{equation}
+    \bm{x}(\bm{q, \tau}) = \bm{q} - a \nabla\phi_0
+\end{equation}
+
+Alla fine di questi passaggi si è in grado di identificare la mappa che collega le coordinate lagrangiane iniziali con
+quelle finali euleriane
