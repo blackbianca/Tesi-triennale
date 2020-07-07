@@ -1,9 +1,9 @@
 [0] Config.pm:304> INFO - This is Biber 2.14
-[0] Config.pm:307> INFO - Logfile is 'tesi.blg'
-[101] biber-MSWIN64:322> INFO - === 
-[127] Biber.pm:415> INFO - Reading 'tesi.bcf'
-[296] Biber.pm:943> INFO - Found 0 citekeys in bib section 0
-[312] Utils.pm:304> WARN - The file 'tesi.bcf' does not contain any citations!
-[340] bbl.pm:652> INFO - Writing 'tesi.bbl' with encoding 'UTF-8'
-[340] bbl.pm:755> INFO - Output to tesi.bbl
-[341] Biber.pm:128> INFO - WARNINGS: 1
+[1] Config.pm:307> INFO - Logfile is 'tesi.blg'
+[99] biber-MSWIN64:322> INFO - === 
+[124] Biber.pm:415> INFO - Reading 'tesi.bcf'
+[252] Biber.pm:943> INFO - Found 0 citekeys in bib section 0
+[261] Utils.pm:304> WARN - The file 'tesi.bcf' does not contain any citations!
+[275] bbl.pm:652> INFO - Writing 'tesi.bbl' with encoding 'UTF-8'
+[275] bbl.pm:755> INFO - Output to tesi.bbl
+[276] Biber.pm:128> INFO - WARNINGS: 1

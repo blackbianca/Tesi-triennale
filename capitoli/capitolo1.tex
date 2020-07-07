@@ -204,18 +204,71 @@ senza perturbazioni gravitazionali esterne. Quindi se la posizione iniziale è d
 $\bm{q}$, allora per ogni posizione euleriana $\bm{x}$ del moto varrà che 
 
 \begin{equation}
-    \bm{u}(\bm{x}, \tau) = \bm{u}_0(\bm{q})
+    \bm{u}(\bm{x}, a) = \bm{u}_0(\bm{q})
 \end{equation}
 Le traiettorie delle particelle, rettilinee e a velocità costante $u$, sono descritte da
 
 \begin{equation}
-    \bm{x}(\bm{q, \tau}) = \bm{q} + a u_0(\bm{q})
+    \bm{x}(\bm{q, a}) = \bm{q} + a u_0(\bm{q})
 \end{equation}
 Ma usando \ref{eqn:zelsol} si ricaverà
 
 \begin{equation}
-    \bm{x}(\bm{q, \tau}) = \bm{q} - a \nabla\phi_0
+    \bm{x}(\bm{q, a}) = \bm{q} - a \nabla\phi_0
 \end{equation}
 
-Alla fine di questi passaggi si è in grado di identificare la mappa che collega le coordinate lagrangiane iniziali con
-quelle finali euleriane
+Alla fine di questi passaggi si è in grado di identificare la mappa $\mathbb{M}$ che collega le coordinate lagrangiane 
+iniziali con quelle finali euleriane. 
+
+A questo punto saremmo in grado di risolvere l'equazione di continuità semplicemente come un'equazione a variabili
+separabili, trovando quindi la forma di $\eta$. Tuttavia la via più semplice risulta invece dall'impostare la 
+conservazione della massa dei singoli elementi fluidi.
+
+\begin{equation}
+    \eta(\bm{x}, a)d^3x=\eta_0(\bm{q})d^3q
+\end{equation}
+da cui
+
+\begin{equation}
+    \eta(\bm{x}(\bm{q}, a), a) = (1 + \delta_0(\bm{q}))\det\left(\frac{\partial q}{\partial x}\right) 
+\end{equation}
+Ma supponendo che nella configurazione iniizale la perturbazione di energia sia nulla $\delta_0 = 0$
+e contemporaneamente utilizzando le proprietà del determinante, si potrà scrivere anche
+
+\begin{equation}
+    \eta(\bm{x}(\bm{q}, a), a) = \left[\det\left(\frac{\partial x}{\partial q}\right)\right]^{-1}
+\end{equation}
+E' possibile scrivere la matrice $\partial x$/$\partial q$ in componenti, sapendo che $x_i = q_i - a \frac{\partial\phi_0}{\partial q^i}$, 
+e derivando ulteriormente 
+
+\begin{equation}
+    \frac{\partial x^i}{\partial q^j} = \delta^i_j - a \frac{\partial^2 \phi_0}{\partial q_i \partial q^j} = 
+    \delta^i_j - a D^i_j(q)
+\end{equation}
+dove si è definito il tensore di deformazione $D^i_j$. Nel sistema di riferimento opportuno tale tensore ha forma
+diagonale, con i tre autovalori $\lambda_1(\bm{q})$, $\lambda_2(\bm{q})$ e $\lambda_3(\bm{q})$, dipendenti dalle
+coordinate iniziali.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\begin{comment}
+SCALETTA SEGUENTE
+
+- introdurre le caustiche proseguendo sulla linea delle note di matarrese
+- dire che il problema si può affrontare anche come problema di minimizzazione, partendo dall'ipotesi di
+mappa lagrangiana potenziale ed arrivando all'equazione MAK (citare articolo Moyahee) 
+
+\end{comment}
