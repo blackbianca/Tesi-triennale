@@ -1,32 +1,12 @@
 \begin{comment}
+    alcune idee/frasi da inserire:
 
     Le singolarità sono una caratteristica essenziale di molte discipline, e hanno talvolta conseguenze
     drammatiche sul modello matematico\dots
-    
-    In cosmologia, le caustiche sono i processi fondanti della formazione delle strutture cosmologiche
-    su larga scala. Queste corrispondono ai punti presso i quali la densità risulta localmente infinita
-    e sono i prodotti del cosiddetto \textit{shell-crossing}, che si verifica all'incrociarsi delle traiettorie
-    delle particelle di CDM, e corrispondono dunque alle singolarità matematiche che emergono naturalmente
-    nel trattare il problema con la dinamica gravitazione Newtoniana.
-    In particolare con al primo shell-crossing le particelle si spostano dal regime di \textit{single-stream}
-    a quello di \textit{multistreaming}, dove le orbite particellari si intersecano e i fenomeni di shell-crossing
-    si moltiplicano, determinando il diramarsi dei flussi.
-    
-    Nel regime di single-stream l'approssimazione di Zel'dovich è opportuna, in quanto costitusice un modello non
-    accelerato dove le particelle procedono imperturbate e a velocità costante (quale velocità, comovente?).
-    Tuttavia non appena entriamo in multistreaming l'approssimazione perde di validità, in quanto non prevede
-    effetti di accelerazione gravitazionale.
 
-    Nella presente trattazione si fa uso di coordinate Lagrangiane per impostare la descrizione di dell'instabilità
-    gravitazionale: in tale cornice l'approssimazione di Zel'dovich rappresenta lo sviluppo all'ordine zero delle
-    equazioni della fluidodinamica in regime di single-stream.
-    Tuttavia gli effetti gravitazionali che emergono con il multistreaming non sono descrivibili nemmeno utilizzando
-    ordini superiori della teoria perturbativa lagrangiana, dal momento che le equazioni del fluido cessano di essere
-    valide al primo shell-crossing. Pertanto la dinamica della CMD è basata unicamente sull'equazione di Vlasov, che 
-    sappiamo corretta ma di difficile risoluzione. Occorre quindi una teoria che risolva tale equazione, identificandone
-    in particolare le singolarità matematiche. Per la risoluzione assumiamo un universo unidimensionale: questa assunzione
+    Per la risoluzione assumiamo un universo unidimensionale: questa assunzione
     si può giustificare sulla base del fatto che in effetti anche in tre dimensioni i fenomeni di shell-crossing hanno 
-    origine unidimensionale con la formazione dei pancakes (cosa sono, come si legano alle caustiche?...)
+    origine unidimensionale con la formazione dei pancakes-
     
     Tuttavia l'analisi offerta sarà facilmente estendibile a più dimensioni.
     
@@ -48,7 +28,6 @@ Inoltre le coordinate x sono coordinate comoventi legate alle coordinate fisiche
 x = r/$a$, dove $a$ rappresenta il fattore cosm
 ico di scala, che corrisponde a $\tau$ in un universo
 EdS.
-%Definiamo infine $u(x(q, \tau), \tau) = \partial_a x(q, \tau) = \partial_{\tau}(q, \tau) = \dot{x}(q, \tau)$
 Definiamo infine le velocità $\bm{v} = a \dot{\bm{x}}$ e $\bm{w} = \dot{\bm{r}} = H \bm{r} + v$
 
 Per approcciare la dinamica di particelle non collidenti ("polvere"), definiamo una funzione $f(\bm{x}, \bm{p}, t)$ 
@@ -247,9 +226,39 @@ e derivando ulteriormente
 \end{equation}
 dove si è definito il tensore di deformazione $D^i_j$. Nel sistema di riferimento opportuno tale tensore ha forma
 diagonale, con i tre autovalori $\lambda_1(\bm{q})$, $\lambda_2(\bm{q})$ e $\lambda_3(\bm{q})$, dipendenti dalle
-coordinate iniziali.
+coordinate iniziali. Si può dimostrare che nell'ipotesi in cui il potenziale $phi_0$ sia gaussiano come previsto
+dal meccanismo di inflazione, allora nel almeno uno dei tre autovalori del tensore di deformazione è positivo 
+nel 92$\%$ dei casi.
+Ora, riscrivendo il rapporto di densità $\eta$
 
+\begin{multline}
+    \eta(\bm{x}(\bm{q}, a), a) = \left[\det\left(\frac{\partial x}{\partial q}\right)\right]^{-1} = \left[\det\left( \mathbb{I}- a D \right)\right]^{-1} = \\
+    = \frac{1}{(1-a\lambda_1(\bm{q}))(1-a\lambda_2(\bm{q}))(1-a\lambda_3(\bm{q}))}
+\end{multline}
 
+A questo punto, è evidente che, supponendo che $\lambda_1(\bm{q})$ sia l'autovalore maggiore, allora il tempo 
+$\bar{a}=1/\lambda_1(\bm{q})$ rappresenta una criticità, in quanto la quantità $\eta$ diverge e con essa la 
+densità. Questo tipo di evento è detto \textit{shell-crossing} o \textit{caustica} ed è rappresenta il 
+fenomeno che si registra quando due particelle con diverse coordinate lagrangiane iniziali 
+$\bm{q}_1$ e $\bm{q}_2$ confluiscono nella stessa coordinata di campo $\bm{x}$, dando luogo a densità
+infinita. 
+Tale divergenza è racchiusa nella mancata biunivocità della mappa $\mathbb{M}^{-1}$, dal momento che a 
+una sola coordinata euleriana possono corrispondere più coordinate iniziali. A causa della mancanza
+di tale biunivocità, la matrice Jacobiana $\partial x/\partial q$ risulta essere mal definita.
+Le caustiche delimitano le zone del cosiddetto \textit{multistreaming}, regioni entro le quali non è
+più possibile ritracciare le particelle all'indietro, in quanto non sappiamo come si sono comportate
+negli eventi di shell-crossing. Le strutture di materia che si formano sono detti \textit{pancakes},
+filamenti "quasi" unidimensionali o bidimenzionali, nel senso che la grumosità si sviluppa 
+sostanzialmente in una oppure due direzioni. Queste strutture saranno l'opportuna sede la formazione
+delle galassie.
+
+Nel regime di single-stream l'approssimazione di Zel'dovich è opportuna, in quanto costitusice 
+un modello non accelerato dove le particelle procedono imperturbate lungo una traiettoria rettilinea
+ e a velocità costante. Tuttavia a partire dal primo shell-crossing l'approssimazione perde di validità, 
+in quanto non prevede effetti di accelerazione gravitazionale esercitata dalle particelle vicine, che 
+modificherebbe il cammino della particella in modo sensibile. 
+
+\section{Metodi di ricostruzione}
 
 
 
@@ -266,9 +275,10 @@ coordinate iniziali.
 
 \begin{comment}
 SCALETTA SEGUENTE
-
-- introdurre le caustiche proseguendo sulla linea delle note di matarrese
-- dire che il problema si può affrontare anche come problema di minimizzazione, partendo dall'ipotesi di
-mappa lagrangiana potenziale ed arrivando all'equazione MAK (citare articolo Moyahee) 
-
+nuova sezione con carrellata su metodi di ricostruzione (citare Mohayaee)
+- cos'è la reconstruction
+- Peebles
+- POTENT
+- MAK, particolare attenzione perché prende le origin dalla trattazione fluido
+ed è il metodo che fornisce unicità
 \end{comment}
