@@ -1,9 +1,17 @@
 [0] Config.pm:304> INFO - This is Biber 2.14
 [0] Config.pm:307> INFO - Logfile is 'tesi.blg'
-[75] biber-MSWIN64:322> INFO - === 
-[103] Biber.pm:415> INFO - Reading 'tesi.bcf'
-[211] Biber.pm:943> INFO - Found 0 citekeys in bib section 0
-[219] Utils.pm:304> WARN - The file 'tesi.bcf' does not contain any citations!
-[231] bbl.pm:652> INFO - Writing 'tesi.bbl' with encoding 'UTF-8'
-[232] bbl.pm:755> INFO - Output to tesi.bbl
-[233] Biber.pm:128> INFO - WARNINGS: 1
+[115] biber-MSWIN64:322> INFO - === 
+[150] Biber.pm:415> INFO - Reading 'tesi.bcf'
+[317] Biber.pm:943> INFO - Found 1 citekeys in bib section 0
+[339] Biber.pm:4256> INFO - Processing section 0
+[340] Utils.pm:75> INFO - Globbing data source 'bibliografia.bib'
+[353] Utils.pm:91> INFO - Globbed data source 'bibliografia.bib' to bibliografia.bib
+[374] Biber.pm:4455> INFO - Looking for bibtex format file 'bibliografia.bib' for section 0
+[386] bibtex.pm:1653> INFO - LaTeX decoding ...
+[390] bibtex.pm:1471> INFO - Found BibTeX data source 'bibliografia.bib'
+[450] UCollate.pm:68> INFO - Overriding locale 'it-IT' defaults 'variable = shifted' with 'variable = non-ignorable'
+[451] UCollate.pm:68> INFO - Overriding locale 'it-IT' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[451] Biber.pm:4084> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'it-IT'
+[451] Biber.pm:4090> INFO - No sort tailoring available for locale 'it-IT'
+[455] bbl.pm:652> INFO - Writing 'tesi.bbl' with encoding 'UTF-8'
+[457] bbl.pm:755> INFO - Output to tesi.bbl
