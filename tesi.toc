@@ -10,8 +10,8 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {1.3}Metodi di ricostruzione}{8}{section.1.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {2}Tipi di singolarità nella trattazione Lagrangiana}{10}{chapter.2}%
+\contentsline {chapter}{\numberline {2}Tipi di singolarità nella trattazione Lagrangiana}{11}{chapter.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.1}Parte prima}{10}{section.2.1}%
+\contentsline {section}{\numberline {2.1}Parte prima}{11}{section.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.2}Parte seconda}{11}{section.2.2}%
+\contentsline {section}{\numberline {2.2}Parte seconda}{12}{section.2.2}%

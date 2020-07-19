@@ -19,6 +19,26 @@
 
 \refsection{0}
   \datalist[entry]{nty/global//global/global}
+    \entry{mohayaee}{article}{}
+      \name{author}{1}{}{%
+        {{hash=e3657c718b338b91cdefcea5bef8ebd8}{%
+           family={Mohayeaee},
+           familyi={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{e3657c718b338b91cdefcea5bef8ebd8}
+      \strng{fullhash}{e3657c718b338b91cdefcea5bef8ebd8}
+      \strng{bibnamehash}{e3657c718b338b91cdefcea5bef8ebd8}
+      \strng{authorbibnamehash}{e3657c718b338b91cdefcea5bef8ebd8}
+      \strng{authornamehash}{e3657c718b338b91cdefcea5bef8ebd8}
+      \strng{authorfullhash}{e3657c718b338b91cdefcea5bef8ebd8}
+      \field{sortinit}{M}
+      \field{sortinithash}{2e5c2f51f7fa2d957f3206819bf86dc3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{AstronomyAstrophysics}
+      \field{title}{Back to the primordial Universe by a Monge–Ampere–Kantorovich optimization scheme}
+      \field{year}{2003}
+    \endentry
     \entry{Peebles}{article}{}
       \name{author}{1}{}{%
         {{hash=dd71b2b0e5f00721bd0cdf4a474674df}{%

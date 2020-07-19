@@ -17,8 +17,19 @@
 \section{Equazioni della fluidodinamica}
 
 
+Una delle ipotesi vertice della seguente trattazione è quella che il plasma primordiale fosse altamente omogeneo.
+Tale teoria è avallata dallo spettro della CMB (Cosmic Microwave Background), che risulta riprodurre la stessa
+isotropia, eccezion fatta per deboli fluttuazioni termiche che caratterizzavano lo stesso plasma primordiale.
 
-Partiamo dall'ipotesi di universo primordiale omogeneo, come ci suggerisce lo spettro di CMB (FIGURA?).
+\begin{center}
+	\begin{figure}[H]
+		\centering
+		\includegraphics[scale=0.5, angle=0]{cmb.png}
+		\caption{Immagine dello spettro della CMB attraverso le misurazioni della sonda spaziale WMAP}
+		\label{fig:cmb}
+	\end{figure}
+\end{center}
+
 Ci muoviamo innanzitutto dal modello cosmologico Einstein-De Sitter, che pone la curvatura dell'universo
 e la costante cosmologica $\Lambda$ pari a 0 e prevede uno spazio composto sostanzialmente di materia
 oscura fredda (CDM).
@@ -260,8 +271,8 @@ modificherebbe il cammino della particella in modo sensibile.
 
 \section{Metodi di ricostruzione}
 
-Come anticipato all'inizio del capitolo, l'alta uniformità della CMB è una prova forte dell'alta 
-omogeneità dell'Universo primordiale. La grumosità della distrubuzione attuale della massa si spiega con 
+Come anticipato all'inizio del capitolo, l'alta uniformità della CMB è una prova forte dell'omogeneità 
+dell'Universo primordiale. La grumosità della distrubuzione attuale della massa si spiega invece con 
 la formazione di strutture filiformi e oblate come i pancakes. Per poter rendere conto di questa transizione,
 sono possibili due tipi di atteggiamento: un \textit{forward approach}, che si basa sull'ipotizzare un 
 modello iniziale, presumibilmente a densità costante, ed eseguire una simulazione a N corpi sulle basi 
@@ -270,18 +281,18 @@ distrubuzione attuale delle galassie, per poi accettare o eventualmente rigettar
 Tale approccio è praticabile solo tramite tecniche numeriche e non permette di formulare analiticamente
 il problema a causa del numero troppo elevato di gradi di libertà.
 
-Un modo di ottenere soluzione analitiche invece seguire un approccio di \textit{reconstruction}, in cui
+Un modo di ottenere soluzione analitiche invece è seguire un approccio di \textit{reconstruction}, in cui
 si tenta di fittare in modo esatto la distribuzione di massa attuale dell'universo e di mappare la velocità 
 delle galassie, per poi invertire il problema usando le posizioni attuali come posizioni iniziali e 
 cambiando segno alla velocità. 
 Tuttavia mentre l'approccio forward, pur con il suo alto coefficiente di difficoltà, si può formulare
-in un ben definito problema di Cauchy che garantisce l'unicità delle soluzioni, la reconstruction non
-è si può formulare allo stesso modo, dato che si è osservato che a causa dello shell-crossing a una 
+in un ben definito problema di Cauchy che garantisca l'unicità delle soluzioni, la reconstruction non
+si può formulare allo stesso modo, dato che si è osservato che a causa dello shell-crossing a una 
 coordinata euleriana possono corrispondere più posizioni iniziali. Quindi con la ricostruzione si pone 
-un problema di condizioni al contorno, in cui la sfida consiste nel trovare un algoritmo che garantisca
+un problema di condizioni al contorno, per cui la sfida consiste nel trovare un algoritmo che garantisca
 unicità.
 
-La prima via è rappresentata dal problema variazionale come fu formulato da Peebels in \cite{Peebles}.
+Una via percorribile è rappresentata dal problema variazionale come fu formulato da Peebels in \cite{Peebles}.
 Anzichè risolvere le equazioni del moto, è possibile cercare i punti stazionari della corrispondente
 azione di Eulero-Lagrange, scritta nelle coordinate comoventi $\bm{x}$ come
 
@@ -294,10 +305,38 @@ dove $t_0$ rappresenta il tempo attuale, $\bm{x}_i$ è la traiettoria della i-es
 è possibile calcolare la variazione di azione e porla uguale a zero per cercare le orbite stazionarie.
 
 \begin{equation}
-    \delta S = \int_0^{t_0}\left[\frac{\partial \mathcal{L}}{\partial \bm{x}_i}\cdot \delta\bm{x}_i + \frac{\partial\mathcal{L}}{\partial \bm{x}_i}\cdot \delta \dot{\bm{x}}_i\right] = 0 
+    \delta S = \int_0^{t_0} dt \left[\frac{\partial \mathcal{L}}{\partial \bm{x}_i}\cdot \delta\bm{x}_i + \frac{\partial\mathcal{L}}{\partial \bm{x}_i}\cdot \delta \dot{\bm{x}}_i\right] = 0 
 \end{equation}
-Ponendo le opportune condizioni al contorno sarà possibile trovare soluzioni analitiche per $\bm{x}_i$,
-ma tale metodo manca comunque di unicità perché non supera il problema delle regioni di mulistreaming.
+Ponendo le opportune condizioni al contorno sarà possibile trovare soluzioni analitiche per $\bm{x}_i$.
+In particolare nel suo primo lavoro Peebles considerò solamente i punti di minimo dell'azione: trovò
+successivamente che considerando anche i punti di sella si trovava un accordo migliore con i parametri
+osservati nel Gruppo Locale.
+
+\begin{center}
+	\begin{figure}[H]
+		\centering
+		\includegraphics[scale=0.5, angle=0]{peebles.png}
+        \caption{Raffigurazione schematica della ricostruzione di Peebles per il Gruppo Locale. Le orbite rosa
+        corrispondono alla scelta del minimo dell'azione, mentre quelle gialle indicano la selezione del punto di sella.
+        Interessante è il caso della galassia N6822, che offre sia una soluzione in avvicinamento che in allontanamento:
+        l'accordo corretto si trova con l'orbita prevista con il punto di sella. Immagine tratta da \cite{mohayaee}.}
+		\label{fig:peebles}
+	\end{figure}
+\end{center}
+
+Tuttavia è impresa ardua ripetere gli stessi risultati su altri set di galassie redshiftate, di cui
+sono sconosciute le velocità, necessarie a porre opportune condizioni al contorno. Non è possibile 
+quindi scegliere l'orbita corretta tra le molte proposte dall'approccio variazionale, per cui si 
+perde l'unicità della soluzione, come accennato in precedenza. 
+
+Oltre all'approccio variazionale appena esposto, un'opzione valida è la ricostruzione POTENT, che si basa
+sul rintracciare il campo potenziale della velocità integrando le componenti radiali della velocità.
+Questo metodo regge solamente in regime euleriano lineare $|(\rho-\rho_b)/\rho_b|\leq 1$, pertanto non 
+recuperano le corrette condizioni iniziali delle regiorni di attuale altà densità, in quanto non lineari.
+
+Infine il metodo MAK supera sia il problema della non unicità che affligge la ricostruzione di Peebles, 
+sia i limiti di validitò dell'algoritmo POTENT, rimanendo valido anche ben oltre il regime lineare euleriano.
+
 
 
 
