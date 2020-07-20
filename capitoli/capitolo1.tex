@@ -204,6 +204,7 @@ Le traiettorie delle particelle, rettilinee e a velocità costante $u$, sono des
 Ma usando \ref{eqn:zelsol} si ricaverà
 
 \begin{equation}
+    \label{eqn:zelmap}
     \bm{x}(\bm{q, a}) = \bm{q} - a \nabla\phi_0
 \end{equation}
 
@@ -237,7 +238,8 @@ e derivando ulteriormente
 \end{equation}
 dove si è definito il tensore di deformazione $D^i_j$. Nel sistema di riferimento opportuno tale tensore ha forma
 diagonale, con i tre autovalori $\lambda_1(\bm{q})$, $\lambda_2(\bm{q})$ e $\lambda_3(\bm{q})$, dipendenti dalle
-coordinate iniziali. Si può dimostrare che nell'ipotesi in cui il potenziale $phi_0$ sia gaussiano come previsto
+coordinate iniziali. Questi governano la deformazione locale della materia lungo i tre assi ortogonali identificati
+dagli autovettori. Si può dimostrare che nell'ipotesi in cui il potenziale $phi_0$ sia gaussiano come previsto
 dal meccanismo di inflazione, allora nel almeno uno dei tre autovalori del tensore di deformazione è positivo 
 nel 92$\%$ dei casi.
 Ora, riscrivendo il rapporto di densità $\eta$
@@ -292,7 +294,7 @@ coordinata euleriana possono corrispondere più posizioni iniziali. Quindi con l
 un problema di condizioni al contorno, per cui la sfida consiste nel trovare un algoritmo che garantisca
 unicità.
 
-Una via percorribile è rappresentata dal problema variazionale come fu formulato da Peebels in \cite{Peebles}.
+Una via percorribile è rappresentata dal problema variazionale come fu formulato da Peebels in \parencite{peebles}.
 Anzichè risolvere le equazioni del moto, è possibile cercare i punti stazionari della corrispondente
 azione di Eulero-Lagrange, scritta nelle coordinate comoventi $\bm{x}$ come
 
@@ -319,7 +321,7 @@ osservati nel Gruppo Locale.
         \caption{Raffigurazione schematica della ricostruzione di Peebles per il Gruppo Locale. Le orbite rosa
         corrispondono alla scelta del minimo dell'azione, mentre quelle gialle indicano la selezione del punto di sella.
         Interessante è il caso della galassia N6822, che offre sia una soluzione in avvicinamento che in allontanamento:
-        l'accordo corretto si trova con l'orbita prevista con il punto di sella. Immagine tratta da \cite{mohayaee}.}
+        l'accordo corretto si trova con l'orbita prevista con il punto di sella. Immagine tratta da \parencite{mohayaee}.}
 		\label{fig:peebles}
 	\end{figure}
 \end{center}
@@ -332,12 +334,70 @@ perde l'unicità della soluzione, come accennato in precedenza.
 Oltre all'approccio variazionale appena esposto, un'opzione valida è la ricostruzione POTENT, che si basa
 sul rintracciare il campo potenziale della velocità integrando le componenti radiali della velocità.
 Questo metodo regge solamente in regime euleriano lineare $|(\rho-\rho_b)/\rho_b|\leq 1$, pertanto non 
-recuperano le corrette condizioni iniziali delle regiorni di attuale altà densità, in quanto non lineari.
+recuperano le corrette condizioni iniziali delle regiorni di attuale altà densità, in quanto non lineari:
+in altre parole, è un metodo di ricostruzione che non funziona nelle regioni di multistreaming.
 
 Infine il metodo MAK supera sia il problema della non unicità che affligge la ricostruzione di Peebles, 
 sia i limiti di validitò dell'algoritmo POTENT, rimanendo valido anche ben oltre il regime lineare euleriano.
+Occorre innanzitutto formulare un'equazione di conservazione della massa e prenderla a vincolo
 
+\begin{equation}
+    \rho(\bm{x})d\bm{x} = \rho_0(\bm{q})d\bm{q}
+\end{equation}
+dove $\rho_0(\bm{q})$ è la densità iniziale e a $\rho(\bm{x})$ è la densità alla posizione attuale euleriana.
+Manipolando tale equazione di conservazione otterremo 
 
+\begin{equation}
+    \label{eqn:masscons}
+    \det\left[\frac{\partial q_i}{\partial x_j}\right] = \frac{\rho(\bm{x})}{\rho_0(\bm{q})}
+\end{equation}
+dove il membro di destra dovrebbe essere noto: conosciamo infatti la posizione della particella
+e la densità del campo euleriano, e assumiamo inoltre una densità iniziale costante $\rho_0(\bm{q}) = \rho_0$-
+Per risolvere l'equazione, si fa l'ipotesi che la mappa lagrangiana $\mathbb{M}: \bm{q} \mapsto \bm{x}$ si 
+possa scrivere come il gradiente di un potenziale convesso $\Phi$.
+
+\begin{equation}
+    \bm{x}(\bm{q}, t) = \nabla_q \Phi(\bm{q}, t)
+\end{equation}
+La convessità del potenziale assicura una relazione biunivoca tra coordinata lagrangiana e coordinata
+euleriana, ossia garantisce l'unicità evitando i fenomeni di multistreaming.
+Si osserva che nel caso dell'approssimazione di Zel'dovich, con l'equazione \ref{eqn:zelmap} che esplicita la 
+mappa lagrangiana è possibile costruire il potenziale $\Phi$, che sarebbe dato da 
+$\Phi(\bm{q}, t) = \bm{q}^2/2 -a\phi_0(\bm{q}, t)$.
+Tuttavia è evidente che tale potenziale non è convesso ovunque, e proprio per questo l'approssimazione
+di Zel'dovich non garantisce unicità, in quanto propone una traiettoria rettilinea secondo cui le particelle 
+proseguono dritte nella direzione in cui sono entrate nella zona di shell-crossing, in modo abbastanza irrealistico,
+dal momento che la traiettoria di una particella che entra in una zona di alta densità viene presumibilmente modificata in modo 
+consistente. 
+Sarà invece possibile identificare un potenziale convesso e recuperare quindi l'unicità solamente con una proposta 
+alternativa all'approssimazione di Zel'dovich, ossia il modello di adesione, che prevede l'aggiunta di 
+termini di interazione gravitazionale.
+Se $\Phi$ esiste ed è convesso sarà definita convessa anche la mappa inversa $\Theta(\bm{x}, t)$ tale caustiche
+$\bm{q} = \nabla_x \Theta$. La relazione tra $\Phi$ e $\Theta$ è stabilita dalle trasformazioni di
+Legendre-Fenchel.
+
+\begin{equation}
+    \Theta(\bm{x}) = \max_q \{\bm{q}\cdot\bm{x}-\Phi(\bm{q})\} \qquad \Phi(\bm{q}) = \max_x \{\bm{x}\cdot\bm{q}-\Theta(\bm{x})\}
+\end{equation}
+A questo punto l'equazione \ref{eqn:masscons} diventa l'equazione di Monge-Ampere.
+
+\begin{equation}
+    \det\left[\frac{\partial^2 \Theta (\bm{x}, t)}{\partial x_i \partial x_j}\right] = \frac{\rho(\bm{x})}{\rho_0}
+\end{equation}
+Solo recentemente si è scoperto che la soluzione a tale equazione è equivalente alla soluzione unica
+di un problema di trasporto ottimo, in particolare il problema di trasporto di massa di Monge-Kantorovich,
+in cui si cerca quale relazione tra $\bm{q}$ e $\bm{x}$ minimizza la la funzione quadratica di costo 
+$c(\bm{q}, \bm{x}) = |\bm{x}-\bm{q}|^2$, o meglio si cerca la minimizzazione del funzionale I.
+
+\begin{equation}
+    \label{eqn:mongeampere}
+    I = \int_q \rho_0(\bm{q})|\bm{x}-\bm{q}|^2 d\bm{q} = \int_x \rho(\bm{x})|\bm{x}-\bm{q}|^2 d\bm{x} 
+\end{equation}
+Si trova infatti che per ottenere la condizione $\delta I = 0$, $\bm{q}(\bm{x})$ deve essere il gradiente
+di una funzione di $\bm{x}$. I dettagli della trattazione sono reperibili in \parencite{mohayaee} e \parencite{matarrese}.
+Per risolvere l'equazione \ref{eqn:mongeampere} la si discretizza e si risolve il relativo problema di assegnazione 
+tramite algoritmi numerici, come quelli presentati in \parencite{mohayaee}, che permettano di preservare l'unicità
+delle soluzioni.
 
 
 
@@ -354,6 +414,6 @@ nuova sezione con carrellata su metodi di ricostruzione (citare Mohayaee)
 - cos'è la reconstruction
 - Peebles
 - POTENT
-- MAK, particolare attenzione perché prende le origin dalla trattazione fluido
+- MAK, particolare attenzione perché prende le origini dalla trattazione fluido
 ed è il metodo che fornisce unicità
 \end{comment}
