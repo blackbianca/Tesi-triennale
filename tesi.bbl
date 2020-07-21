@@ -3,8 +3,8 @@
 % Do not modify the above lines!
 %
 % This is an auxiliary file used by the 'biblatex' package.
-% This file may safely be deleted. It will be recreated by
-% biber as required.
+% This file may safely be deleted. It will be recreated as
+% required.
 %
 \begingroup
 \makeatletter
@@ -16,33 +16,123 @@
   {}
 \endgroup
 
+\datalist[entry]{nty/global//global/global}
+  \entry{matarrese}{article}{}
+    \name{author}{7}{}{%
+      {{hash=BY}{%
+         family={Brenier},
+         familyi={B\bibinitperiod},
+         given={Y.},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=MS}{%
+         family={Matarrese},
+         familyi={M\bibinitperiod},
+         given={S.},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=FU}{%
+         family={Frisch},
+         familyi={F\bibinitperiod},
+         given={U.},
+         giveni={U\bibinitperiod},
+      }}%
+      {{hash=HM}{%
+         family={Hénon},
+         familyi={H\bibinitperiod},
+         given={M.},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=LG}{%
+         family={Loeper},
+         familyi={L\bibinitperiod},
+         given={G.},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=MR}{%
+         family={Mohayaee},
+         familyi={M\bibinitperiod},
+         given={R.},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=SA}{%
+         family={Sobolevski},
+         familyi={S\bibinitperiod},
+         given={A.},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{BY+1}
+    \strng{fullhash}{BYMSFUHMLGMRSA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{B}
+    \field{sortinithash}{B}
+    \field{title}{Reconstruction of the early Universe as a convex optimization
+  problem}
+    \field{journaltitle}{Royal Astronomical Society}
+    \field{year}{2003}
+  \endentry
 
-\refsection{0}
-  \datalist[entry]{nty/global//global/global}
-    \entry{peebles}{article}{}
-      \name{author}{1}{}{%
-        {{hash=dd71b2b0e5f00721bd0cdf4a474674df}{%
-           family={Peebles},
-           familyi={P\bibinitperiod},
-           given={P.\bibnamedelimi J.\bibnamedelimi E.},
-           giveni={P\bibinitperiod\bibinitdelim J\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
-      }
-      \strng{namehash}{dd71b2b0e5f00721bd0cdf4a474674df}
-      \strng{fullhash}{dd71b2b0e5f00721bd0cdf4a474674df}
-      \strng{bibnamehash}{dd71b2b0e5f00721bd0cdf4a474674df}
-      \strng{authorbibnamehash}{dd71b2b0e5f00721bd0cdf4a474674df}
-      \strng{authornamehash}{dd71b2b0e5f00721bd0cdf4a474674df}
-      \strng{authorfullhash}{dd71b2b0e5f00721bd0cdf4a474674df}
-      \field{sortinit}{P}
-      \field{sortinithash}{bb5b15f2db90f7aef79bb9e83defefcb}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{The Astrophysical journal}
-      \field{number}{344}
-      \field{title}{Tracing galaxy orbit back in time}
-      \field{year}{1989}
-    \endentry
-  \enddatalist
-\endrefsection
+  \entry{mohayaee}{article}{}
+    \name{author}{4}{}{%
+      {{hash=MR}{%
+         family={Mohayaee},
+         familyi={M\bibinitperiod},
+         given={R.},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=MS}{%
+         family={Matarrese},
+         familyi={M\bibinitperiod},
+         given={S.},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=FU}{%
+         family={Frisch},
+         familyi={F\bibinitperiod},
+         given={U.},
+         giveni={U\bibinitperiod},
+      }}%
+      {{hash=SA}{%
+         family={Sobolevski},
+         familyi={S\bibinitperiod},
+         given={A.},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{MR+1}
+    \strng{fullhash}{MRMSFUSA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{M}
+    \field{sortinithash}{M}
+    \field{title}{Back to the primordial Universe by a Monge-Ampere-Kantorovich
+  optimization scheme}
+    \field{journaltitle}{Astronomy and Astrophysics}
+    \field{year}{2003}
+  \endentry
+
+  \entry{peebles}{article}{}
+    \name{author}{1}{}{%
+      {{hash=PPJE}{%
+         family={Peebles},
+         familyi={P\bibinitperiod},
+         given={P.\bibnamedelima J.\bibnamedelima E.},
+         giveni={P\bibinitperiod\bibinitdelim J\bibinitperiod\bibinitdelim
+  E\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{PPJE1}
+    \strng{fullhash}{PPJE1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{P}
+    \field{sortinithash}{P}
+    \field{number}{344}
+    \field{title}{Tracing galaxy orbit back in time}
+    \field{journaltitle}{The Astrophysical journal}
+    \field{year}{1989}
+  \endentry
+\enddatalist
 \endinput
-

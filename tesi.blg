@@ -1,23 +1,65 @@
-[0] Config.pm:304> INFO - This is Biber 2.14
-[0] Config.pm:307> INFO - Logfile is 'tesi.blg'
-[143] biber-MSWIN64:322> INFO - === 
-[168] Biber.pm:415> INFO - Reading 'tesi.bcf'
-[307] Biber.pm:943> INFO - Found 3 citekeys in bib section 0
-[329] Biber.pm:4256> INFO - Processing section 0
-[330] Utils.pm:75> INFO - Globbing data source 'bibliografia.bib'
-[342] Utils.pm:91> INFO - Globbed data source 'bibliografia.bib' to bibliografia.bib
-[363] Biber.pm:4455> INFO - Looking for bibtex format file 'bibliografia.bib' for section 0
-[365] bibtex.pm:1653> INFO - LaTeX decoding ...
-[380] bibtex.pm:1471> INFO - Found BibTeX data source 'bibliografia.bib'
-[411] Utils.pm:320> ERROR - Name "R. Mohayaee, S. Matarrese, U. Frisch, A. Sobolevski" has too many commas, skipping entry 'mohayaee'
-[411] Utils.pm:304> WARN - Entry with key 'mohayaee' in section '0' is cited and found but not created (likely due to sourcemap)
-[413] Utils.pm:320> ERROR - Name "Y. Brenier, S. Matarrese, U. Frisch, M. Hénon, G. Loeper, R. Mohayaee, A. Sobolevski" has too many commas, skipping entry 'matarrese'
-[413] Utils.pm:304> WARN - Entry with key 'matarrese' in section '0' is cited and found but not created (likely due to sourcemap)
-[425] UCollate.pm:68> INFO - Overriding locale 'it-IT' defaults 'variable = shifted' with 'variable = non-ignorable'
-[425] UCollate.pm:68> INFO - Overriding locale 'it-IT' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[425] Biber.pm:4084> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'it-IT'
-[426] Biber.pm:4090> INFO - No sort tailoring available for locale 'it-IT'
-[428] bbl.pm:652> INFO - Writing 'tesi.bbl' with encoding 'UTF-8'
-[429] bbl.pm:755> INFO - Output to tesi.bbl
-[429] Biber.pm:128> INFO - WARNINGS: 2
-[429] Biber.pm:132> INFO - ERRORS: 2
+This is BibTeX, Version 0.99d (MiKTeX 2.9.7400 64-bit)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: tesi.aux
+The style file: biblatex.bst
+Reallocating 'glb_str_end' (item size: 4) to 20 items.
+Reallocating 'glb_str_ptr' (item size: 4) to 20 items.
+Reallocating 'global_strs' (item size: 1) to 4000000 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'wiz_functions' (item size: 4) to 6000 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Database file #1: tesi-blx.bib
+Database file #2: bibliografia.bib
+Biblatex version: 3.13
+Reallocating 'wiz_functions' (item size: 4) to 9000 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+You've used 4 entries,
+            6365 wiz_defined-function locations,
+            1208 strings with 9368 characters,
+and the built_in function-call counts, 23333 in all, are:
+= -- 1714
+> -- 376
+< -- 76
++ -- 671
+- -- 145
+* -- 1612
+:= -- 2967
+add.period$ -- 0
+call.type$ -- 4
+change.case$ -- 27
+chr.to.int$ -- 42
+cite$ -- 6
+duplicate$ -- 2498
+empty$ -- 2012
+format.name$ -- 240
+if$ -- 4607
+int.to.chr$ -- 0
+int.to.str$ -- 6
+missing$ -- 0
+newline$ -- 135
+num.names$ -- 123
+pop$ -- 1192
+preamble$ -- 1
+purify$ -- 51
+quote$ -- 0
+skip$ -- 565
+stack$ -- 0
+substring$ -- 2979
+swap$ -- 472
+text.length$ -- 104
+text.prefix$ -- 3
+top$ -- 1
+type$ -- 124
+warning$ -- 0
+while$ -- 448
+width$ -- 0
+write$ -- 132

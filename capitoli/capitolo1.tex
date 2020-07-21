@@ -294,7 +294,18 @@ coordinata euleriana possono corrispondere più posizioni iniziali. Quindi con l
 un problema di condizioni al contorno, per cui la sfida consiste nel trovare un algoritmo che garantisca
 unicità.
 
-Una via percorribile è rappresentata dal problema variazionale come fu formulato da Peebels in \parencite{peebles}.
+\begin{center}
+	\begin{figure}[H]
+		\centering
+		\includegraphics[scale=0.5, angle=0]{rec.png}
+        \caption{Esempio di ricostruzione senza unicità. La densità nel grafico superiore potrebbe essere stata generata
+        sia dalla mappa lagrangiana in grassetto che da quella tratteggiata. FIgura tratta da \cite{matarrese}}
+		\label{fig:rec}
+	\end{figure}
+\end{center}
+
+
+Una via percorribile è rappresentata dal problema variazionale come fu formulato da Peebels in \cite{peebles}.
 Anzichè risolvere le equazioni del moto, è possibile cercare i punti stazionari della corrispondente
 azione di Eulero-Lagrange, scritta nelle coordinate comoventi $\bm{x}$ come
 
@@ -321,7 +332,7 @@ osservati nel Gruppo Locale.
         \caption{Raffigurazione schematica della ricostruzione di Peebles per il Gruppo Locale. Le orbite rosa
         corrispondono alla scelta del minimo dell'azione, mentre quelle gialle indicano la selezione del punto di sella.
         Interessante è il caso della galassia N6822, che offre sia una soluzione in avvicinamento che in allontanamento:
-        l'accordo corretto si trova con l'orbita prevista con il punto di sella. Immagine tratta da \parencite{mohayaee}.}
+        l'accordo corretto si trova con l'orbita prevista con il punto di sella. Immagine tratta da \cite{mohayaee}.}
 		\label{fig:peebles}
 	\end{figure}
 \end{center}
@@ -394,10 +405,12 @@ $c(\bm{q}, \bm{x}) = |\bm{x}-\bm{q}|^2$, o meglio si cerca la minimizzazione del
     I = \int_q \rho_0(\bm{q})|\bm{x}-\bm{q}|^2 d\bm{q} = \int_x \rho(\bm{x})|\bm{x}-\bm{q}|^2 d\bm{x} 
 \end{equation}
 Si trova infatti che per ottenere la condizione $\delta I = 0$, $\bm{q}(\bm{x})$ deve essere il gradiente
-di una funzione di $\bm{x}$. I dettagli della trattazione sono reperibili in \parencite{mohayaee} e \parencite{matarrese}.
+di una funzione di $\bm{x}$. I dettagli della trattazione sono reperibili in \cite{mohayaee} e \cite{matarrese}.
 Per risolvere l'equazione \ref{eqn:mongeampere} la si discretizza e si risolve il relativo problema di assegnazione 
-tramite algoritmi numerici, come quelli presentati in \parencite{mohayaee}, che permettano di preservare l'unicità
+tramite algoritmi numerici, come quelli presentati in \cite{mohayaee}, che permettano di preservare l'unicità
 delle soluzioni.
+
+aaa
 
 
 

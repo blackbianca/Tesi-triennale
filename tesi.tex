@@ -1,5 +1,6 @@
-\documentclass[a4paper,12pt,oneside]{book}
-\usepackage{graphicx}
+\documentclass[a4paper,11pt,oneside]{book}
+
+\usepackage[pdftex]{graphicx} %per poter inserire le figure
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage{float}
@@ -7,20 +8,31 @@
 \usepackage{listings}
 %\usepackage{natbib}
 \usepackage{physics}
-\usepackage[a4paper, top=2cm, bottom=3cm, right=3cm, left=4cm]{geometry}
-\usepackage{amsmath}
+\usepackage[a4paper, top=2cm, bottom=2cm, right=2cm, left=2cm]{geometry}
 \usepackage{bm}
-\usepackage{amssymb}
+\usepackage{amssymb,amsmath,amsthm,amsfonts}
+\usepackage{xspace}
+\usepackage{tabularx}
+\usepackage{indentfirst}
 %\usepackage{enumitem}
 \usepackage{hyperref}
-%\usepackage{booktabs}
+\usepackage{booktabs}
+\usepackage{afterpage}
 \usepackage{subfig}
 \usepackage{blindtext}
 \usepackage{fancyhdr}
 \usepackage{caption}
+\usepackage{eucal}
+\usepackage{eso-pic}
+\usepackage{url}
+\usepackage{parskip}
+\usepackage{textcomp}
+\usepackage{multirow}
+\usepackage{setspace}
 \usepackage{verbatim}
-\usepackage{biblatex}
+\usepackage[backend=bibtex]{biblatex}
 \addbibresource{bibliografia.bib}
+%\usepackage{cite}
 
 \newcommand{\changefont}{%
 \fontsize{9}{11}\selectfont
@@ -31,8 +43,6 @@
 \fancyhead[LE,RO]{\changefont \slshape \rightmark} %section
 \fancyhead[RE,LO]{\changefont \slshape } %chapter
 \fancyfoot[C]{\changefont \thepage} %footer
-
-
 
 \pagestyle{fancy}
 
@@ -51,10 +61,13 @@
 
 \begin{document}
 
-    \input{titolo/titolo.tex}
+    \input{frontmatter/frontespizio.tex}
+
+    \mainmatter
 	    
     \chapter*{Abstract}
     \blindtext
+    
 
 
     \tableofcontents
@@ -73,6 +86,10 @@
     \chapter*{Conclusioni}
     \input{capitoli/conclusioni.tex}
 
+    %\bibliography{bibliografia} 
+    %\bibliographystyle{ieeetr}
     \printbibliography
+
+
 
 \end{document}
