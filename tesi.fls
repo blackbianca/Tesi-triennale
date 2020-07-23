@@ -276,6 +276,8 @@ INPUT c:\Users\User\Desktop\UniPD\Università\III anno\Tesi\tesi\cmb.png
 INPUT c:\Users\User\Desktop\UniPD\Università\III anno\Tesi\tesi\cmb.png
 INPUT c:\Users\User\Desktop\UniPD\Università\III anno\Tesi\tesi\cmb.png
 INPUT c:\Users\User\Desktop\UniPD\Università\III anno\Tesi\tesi\cmb.png
+INPUT C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\jknappen\ec\ecrm1000.tfm
+INPUT C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\jknappen\ec\ecbx1000.tfm
 INPUT C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\jknappen\ec\ecrm0900.tfm
 INPUT C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\jknappen\ec\ecsl0900.tfm
 INPUT C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\jknappen\ec\ecti1095.tfm
@@ -309,6 +311,10 @@ INPUT C:\Users\User\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\
 INPUT C:\Users\User\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm0900.pk
 INPUT C:\Users\User\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecsl0900.pk
 INPUT C:\Users\User\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecsl0900.pk
+INPUT C:\Users\User\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1000.pk
+INPUT C:\Users\User\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1000.pk
+INPUT C:\Users\User\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1000.pk
+INPUT C:\Users\User\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1000.pk
 INPUT C:\Users\User\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1095.pk
 INPUT C:\Users\User\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1095.pk
 INPUT C:\Users\User\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1095.pk

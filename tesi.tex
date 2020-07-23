@@ -21,7 +21,7 @@
 \usepackage{subfig}
 \usepackage{blindtext}
 \usepackage{fancyhdr}
-\usepackage{caption}
+\usepackage[font=small,labelfont=bf]{caption}
 \usepackage{eucal}
 \usepackage{eso-pic}
 \usepackage{url}
@@ -73,6 +73,7 @@
     \tableofcontents
 
     \chapter*{Introduzione}
+    \addcontentsline{toc}{chapter}{Introduzione}
     \input{capitoli/introduzione.tex}
 
     \chapter{Il problema di ricostruzione}
@@ -84,6 +85,8 @@
 
 
     \chapter*{Conclusioni}
+    \addcontentsline{toc}{chapter}{Conclusioni}
+
     \input{capitoli/conclusioni.tex}
 
     %\bibliography{bibliografia} 
