@@ -36,8 +36,7 @@ oscura fredda (CDM).
 In tale cornice definiamo una mappa Lagrangiana $\mathbb{M}: \bm{q} \mapsto \bm{x}(\bm{q}, \tau)$ che connette la posizione
 iniziale alla posizione corrente x al tempo di scala $\tau$ $\propto$ $t^{\frac{2}{3}}$.
 Inoltre le coordinate x sono coordinate comoventi legate alle coordinate fisiche r dalla relazione
-x = r/$a$, dove $a$ rappresenta il fattore cosm
-ico di scala, che corrisponde a $\tau$ in un universo
+x = r/$a$, dove $a$ rappresenta il fattore cosmico di scala, che corrisponde a $\tau$ in un universo
 EdS.
 Definiamo infine le velocità $\bm{v} = a \dot{\bm{x}}$ e $\bm{w} = \dot{\bm{r}} = H \bm{r} + v$
 
@@ -151,7 +150,7 @@ analitiche altrimenti proibitive.
 
 A questo punto tuttavia conviene operare un ulteriore cambio di variabili sul set di equazioni ottenute \ref{eqn:continuitax},
 \ref{eqn:eulerox} e \ref{eqn:poissonx}. Per farlo si definisce meglio il fattore di scala per mezzo di un'ampiezza $a_{*}$ e
-un tempo caratteristico $t_{*}$, in modo che $a(t) = (t / t_{*})^{2/3}$. Ricordando inoltre $\rho = \rho_b + \delta\rho$ e 
+un tempo caratteristico $t_{*}$, in modo che $a(t) = a^{*}(t / t_{*})^{2/3}$. Ricordando inoltre $\rho = \rho_b + \delta\rho$ e 
 $\bm{v} = a \dot{\bm{x}}$, facciamo le seguenti sostituzioni
 
 \begin{gather}
@@ -163,15 +162,17 @@ Grazie alla mappatura $(\rho, \bm{v}, \phi{'})\mapsto(\eta, \bm{u}, \phi)$, le e
 la nuova forma 
 
 \begin{gather}
+    \label{eqn:cont_tau}
     \frac{D\bm{u}}{Da} + \frac{3}{2a}\bm{u} = -\frac{3}{2a}\nabla\phi \\
     \frac{D\eta}{Da} + \eta \nabla \cdot \bm{u} = 0 \\
+    \label{eqn:poisson_tau}
     \laplacian \phi = \frac{\delta}{a}
 \end{gather}
 dove la derivata $D/Da$ si dice \textit{derivata convettiva}.
 Ora usiamo il fatto che in un universo EdS linearizzato, la soluzione \textit{growing mode} è data complessivamente
 da  $\delta \propto t^{\frac{2}{3}}$, $\bm{v} \propto t^{\frac{1}{3}}$ e $\phi = const$. Con questi andamenti, è
 evidente che la nuova coordinata di velocità $\bm{u} = \bm{v} / (a\dot{a}) \approx const$, dal momento che sia 
-$\bm{v}$ che $a\dot{a} \propto t^{2/3} * t^{-1/3}$ hanno lo stesso andamento $t^{1/3}$.
+$\bm{v}$ che $a\dot{a} \propto t^{2/3} \cdot t^{-1/3}$ hanno lo stesso andamento $t^{1/3}$.
 
 Ma allora il termine $Du/Da$ nell'equazione di Eulero si può considerare nullo
 \begin{equation}

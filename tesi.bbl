@@ -17,6 +17,42 @@
 \endgroup
 
 \datalist[entry]{nty/global//global/global}
+  \entry{arnold}{article}{}
+    \name{author}{3}{}{%
+      {{hash=AV}{%
+         family={Arnold},
+         familyi={A\bibinitperiod},
+         given={V.},
+         giveni={V\bibinitperiod},
+      }}%
+      {{hash=SS}{%
+         family={Shandarin},
+         familyi={S\bibinitperiod},
+         given={Sergei},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=ZY}{%
+         family={Zeldovich},
+         familyi={Z\bibinitperiod},
+         given={Ya},
+         giveni={Y\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{AVSSZY1}
+    \strng{fullhash}{AVSSZY1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{A}
+    \field{sortinithash}{A}
+    \field{pages}{111\bibrangedash 130}
+    \field{title}{The Large Scale Structure of the Universe I. General
+  Properties. One-and Two-Dimensional Models}
+    \field{volume}{20}
+    \field{journaltitle}{Geophysical\&Astrophysical Fluid Dynamics}
+    \field{month}{04}
+    \field{year}{1982}
+  \endentry
+
   \entry{matarrese}{article}{}
     \name{author}{7}{}{%
       {{hash=BY}{%
@@ -109,7 +145,7 @@
     \field{sortinithash}{M}
     \field{title}{Back to the primordial Universe by a Monge-Ampere-Kantorovich
   optimization scheme}
-    \field{journaltitle}{Astronomy and Astrophysics}
+    \field{journaltitle}{Astronomy\&Astrophysics}
     \field{year}{2003}
   \endentry
 
