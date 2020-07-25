@@ -1,5 +1,8 @@
 \begin{comment}
-    alcune idee/frasi da inserire
+    parti fa chiarire con Matarrese
+
+    - non mi torna la definizione di R_tau
+    - che significato ha la condizione iniziale xi = -1 + q^3/6...
 
 
 \end{comment}
@@ -35,14 +38,22 @@ Si riportano le equazioni \ref{eqn:cont_tau} e \ref{eqn:poisson_tau}.
     \label{eqn:poisson_new}
     \laplacian_x\phi = \frac{\delta}{\tau}
 \end{gather}
-dove si ricorda che $\delta$ rappresenta la deviazione dalla densità media, e sia $\delta$
-che $\phi$ dipendono da x.
+dove si ricorda che $\delta = (\rho - \rho_b)/\rho_b$ rappresenta la deviazione dalla densità media, e sia $\delta$
+che $\phi$ dipendono da x. In particolare si può riscrivere 
+\begin{equation}
+    \label{eqn:density}
+    \delta(x(q, \tau), \tau) = \int dq' \delta_D[x(q, \tau)-x(q', \tau)] - 1
+\end{equation}
+dove $\delta_D$ è una delta di Dirac che dà contributo quando due particelle partite da diverse
+posizioni iniziali $q$ e $q'$ collidono nella stessa posizione euleriana $x$.
+
 Si osserva ora che tale set di equazioni gode di invarianza rispetto a trasformazioni di 
 Galileo della forma $x \mapsto x + \zeta(\tau)$: possiamo sfruttare al presenza di questa 
 simmetria per imporre una condizione al centro di massa. Per scriverla definiamo il dislocamento
 lagrangiano $\xi(q, \tau):= x(q, \tau) - q$.
 
 \begin{equation}
+    \label{eqn:com}
     \int_{\mathbb{T}}\xi(q', \tau) dq' = 0
 \end{equation}
 Se tale condizione non fosse rispettata significherebbe che esiste un certa direzione
@@ -54,25 +65,43 @@ A questo punto si procede prendendo la divergenza di \ref{eqn:cont_new} e insere
 \begin{equation}
     \nabla \ddot{x} + \nabla \left(\frac{3}{2\tau}\dot{x}\right) = -\frac{3}{2\tau}\laplacian\phi = -\frac{3\delta(x)}{2\tau^2}
 \end{equation}
-
 Sviluppando i calcoli si trova che questa equazione si può riscrivere come 
 
 \begin{equation}
+    \label{eqn:Fequation}
     \partial_q \mathcal{R}_{\tau}\xi = -\frac{3}{2}F(x(q, \tau))
 \end{equation}
+dove si è definito l'operatore $\mathcal{R}_{\tau} = \tau^2\partial^2_{\tau} + (3\tau/2)\partial\tau-3/2$,
+e la funzione F rappresenta una forza "efficace" di multistreaming, ed è proporzionale alla densità
+\ref{eqn:density}. Nel dettaglio, $F(x(q, \tau)) = (\partial_q x) \delta(x)$.
+Integrando ora la \ref{eqn:Fequation} sulla coordinata $q$, sarà possibile ottenere l'equazione 
+del moto del dislocamento $\xi$.
+
+\begin{equation}
+    \label{eqn:Sequation}
+    \mathcal{R}_{\tau}[\xi(q, \tau)-\xi_c(\tau)] = -\frac{3}{2}S(x(q, \tau))
+\end{equation}
+dove $S$ è definito come l'integrale della forza generalizzata F e $\xi_c$ rappresenta il 
+dislocamento alla coordinata $q=0$.
+Per potere risolvere l'equazione differenziale espressa nella \ref{eqn:Sequation} ci occorrono
+però delle condizioni iniziali per l'istante $\tau = 0$.
+
+\begin{equation}
+    \xi(q, 0) = -q + \frac{q^3}{6} + cq^4 + o(q^4) = \xi_{ZA}^{ini}
+\end{equation}
+in cui si assume c<\!<1.
 
 
 
+\section{Caso dell'approssimazione di Zel'dovich}
 
+Finchè non vi sono eventi di collisione, ossia nella regione di single-stream, non si verificano 
+sovrapposizioni tra coordinate euleriane generate da diversi antecedenti lagrangiani, ossia $x(q)\neq x'(q')$.
+Questo rende l'espressione di densità \ref{eqn:density} nulla, e con essa anche la forza generalizzata
+$F(x(q, \tau)$ e il suo integrale $S(x(q, \tau)$. Pertanto l'equazione \ref{eqn:Sequation} si riduce
+a $\mathcal{R}_{\tau}[\xi(q, \tau)-\xi_c(\tau)] = 0$. Sfruttando inoltre la condizione del centro di 
+massa \ref{eqn:com}, imponiamo $\xi_c = 0$, recuperando così la soluzione di Zel'dovich
 
-
-
-
-
-
-
-
-
-
-\section{Parte seconda}
-
+\begin{equation}
+    x_{ZA}(q, \tau) = q+ \tau \xi_{ZA}^{ini}
+\end{equation}

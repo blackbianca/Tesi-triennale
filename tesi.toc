@@ -16,6 +16,6 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2.1}Setup e scelta delle condizioni iniziali}{12}{section.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.2}Parte seconda}{13}{section.2.2}%
+\contentsline {section}{\numberline {2.2}Caso dell'approssimazione di Zel'dovich}{13}{section.2.2}%
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{Conclusioni}{14}{chapter*.8}%
