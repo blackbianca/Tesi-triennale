@@ -3,6 +3,7 @@
 
     - non mi torna la definizione di R_tau
     - che significato ha la condizione iniziale xi = -1 + q^3/6...
+    - come può l'equazione (2) trasformarsi in 1/(dx/dq) - 1
 
 
 \end{comment}
@@ -92,16 +93,51 @@ però delle condizioni iniziali per l'istante $\tau = 0$.
 in cui si assume c<\!<1.
 
 
-
-\section{Caso dell'approssimazione di Zel'dovich}
-
 Finchè non vi sono eventi di collisione, ossia nella regione di single-stream, non si verificano 
 sovrapposizioni tra coordinate euleriane generate da diversi antecedenti lagrangiani, ossia $x(q)\neq x'(q')$.
 Questo rende l'espressione di densità \ref{eqn:density} nulla, e con essa anche la forza generalizzata
 $F(x(q, \tau)$ e il suo integrale $S(x(q, \tau)$. Pertanto l'equazione \ref{eqn:Sequation} si riduce
 a $\mathcal{R}_{\tau}[\xi(q, \tau)-\xi_c(\tau)] = 0$. Sfruttando inoltre la condizione del centro di 
-massa \ref{eqn:com}, imponiamo $\xi_c = 0$, recuperando così la soluzione di Zel'dovich
+massa \ref{eqn:com}, imponiamo $\xi_c = 0$, recuperando così la soluzione di Zel'dovich.
 
 \begin{equation}
     x_{ZA}(q, \tau) = q+ \tau \xi_{ZA}^{ini}
 \end{equation}
+Sappiamo che tale soluzione risulta valida solamente fino al primo shell-crossing, in cui si verifica
+la condizione $\partial_q x_{ZA} = 0$, che causa la divergenza della densità.
+Infatti, ricordando la proprietà della delta di Dirac
+
+\begin{equation}
+    \label{eqn:dirac}
+    \delta_D(f(x)) = \sum_i \frac{\delta_D(x-a_i)}{f'(a_i)}
+\end{equation}
+dove $\{a_i\}$ sono gli zeri di $f(x)$, si trova che la \ref{eqn:density} diventa
+
+\begin{equation}
+    \label{eqn:density_ZA}
+    \delta(x_{ZA})= \int dq' \delta_D[x(q, \tau) - x(q', \tau)] - 1 = \int dq' \frac{\delta_D(q' - q)}{\partial_q x_{ZA}(q, \tau)} - 1 = \frac{1}{\partial_q x_{ZA}}-1
+\end{equation}
+per cui si è chiariato perché la densità diventa infinita quando $\partial_q x_{ZA} = 0$.
+
+Inoltre, grazie alla scelta delle condizioni iniziali, il primo shell crossing avviene a $\bar{\tau}=1$.
+
+
+
+\section{Evoluzione post-Zel'dovich}
+
+Dopo lo shell-crossing è necessario rinunciare alla soluzione analitica della \ref{eqn:Sequation} per 
+fare uso invece di un algoritmo iterativo, il cui primo ciclo adotterà come forza generalizzata la
+$F(x_{ZA}(q, \tau))$ calcolata sull'ultima $x_{ZA}$ ricavata dall'approssimazione di Zel'dovich.
+
+\begin{equation}
+    \mathcal{R}_{\tau}[\xi_{PZA}(q, \tau)-\xi_c(\tau)] = -\frac{3}{2}S_{ZA}(q, \tau)
+\end{equation}
+Per determinare $S_{ZA}(q, \tau)$ occorre cercare le condizioni per cui si cancella l'argomento 
+della delta di Dirac con cui è costruita la forza generalizzata. Svolgendo i calcoli, si trova
+che l'argomento della delta di Dirac si annulla per tre radici $q_1$, $q_2$ e $q_3$, per cui, 
+utilizzando la proprietà \ref{eqn:dirac}, è possibile riscrivere $F(x_{ZA}(q, \tau))$ come
+
+\begin{equation}
+    F(x_{ZA}(q, \tau)) = \partial_q x_{ZA}(q)\left[\frac{1}{\partial_q x(q_1)} + \frac{1}{\partial_q x(q_2)} + \frac{1}{\partial_q x(q_3)}\right]
+\end{equation}
+
