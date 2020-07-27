@@ -103,8 +103,8 @@ massa \ref{eqn:com}, imponiamo $\xi_c = 0$, recuperando così la soluzione di Ze
 \begin{equation}
     x_{ZA}(q, \tau) = q+ \tau \xi_{ZA}^{ini}
 \end{equation}
-Sappiamo che tale soluzione risulta valida solamente fino al primo shell-crossing, in cui si verifica
-la condizione $\partial_q x_{ZA} = 0$, che causa la divergenza della densità.
+Sappiamo che tale soluzione risulta valida solamente fino al primo shell-crossing, momento in cui si verifica
+la condizione $\partial_q x_{ZA} = 0$, che causa invece la divergenza della densità prima nulla.
 Infatti, ricordando la proprietà della delta di Dirac
 
 \begin{equation}
@@ -140,4 +140,57 @@ utilizzando la proprietà \ref{eqn:dirac}, è possibile riscrivere $F(x_{ZA}(q, 
 \begin{equation}
     F(x_{ZA}(q, \tau)) = \partial_q x_{ZA}(q)\left[\frac{1}{\partial_q x(q_1)} + \frac{1}{\partial_q x(q_2)} + \frac{1}{\partial_q x(q_3)}\right]
 \end{equation}
+A questo punto ci è possibile calcolare $S_{ZA}$: attraverso la teoria delle perturbazioni si ricava,
+per coefficienti $c$ piccoli, il seguente risultato.
 
+\begin{equation}
+    \label{eqn:SZA}
+    S_{ZA} = 
+    \begin{cases}
+        0 & 0 \leq \tau \leq \tau_{com} \\
+        -sign(q)\sqrt{D(q, \tau, c)} & \tau_{com} \leq \tau \leq \tau_{min} \\
+        -3q & \tau_{min} \leq \tau
+    \end{cases}
+\end{equation}
+
+dove $D(q, \tau, c) = 24 - 3q^2 -42/\tau + 24cq(3-1^2-3/\tau)$, mentre i due tempi che separano 
+i tre diversi andamenti sono dati da $\tau_{com} = 8/(8-q^2-5cq^3)$ e $\tau_{min} = 2/(2-q^2-8cq^3)$.
+Tramite questi tempi sono definite le coordinate lagrangiane $q_{max}$, $q_{comax}$, che sono le 
+coordinate lagrangiane associate alla posizione euleriana massima $x_{max}$ che delimita l'estremo
+superiore della zona di multistreaming, e $q_{min}$ e $q_{coin}$, associate all'altro estremo 
+della zona di multistreaming $x_{min}$. 
+
+$S_{ZA}$ ci è necessaria per il primo ciclo del calcolo iterativo di $\xi_{PZA}$, ma occorre anche
+conoscere il valore della costante di integrazione $\xi_c(\tau)$. Per determinarla definiamo 
+$M(q, \tau) = \mathcal{R}_{\tau} \xi_c (\tau)- 3/2 S_{ZA}(q,\tau)$, da cui possiamo scrivere, 
+riordinando la \ref{eqn:Sequation} e integrando per $q \in [-\pi, \pi]$, la seguente.
+
+\begin{equation}
+    \int_{-\pi}^{\pi} \mathcal{R}_{\tau}\xi_{PZA}(q', \tau)dq' = \int_{-\pi}^{\pi} M(q', \tau) dq'
+\end{equation}
+In tale equazione si può far uso della condizione \ref{eqn:com} per cancellare il membro di sinistra
+e ottenere quindi che l'integrale di $M$ deve essere nullo. Questo integrale risulta problematico
+per via della definiziona tratti di $S_{ZA}$ \ref{eqn:SZA}, per cui facciamo l'ipotesi forte 
+$\xi_c = \xi_1 + \xi_2 + \xi_3$ dove le $\{\xi_i\}$ sono soluzioni individuali delle tre regioni 
+di definizione, cioè le costanti di integrazione di ciascun tratto.
+
+Imporre $\int_{-\pi}^{\pi} M(q', \tau) dq' = 0$ equivale a chiedere 
+$\int_{-\pi}^{\pi} \mathcal{R}_{\tau}\xi_c(q', \tau) dq' = \int_{-\pi}^{\pi} \frac{3}{2} S_{ZA}(q', \tau) dq'$
+ma dato che $\xi_c$ è indipendente da $q$ la stessa equazione si può riscrivere come
+
+\begin{equation}
+    \mathcal{R}_{\tau} \xi_c(\tau) = \Big\langle \frac{3}{2}S_{ZA}(q, \tau) \Big\rangle
+\end{equation}
+
+
+
+
+\begin{center}
+    \begin{figure}[H]
+        \label{fig:fig1}
+		\centering
+		\includegraphics[scale=0.5, angle=0]{fig1.png}
+		\caption{Immagine della mappa post-Zeldovich poco dopo il multistreaming, cioè a $\tau=1.002$}
+		\label{fig:cmb}
+	\end{figure}
+\end{center}
