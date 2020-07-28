@@ -181,16 +181,49 @@ ma dato che $\xi_c$ è indipendente da $q$ la stessa equazione si può riscriver
 \begin{equation}
     \mathcal{R}_{\tau} \xi_c(\tau) = \Big\langle \frac{3}{2}S_{ZA}(q, \tau) \Big\rangle
 \end{equation}
+Questa stessa equazione, ripartita nei vari regimi, si traduce nel seguente gruppo di equazioni
 
+\begin{gather}
+    \label{eqn:xi1}
+    \mathcal{R}_{\tau} \xi_1(\tau) = 0 \\
+    \label{eqn:xi2}
+    \mathcal{R}_{\tau} \xi_2(\tau) = - \Big\langle \frac{3}{2} sign(q) \sqrt(D(q, \tau, c)) \Big\rangle = 18c (1-\frac{1}{\tau}) \\
+    \label{eqn:xi3}
+    \mathcal{R}_{\tau} \xi_3(\tau) = - \Big \langle \frac{9}{2} q = 36c (1-\frac{1}{\tau})\Big\rangle 
+\end{gather}
+La soluzione della \ref{eqn:xi1}, nel regime di single stream, è data da $\xi_1=0$, mentre \ref{eqn:xi2} 
+e \ref{eqn:xi3} richiedono l'utilizzo delle condizioni iniziali $\xi(\tau=1)=0$ e $\dot{\xi}(\tau=1)=0$.
+Si ottengono dunque delle soluzioni valide per $\xi_i$, che sommate danno luogo al valore della costante
+di integrazione $\xi_c$.
+
+\begin{equation}
+    \xi_c(\tau)= -\frac{18c}{5}\left(10+8\tau^{-\frac{2}{3}}-\frac{15}{\tau}-3\tau\right)
+\end{equation}
+Si osserva che $\xi_c$, che si attiva solamente dopo il primo shell crossing, ossia a $\tau=1$,
+ossia è interpretato come un boost dipendente dal tempo che non sarebbe prevedibile con l'appoggio
+della sola approssimazione di Zel'dovich.
+
+In \ref{fig:fig1} è rappresentato il moto della particelle nell'istante $\tau=1.002$, ovvero
+poco dopo il primo shell-crossing.
+
+\begin{center}
+    \begin{figure}[H]
+        \centering
+        \includegraphics[scale=0.5, angle=0]{fig1.png}
+        \caption{Nel pannello in alto è raffigurata un'immagine della mappa post-Zeldovich a $\tau=1.002$,
+        nel pannelo centrale e quello inferiore sono mappate rispettivamente $M(q, \tau)$ e $F(q, \tau)$
+        }
+        \label{fig:fig1}
+	\end{figure}
+\end{center}
 
 
 
 \begin{center}
     \begin{figure}[H]
-        \label{fig:fig1}
 		\centering
-		\includegraphics[scale=0.5, angle=0]{fig1.png}
-		\caption{Immagine della mappa post-Zeldovich poco dopo il multistreaming, cioè a $\tau=1.002$}
-		\label{fig:cmb}
+		\includegraphics[scale=0.35, angle=0]{fig2.png}
+        \caption{Confronto tra predizione teorica e simulazione a N corpi.}
+        \label{fig:fig2}
 	\end{figure}
 \end{center}
