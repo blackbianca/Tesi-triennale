@@ -1,9 +1,11 @@
+
 \begin{comment}
     parti fa chiarire con Matarrese
 
     - non mi torna la definizione di R_tau
     - che significato ha la condizione iniziale xi = -1 + q^3/6...
     - come può l'equazione (2) trasformarsi in 1/(dx/dq) - 1
+    - come si posizionano i tempi tau comin e comax rispetto alla linea temporale, o rispetto a tau = 1?
 
 
 \end{comment}
@@ -14,15 +16,15 @@
 
 In cosmologia le caustiche, che nascono da una singolarità nella trattazione di fluido esposta nel precedente
 capitolo, rappresentano in realtà il processo fondamentale della formazione di strutture a grande scala 
-nell'universo. Al primo shell-crossing le particelle affrontano il cosiddetto \textit{collaso gravitazionale
+nell'universo. Al primo shell-crossing le particelle affrontano il \textit{collasso gravitazionale
 secondario}, per cui il numero di collisioni aumenta sostanzialmente, e così aumenta il numero di pancakes e 
 strutture filiformi. Tuttavia la forma oblata quasi unidimensionale del pancake non è l'unica forma che si 
 registra: infatti nel contesto di una trattazione nonlineare della dinamica gravitazionale con l'approssimazione
 di Zel'dovich si incontrano una serie di strutture scrupolosamente classificate per i casi semplici unidimensionale
 e bidimensionale in \cite{arnold}.
 
-Tuttavia le strutture che possono emerge a seguito del collasso gravitazionale non possono essere previste 
-da un modello che include l'approssimazione di Zel'dovich, che si basa sull'ipotesi di velocità costante.
+Tuttavia la varietà di strutture che può emergere a seguito del collasso gravitazionale non possono essere previste 
+da un modello che include l'approssimazione di Zel'dovich, la quale si basa sull'ipotesi di velocità costante.
 In effetti si è spiegato nel primo capitolo che ZA risulta essere una soluzione esatta solamente nel caso 
 unidimensionale, e in ogni caso valida esclusivamente fino al primo shell-crossing, dove le equazioni del
 fluido falliscono. \'E necessario quindi tornare all'equazione di riferimento, ossia all'equazione di Vlasov 
@@ -155,9 +157,9 @@ per coefficienti $c$ piccoli, il seguente risultato.
 
 dove $D(q, \tau, c) = 24 - 3q^2 -42/\tau + 24cq(3-1^2-3/\tau)$, mentre i due tempi che separano 
 i tre diversi andamenti sono dati da $\tau_{com} = 8/(8-q^2-5cq^3)$ e $\tau_{min} = 2/(2-q^2-8cq^3)$.
-Tramite questi tempi sono definite le coordinate lagrangiane $q_{max}$, $q_{comax}$, che sono le 
+Tramite questi tempi sono definite le coordinate lagrangiane $q_{max}$ e $q_{comax}$, che sono le 
 coordinate lagrangiane associate alla posizione euleriana massima $x_{max}$ che delimita l'estremo
-superiore della zona di multistreaming, e $q_{min}$ e $q_{coin}$, associate all'altro estremo 
+superiore della zona di multistreaming, e $q_{min}$ e $q_{comin}$, associate all'altro estremo 
 della zona di multistreaming $x_{min}$. 
 
 $S_{ZA}$ ci è necessaria per il primo ciclo del calcolo iterativo di $\xi_{PZA}$, ma occorre anche
@@ -189,7 +191,7 @@ Questa stessa equazione, ripartita nei vari regimi, si traduce nel seguente grup
     \label{eqn:xi2}
     \mathcal{R}_{\tau} \xi_2(\tau) = - \Big\langle \frac{3}{2} sign(q) \sqrt(D(q, \tau, c)) \Big\rangle = 18c (1-\frac{1}{\tau}) \\
     \label{eqn:xi3}
-    \mathcal{R}_{\tau} \xi_3(\tau) = - \Big \langle \frac{9}{2} q = 36c (1-\frac{1}{\tau})\Big\rangle 
+    \mathcal{R}_{\tau} \xi_3(\tau) = - \Big \langle \frac{9}{2} q \Big \rangle = 36c (1-\frac{1}{\tau})\Big\rangle 
 \end{gather}
 La soluzione della \ref{eqn:xi1}, nel regime di single stream, è data da $\xi_1=0$, mentre \ref{eqn:xi2} 
 e \ref{eqn:xi3} richiedono l'utilizzo delle condizioni iniziali $\xi(\tau=1)=0$ e $\dot{\xi}(\tau=1)=0$.
@@ -211,19 +213,53 @@ poco dopo il primo shell-crossing.
         \centering
         \includegraphics[scale=0.5, angle=0]{fig1.png}
         \caption{Nel pannello in alto è raffigurata un'immagine della mappa post-Zeldovich a $\tau=1.002$,
-        nel pannelo centrale e quello inferiore sono mappate rispettivamente $M(q, \tau)$ e $F(q, \tau)$
+        nel pannelo centrale e quello inferiore sono mappate rispettivamente $M(q, \tau)$ e $F(q, \tau)$.
+        La linea verde rappresenta la soluzione con c = 0, mentre la linea rossa tratteggiata è la soluzione
+        con c = 0.1. Nel pannello in alto la zona grigia corrisponde alla zona di multistreaming, dove si
+        vede che a una stessa posizione x possono corrispondere più posizioni iniziali $q$. Inoltre il primo 
+        pannello definisce due regioni verticali \textit{ascending} e \textit{descending}.
+        Si osserva inoltre, nel secondo pannello, la presenza di punti con derivata discontinua della forza
+        generalizzata, corrispondenti a effetti di singolarità fisiche. 
         }
         \label{fig:fig1}
 	\end{figure}
 \end{center}
 
+Ricavata dunque una soluzione per $\xi_c$ è possibile tornare all'equazione \ref{eqn:Sequation} 
+e risolvere per $\xi_{PZA}$ utilizzando il metodo di variazione delle costanti su 
+$\xi_{PZA} = \lambda(\tau)\tau + \mu(\tau)\tau^{-3/2}$ adottando le condizioni iniziali 
+$\xi_{PZA}(\tau = 1) = \xi_{ZA}^{ini}$ e $\dot{\xi}_{PZA}=\xi_{ZA}^{ini}$. Su queste basi si 
+ricava
+
+\begin{equation}
+    \label{eqn:finale}
+    \xi_{PZA} = \xi_c(\tau) + 
+    \begin{cases}
+        \tau \xi_{ZA}^{ini}(q) & 0 \leq \tau \leq \tau_{com} \\
+        \tau \xi_{ZA}^{ini}(q) +\frac{sign(q)}{180} \frac{D^{\frac{5}{2}}(q, \tau, c)\tau}{8-q^2+cq(48-11q^2)} & \tau_{com} \leq \tau \leq \tau_{min} \\
+        -3q + \frac{4}{5}q\tau -\frac{17}{60}q^3\tau +\frac{48}{5} \sqrt{\frac{2}{2-q^2}} \frac{q}{8-q^2}\tau^{-\frac{3}{2}}+cf(q, \tau) & \tau_{min} \leq \tau
+    \end{cases}
+\end{equation}
+d0ve la definizione di $D(q, \tau, c)$ è stata fornita in precedenza, mentre 
+$f(q, \tau) = \frac{11}{20}q^4\tau -\frac{36}{5}q^4\left(\frac{2}{2-q^2}\right)^{3/2}\frac{3q^2-4}{(q^2-8)^2}\tau^{-\frac{3}{2}}$.
+La \ref{eqn:finale} fornisce quindi l'andamento complessivo del dislocamento $\xi$. In figura \ref{fig:fig2} è proposto un confronto
+tra previsione teorica e simulazione a N corpi.
 
 
 \begin{center}
     \begin{figure}[H]
 		\centering
 		\includegraphics[scale=0.35, angle=0]{fig2.png}
-        \caption{Confronto tra predizione teorica e simulazione a N corpi.}
+        \caption{Confronto tra predizione teorica (linea continua) e simulazione a N corpi (punti).
+        Il pannello di sinistra raffigura l'accelerazione $\ddot{\xi_{PZA}}$ per $c$=0, in cui è possibile 
+        visualizzare alcuni punti a derivata discontinua che rivelano le singolarità fisiche, ben riprodotte 
+        anche dall'andamento della simulazione. Il pannello centrale raffigura le orbite nello spazio delle fasi 
+        $(x, v)$ sempre con $c$=0. Il pannello di destra invece raffigura l'improvviso valore non nullo di $\xi_{PZA}$
+        al primo shell-crossing ($\tau = 1$), in conseguenza dell'attivazione della forza di multistreaming all'istante
+        $\tau = 1$, costruita con $c$=0.1.
+        }
         \label{fig:fig2}
 	\end{figure}
 \end{center}
+
+\section{Asintoti e singolarità}
