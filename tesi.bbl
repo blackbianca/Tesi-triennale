@@ -110,6 +110,31 @@
     \field{year}{2003}
   \endentry
 
+  \entry{colombi}{article}{}
+    \name{author}{1}{}{%
+      {{hash=CS}{%
+         family={Colombi},
+         familyi={C\bibinitperiod},
+         given={Stéphane},
+         giveni={S\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{CS1}
+    \strng{fullhash}{CS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{C}
+    \field{sortinithash}{C}
+    \field{number}{3}
+    \field{pages}{2902\bibrangedash 2920}
+    \field{title}{{Vlasov–Poisson in 1D for initially cold systems:
+  post-collapse Lagrangian perturbation theory}}
+    \field{volume}{446}
+    \field{journaltitle}{Monthly Notices of the Royal Astronomical Society}
+    \field{month}{11}
+    \field{year}{2014}
+  \endentry
+
   \entry{mohayaee}{article}{}
     \name{author}{4}{}{%
       {{hash=MR}{%
@@ -169,6 +194,74 @@
     \field{title}{Tracing galaxy orbit back in time}
     \field{journaltitle}{The Astrophysical journal}
     \field{year}{1989}
+  \endentry
+
+  \entry{rampf}{misc}{}
+    \name{author}{3}{}{%
+      {{hash=RC}{%
+         family={Rampf},
+         familyi={R\bibinitperiod},
+         given={Cornelius},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=FU}{%
+         family={Frisch},
+         familyi={F\bibinitperiod},
+         given={Uriel},
+         giveni={U\bibinitperiod},
+      }}%
+      {{hash=HO}{%
+         family={Hahn},
+         familyi={H\bibinitperiod},
+         given={Oliver},
+         giveni={O\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{RCFUHO1}
+    \strng{fullhash}{RCFUHO1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{R}
+    \field{sortinithash}{R}
+    \field{title}{Unveiling the singular dynamics in the cosmic large-scale
+  structure}
+    \field{eprinttype}{arXiv}
+    \field{eprintclass}{astro-ph.CO}
+    \field{year}{2019}
+  \endentry
+
+  \entry{zeldovich}{article}{}
+    \name{author}{2}{}{%
+      {{hash=SSF}{%
+         family={Shandarin},
+         familyi={S\bibinitperiod},
+         given={S.\bibnamedelima F.},
+         giveni={S\bibinitperiod\bibinitdelim F\bibinitperiod},
+      }}%
+      {{hash=ZYB}{%
+         family={Zeldovich},
+         familyi={Z\bibinitperiod},
+         given={Ya.\bibnamedelima B.},
+         giveni={Y\bibinitperiod\bibinitdelim B\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {American Physical Society}%
+    }
+    \strng{namehash}{SSFZYB1}
+    \strng{fullhash}{SSFZYB1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{issue}{2}
+    \field{pages}{185\bibrangedash 220}
+    \field{title}{The large-scale structure of the universe: Turbulence,
+  intermittency, structures in a self-gravitating medium}
+    \field{volume}{61}
+    \field{journaltitle}{Rev. Mod. Phys.}
+    \field{year}{1989}
+    \warn{\item Invalid format of field 'month'}
   \endentry
 \enddatalist
 \endinput

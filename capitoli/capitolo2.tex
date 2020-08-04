@@ -4,8 +4,8 @@
 
     - non mi torna la definizione di R_tau
     - che significato ha la condizione iniziale xi = -1 + q^3/6...
-    - come può l'equazione (2) trasformarsi in 1/(dx/dq) - 1
     - come si posizionano i tempi tau comin e comax rispetto alla linea temporale, o rispetto a tau = 1?
+        sono entrambi dopo l'istante tau = 1, perchè sono in shell crossing credo
 
 
 \end{comment}
@@ -66,17 +66,33 @@ A questo punto si procede prendendo la divergenza di \ref{eqn:cont_new} e insere
 \ref{eqn:poisson_new}, ottenendo
 
 \begin{equation}
-    \nabla \ddot{x} + \nabla \left(\frac{3}{2\tau}\dot{x}\right) = -\frac{3}{2\tau}\laplacian\phi = -\frac{3\delta(x)}{2\tau^2}
+    \nabla_x \ddot{x} + \nabla_x \left(\frac{3}{2\tau}\dot{x}\right) = -\frac{3}{2\tau}\laplacian_x\phi = -\frac{3\delta(x)}{2\tau^2}
 \end{equation}
-Sviluppando i calcoli si trova che questa equazione si può riscrivere come 
+Sostituendo $\nabla_x = \partial_x q \nabla_q$, si ottiene
+
+\begin{gather}
+    \nabla_q \ddot{x} + \frac{3}{2\tau} \nabla_q\dot{x} = -\frac{3}{2\tau^2}\frac{\partial x}{\partial q}\delta(x(q,\tau)) \\
+    \label{eqn:progress}
+    \nabla_q \left[ \tau^2 \partial^2_{\tau} + \frac{3}{2}\tau \partial_{\tau} \right] x = -\frac{3}{2}\frac{\partial x}{\partial q}\delta(x(q,\tau))
+\end{gather}
+A questo punto definiamo la funzione $F(x(q, \tau))$ come una forza "efficace" di multistreaming, utilizzando 
+la definizione della densità \ref{eqn:density}. Nel dettaglio, $F(x(q, \tau)) = (\partial_q x) \int \delta_D[x(q, \tau)-x(q', \tau)]dq' -1$.
+Ma allora il secondo membro della \ref{eqn:progress} si può scrivere come
 
 \begin{equation}
+    -\frac{3}{2} (\partial_q x )\delta = -\frac{3}{2}(F+1-\partial_q x) = -\frac{3}{2} F +\frac{3}{2} (\partial_q x - 1) = -\frac{3}{2} F + \frac{3}{2} \partial_q \xi    
+\end{equation}
+dato che in effetti $\partial_q \xi = \partial_q (x-q) = \partial_q x - 1$. 
+
+Il primo membro di \ref{eqn:progress} invece contiene un operatore temporale che agisce su $x$. Se si scrive $x(q,\tau) = \xi(q, \tau) + q$ e si nota che q non 
+dipende dal tempo, è equivalente far agire l'operatore su $\xi$ anzichè su x. 
+
+\begin{gather}
+    \partial_q \left[ \tau^2 \partial^2_{\tau}+\frac{3}{2}\tau\partial_{\tau} \right] \xi = -\frac{3}{2}F(x(q,\tau)) +\frac{3}{2}\partial_q \xi \\
     \label{eqn:Fequation}
     \partial_q \mathcal{R}_{\tau}\xi = -\frac{3}{2}F(x(q, \tau))
-\end{equation}
-dove si è definito l'operatore $\mathcal{R}_{\tau} = \tau^2\partial^2_{\tau} + (3\tau/2)\partial\tau-3/2$,
-e la funzione F rappresenta una forza "efficace" di multistreaming, ed è proporzionale alla densità
-\ref{eqn:density}. Nel dettaglio, $F(x(q, \tau)) = (\partial_q x) \delta(x)$.
+\end{gather}
+dove si è definito l'operatore $\mathcal{R}_{\tau} = \tau^2\partial^2_{\tau} + (3\tau/2)\partial\tau-3/2$.
 Integrando ora la \ref{eqn:Fequation} sulla coordinata $q$, sarà possibile ottenere l'equazione 
 del moto del dislocamento $\xi$.
 
@@ -84,16 +100,33 @@ del moto del dislocamento $\xi$.
     \label{eqn:Sequation}
     \mathcal{R}_{\tau}[\xi(q, \tau)-\xi_c(\tau)] = -\frac{3}{2}S(x(q, \tau))
 \end{equation}
-dove $S$ è definito come l'integrale della forza generalizzata F e $\xi_c$ rappresenta il 
+dove $S$ è definito come l'integrale della forza generalizzata $S = \int_0^q F(q',\tau)dq'$ e $\xi_c$ rappresenta il 
 dislocamento alla coordinata $q=0$.
 Per potere risolvere l'equazione differenziale espressa nella \ref{eqn:Sequation} ci occorrono
 però delle condizioni iniziali per l'istante $\tau = 0$.
 
 \begin{equation}
+    \label{eqn:initcond}
     \xi(q, 0) = -q + \frac{q^3}{6} + cq^4 + o(q^4) = \xi_{ZA}^{ini}
 \end{equation}
-in cui si assume c<\!<1.
+in cui si assume c<\!<1. Questa condizione iniziale viene da \cite{zeldovich}, in cui si applica
+un'espansione di Taylor al potenziale gravitazionale, sapendo che quest'ultimo, nell'approssimazione di Zel'dovich, 
+esatta in una dimensione, è collegato alla velocità, come evidente in \ref{eqn:zelsol}, dove si osserva che la 
+velocità non è altro che la derivata del potenziale. Proviamo dunque a espandere il potenziale
 
+\begin{gather}
+    \label{eqn:phiexp}
+    \phi(q) = \phi_0 + a_1 q + a_2 q^2 + a_3 q^3 + o(q^3) \\
+    \phi'(q) = a_1 + 2 a_2 q + 3 a_3 q^2 + o(q^2) \\
+    \phi''(q) = 2a_2 +6a_3 q + o(q) \\
+    \phi'''(q) = 6a_3 + o(const) 
+\end{gather}
+La derivata seconda del potenziale è tuttavia esprimibile tramite gli autovalori $\lambda(q)$ del tensore di deformazione,
+come mostrato nel capitolo precedente. Pertanto, nel momento in cui si adotta l'ipotesi di minimo per tale autovalore,
+ossia per la derivata seconda del potenziale, si chiede $\lambda'(q)=0$, cioè $\phi'''(q)=0$. Pertanto è conveniente la
+scelta $a_3 = 0$, che priva la derivata prima $\phi'(q)$, e con essa la velocità, della terza potenza.
+L'espansione proposta in \ref{eqn:phiexp} è quella proposta in \cite{colombi}, mentre in \cite{rampf} si 
+raggiungono gradi superiori arrivando a disporre del termine di quarto grado nella velocità, come espresso in \ref{eqn:initcond}.
 
 Finchè non vi sono eventi di collisione, ossia nella regione di single-stream, non si verificano 
 sovrapposizioni tra coordinate euleriane generate da diversi antecedenti lagrangiani, ossia $x(q)\neq x'(q')$.
