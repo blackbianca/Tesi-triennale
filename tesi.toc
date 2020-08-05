@@ -18,6 +18,6 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2.2}Evoluzione post-Zel'dovich}{14}{section.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.3}Asintoti e singolarità}{17}{section.2.3}%
+\contentsline {section}{\numberline {2.3}Singolarità nello spazio e nel tempo}{17}{section.2.3}%
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{Conclusioni}{18}{chapter*.10}%
