@@ -232,6 +232,7 @@ Si ottengono dunque delle soluzioni valide per $\xi_i$, che sommate danno luogo 
 di integrazione $\xi_c$.
 
 \begin{equation}
+    \label{eqn:xic}
     \xi_c(\tau)= -\frac{18c}{5}\left(10+8\tau^{-\frac{2}{3}}-\frac{15}{\tau}-3\tau\right)
 \end{equation}
 Si osserva che $\xi_c$, che si attiva solamente dopo il primo shell crossing, ossia a $\tau=1$,
@@ -252,7 +253,7 @@ poco dopo il primo shell-crossing.
         vede che a una stessa posizione x possono corrispondere più posizioni iniziali $q$. Inoltre il primo 
         pannello definisce due regioni verticali \textit{ascending} e \textit{descending}.
         Si osserva inoltre, nel secondo pannello, la presenza di punti con derivata discontinua della forza
-        generalizzata, corrispondenti a effetti di singolarità fisiche. 
+        generalizzata, corrispondenti a effetti di singolarità fisiche. Figura tratta da \cite{rampf.}
         }
         \label{fig:fig1}
 	\end{figure}
@@ -289,7 +290,7 @@ tra previsione teorica e simulazione a N corpi.
         anche dall'andamento della simulazione. Il pannello centrale raffigura le orbite nello spazio delle fasi 
         $(x, v)$ sempre con $c$=0. Il pannello di destra invece raffigura l'improvviso valore non nullo di $\xi_{PZA}$
         al primo shell-crossing ($\tau = 1$), in conseguenza dell'attivazione della forza di multistreaming all'istante
-        $\tau = 1$, costruita con $c$=0.1.
+        $\tau = 1$, costruita con $c$=0.1. Figura tratta da \cite{rampf}.
         }
         \label{fig:fig2}
 	\end{figure}
@@ -310,4 +311,24 @@ si troverà che il termine dominante è del tipo $\delta\tau^{5/2}$. Un ragionam
 se l'espansione invece si compie su $q$ fissando l'istante $\tau$ ed espandendo dunque intorno a $q_{comax}$ o $q_{comin}$:
 in tal caso si presenterà un termine dominante $q^{5/2}$. 
 
+Troviamo anche due singolarità di tipo (b): la prima si verifica all'istante $\tau_{min}$, cioè quando si incollano 
+le due regioni a cavallo di tale istante, che sono rispettivamente ascending e descending. Per poter realizzare la 
+condizione di continuità, è sufficiente, come prima, porre $c$=0. Di nuovo espandendo con Taylor intorno a  $\tau = 
+\tau_{min}$ si trova che la derivata terza di $\xi_{PZA}$ cambia segno presso tale punto. Pertanto in un intorno 
+di $\tau_{min}$ il dislocamento deve assomigliare a una funzione $()\tau-\tau_{min})^3 \theta(\tau-\tau_{min})$.
+Anche la derivata terza spaziale risulta essere discontinua
+Sia la prima singolarità di tipo (a) che quella di tipo (b) sono rappresentate nel pannello di sinistra della figura
+\ref{fig:fig2}, che riporta una soluzione con $c$=0.
 
+Infine è presenta anche una terza singolarità, sempre di tipo (b), che viene dalla definizione di $\xi_c$ in \ref{eqn:xic}:
+infatti si è osservato in precedenza che $\xi_c$ funge da boost che si attiva al primo shell-crossing entrando nella 
+regione di multistreaming, passando quindi da zero a un valore improvvisamente non nullo. Per questo motivo la particella,
+che inizialmente procede con velocità costante, acquista bruscamente un'accelerazione non nulla, secondo un andamento
+non olomorfo (analitico). Questa tipo di singolarità si può osservare nel terzo pannello di \ref{fig:fig2}, dove è
+raffigurato l'andamento di $\xi_{PZA}$ con $c$=0.1.
+
+Sempre in \ref{fig:fig2} è effettuata una comparazione tra i risultati analitici (linea continua) e una simulazione 
+a N corpi della dinamica (punti): il codice usato per la simulazione tratta il caso unidimensionale, è simplettico
+e si basa su un algoritmo che determina la forza di multistreaming, partendo da condizioni iniziali stabiliti con
+l'approssimazione di Zel'dovich, che governa il regime a single-stream, e tramite l'equazione \ref{eqn:com}.
+Si può osservare che l'accordo tra previsione teorica e dati simulativi è eccellente.
