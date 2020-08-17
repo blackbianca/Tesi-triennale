@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7400 64-bit) (preloaded format=pdflatex 2020.5.5)  6 AUG 2020 17:06
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7400 64-bit) (preloaded format=pdflatex 2020.5.5)  17 AUG 2020 12:15
 entering extended mode
 **"c:/Users/User/Desktop/UniPD/Università/III anno/Tesi/tesi/tesi.tex"
 ("c:/Users/User/Desktop/UniPD/Università/III anno/Tesi/tesi/tesi.tex"
@@ -890,24 +890,17 @@ Capitolo 2.
 <fig1.png, id=281, 556.32843pt x 649.67719pt>
 File: fig1.png Graphic file (type png)
 <use fig1.png>
-Package pdftex.def Info: fig1.png  used on input line 248.
+Package pdftex.def Info: fig1.png  used on input line 250.
 (pdftex.def)             Requested size: 278.16353pt x 324.8378pt.
-
-
-LaTeX Warning: Citation 'rampf.' on page 16 undefined on input line 257.
-
-
-LaTeX Warning: Citation 'rampf.' on page 16 undefined on input line 257.
-
-[16]
-Overfull \hbox (41.35689pt too wide) in paragraph at lines 276--281
+ [16]
+Overfull \hbox (41.35689pt too wide) in paragraph at lines 278--283
 \T1/cmr/m/n/10.95 d0ve la de-fi-ni-zio-ne di $\OML/cmm/m/it/10.95 D\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 q; ; c\OT1/cmr/m/n/10.95 )$ \T1/cmr/m/n/10.95 � sta-ta for-ni-ta in pre-ce-den-za, men-tre $\OML/cmm/m/it/10.95 f\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 q; \OT1/cmr/m/n/10.95 ) = []\OML/cmm/m/it/10.95 q[] \OMS/cmsy/m/n/10.95   []\OML/cmm/m/it/10.95 q[] [][] [][]$\T1/cmr/m/n/10.95 .
  []
 
-<fig2.png, id=297, 1347.53438pt x 479.54156pt>
+<fig2.png, id=299, 1347.53438pt x 479.54156pt>
 File: fig2.png Graphic file (type png)
 <use fig2.png>
-Package pdftex.def Info: fig2.png  used on input line 286.
+Package pdftex.def Info: fig2.png  used on input line 288.
 (pdftex.def)             Requested size: 471.6441pt x 167.84206pt.
 [17 <c:/Users/User/Desktop/UniPD/Università/III anno/Tesi/tesi/fig1.png>]) [18 <c:/Users/User/Desktop/UniPD/Università/III anno/Tesi/tesi/fig2.png>] [19] ("c:/Users\User\Desktop\UniPD\Università\III anno\Tesi\tesi\capitoli/conclusioni.tex")
 
@@ -927,15 +920,6 @@ Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 105.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 105.
 Package rerunfilecheck Info: File `tesi.out' has not changed.
 (rerunfilecheck)             Checksum: 0A670AFD5F6D88C602C805DE47E826F0;710.
-
-
-LaTeX Warning: There were undefined references.
-
-
-Package biblatex Warning: Please (re)run BibTeX on the file(s):
-(biblatex)                tesi
-(biblatex)                and rerun LaTeX afterwards.
-
 Package logreq Info: Writing requests to 'tesi.run.xml'.
 \openout1 = `tesi.run.xml'.
 
@@ -943,15 +927,15 @@ Package logreq Info: Writing requests to 'tesi.run.xml'.
 Here is how much of TeX's memory you used:
  19880 strings out of 480896
  333421 string characters out of 2898649
- 810378 words of memory out of 3000000
+ 810363 words of memory out of 3000000
  35293 multiletter control sequences out of 15000+200000
  559002 words of font info for 92 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 50i,12n,51p,1210b,1514s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 50i,12n,51p,1210b,1520s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\User\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1000.pk> <C:\Users\User\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1095.pk> <C:\Users\User\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0900.pk> <C:\Users\User\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecsl0900.pk> <C:\Users\User\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1000.pk> <C:\Users\User\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1000.pk> <C:\Users\User\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1095.pk> <C:\Users\User\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1095.pk> <C:\Users\User\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx2488.pk> <C:\Users\User\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1728.pk> <C:\Users\User\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1440.pk> <C:\Users\User\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx2074.pk><C:/Users/User/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmib10.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cmextra/cmmib8.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/euler/eusm10.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on "c:/Users\User\Desktop\UniPD\Università\III anno\Tesi\tesi\tesi.pdf" (22 pages, 1308639 bytes).
+Output written on "c:/Users\User\Desktop\UniPD\Università\III anno\Tesi\tesi\tesi.pdf" (22 pages, 1308342 bytes).
 PDF statistics:
- 827 PDF objects out of 1000 (max. 8388607)
+ 826 PDF objects out of 1000 (max. 8388607)
  114 named destinations out of 1000 (max. 500000)
  111 words of extra memory for PDF output out of 10000 (max. 10000000)
 

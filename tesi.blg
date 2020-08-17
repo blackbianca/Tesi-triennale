@@ -19,13 +19,12 @@ Reallocating 'singl_function' (item size: 4) to 100 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
 Database file #1: tesi-blx.bib
 Database file #2: bibliografia.bib
-Warning--I didn't find a database entry for "rampf."
 Biblatex version: 3.13
 Reallocating 'wiz_functions' (item size: 4) to 9000 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
 You've used 8 entries,
             6365 wiz_defined-function locations,
-            1236 strings with 10110 characters,
+            1235 strings with 10104 characters,
 and the built_in function-call counts, 47372 in all, are:
 = -- 3310
 > -- 895
@@ -64,4 +63,3 @@ warning$ -- 0
 while$ -- 782
 width$ -- 0
 write$ -- 253
-(There was 1 warning)
