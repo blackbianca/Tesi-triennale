@@ -135,6 +135,48 @@
     \field{year}{2014}
   \endentry
 
+  \entry{mohayaee_nature}{article}{}
+    \name{author}{4}{}{%
+      {{hash=FU}{%
+         family={Frisch},
+         familyi={F\bibinitperiod},
+         given={Uriel},
+         giveni={U\bibinitperiod},
+      }}%
+      {{hash=MS}{%
+         family={Matarrese},
+         familyi={M\bibinitperiod},
+         given={Sabino},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=MR}{%
+         family={Mohayaee},
+         familyi={M\bibinitperiod},
+         given={Roya},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=SA}{%
+         family={Sobolevski},
+         familyi={S\bibinitperiod},
+         given={Andrei},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{FU+1}
+    \strng{fullhash}{FUMSMRSA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{F}
+    \field{sortinithash}{F}
+    \field{pages}{260\bibrangedash 2}
+    \field{title}{A reconstruction of the initial conditions of the Universe by
+  optimal mass transportation}
+    \field{volume}{417}
+    \field{journaltitle}{Nature}
+    \field{month}{06}
+    \field{year}{2002}
+  \endentry
+
   \entry{mohayaee}{article}{}
     \name{author}{4}{}{%
       {{hash=MR}{%
