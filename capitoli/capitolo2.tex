@@ -28,12 +28,12 @@ da un modello che include l'approssimazione di Zel'dovich, la quale si basa sull
 In effetti si è spiegato nel primo capitolo che ZA risulta essere una soluzione esatta solamente nel caso 
 unidimensionale, e in ogni caso valida esclusivamente fino al primo shell-crossing, dove le equazioni del
 fluido falliscono. \'E necessario quindi tornare all'equazione di riferimento, ossia all'equazione di Vlasov 
-\ref{eqn:vlasov}, anche limitandosi in prima battuta al caso unidimensionale, dal momento che gli 
+(\ref{eqn:vlasov}), anche limitandosi in prima battuta al caso unidimensionale, dal momento che gli 
 shell-crossing si manifestano, almeno nella loro fase iniziale, come fenomeni unidimensionali.
 
 Inquadriamo l'analisi in un universo EdS, dove $\tau = a$ come accennato in precedenza, quando abbiamo anche
 fornito la definizione $u(x(q, \tau), \tau) = \partial_a x(q, \tau) = \partial_{\tau}(q, \tau) = \dot{x}(q, \tau)$.
-Si riportano le equazioni \ref{eqn:cont_tau} e \ref{eqn:poisson_tau}.
+Si riportano le equazioni (\ref{eqn:cont_tau}) e (\ref{eqn:poisson_tau}).
 
 \begin{gather}
     \label{eqn:cont_new}
@@ -62,8 +62,8 @@ lagrangiano $\xi(q, \tau):= x(q, \tau) - q$.
 Se tale condizione non fosse rispettata significherebbe che esiste un certa direzione
 privilegiata di moto delle particelle, incompatibilmente con l'assenza di forze esterne.
 
-A questo punto si procede prendendo la divergenza di \ref{eqn:cont_new} e inserendovi 
-\ref{eqn:poisson_new}, ottenendo
+A questo punto si procede prendendo la divergenza di (\ref{eqn:cont_new}) e inserendovi 
+(\ref{eqn:poisson_new}), ottenendo
 
 \begin{equation}
     \nabla_x \ddot{x} + \nabla_x \left(\frac{3}{2\tau}\dot{x}\right) = -\frac{3}{2\tau}\laplacian_x\phi = -\frac{3\delta(x)}{2\tau^2}
@@ -76,15 +76,15 @@ Sostituendo $\nabla_x = \partial_x q \nabla_q$, si ottiene
     \nabla_q \left[ \tau^2 \partial^2_{\tau} + \frac{3}{2}\tau \partial_{\tau} \right] x = -\frac{3}{2}\frac{\partial x}{\partial q}\delta(x(q,\tau))
 \end{gather}
 A questo punto definiamo la funzione $F(x(q, \tau))$ come una forza "efficace" di multistreaming, utilizzando 
-la definizione della densità \ref{eqn:density}. Nel dettaglio, $F(x(q, \tau)) = (\partial_q x) \int \delta_D[x(q, \tau)-x(q', \tau)]dq' -1$.
-Ma allora il secondo membro della \ref{eqn:progress} si può scrivere come
+la definizione della densità (\ref{eqn:density}). Nel dettaglio, $F(x(q, \tau)) = (\partial_q x) \int \delta_D[x(q, \tau)-x(q', \tau)]dq' -1$.
+Ma allora il secondo membro della (\ref{eqn:progress}) si può scrivere come
 
 \begin{equation}
     -\frac{3}{2} (\partial_q x )\delta = -\frac{3}{2}(F+1-\partial_q x) = -\frac{3}{2} F +\frac{3}{2} (\partial_q x - 1) = -\frac{3}{2} F + \frac{3}{2} \partial_q \xi    
 \end{equation}
 dato che in effetti $\partial_q \xi = \partial_q (x-q) = \partial_q x - 1$. 
 
-Il primo membro di \ref{eqn:progress} invece contiene un operatore temporale che agisce su $x$. Se si scrive $x(q,\tau) = \xi(q, \tau) + q$ e si nota che q non 
+Il primo membro di (\ref{eqn:progress}) invece contiene un operatore temporale che agisce su $x$. Se si scrive $x(q,\tau) = \xi(q, \tau) + q$ e si nota che q non 
 dipende dal tempo, è equivalente far agire l'operatore su $\xi$ anzichè su x. 
 
 \begin{gather}
@@ -93,7 +93,7 @@ dipende dal tempo, è equivalente far agire l'operatore su $\xi$ anzichè su x.
     \partial_q \mathcal{R}_{\tau}\xi = -\frac{3}{2}F(x(q, \tau))
 \end{gather}
 dove si è definito l'operatore $\mathcal{R}_{\tau} = \tau^2\partial^2_{\tau} + (3\tau/2)\partial\tau-3/2$.
-Integrando ora la \ref{eqn:Fequation} sulla coordinata $q$, sarà possibile ottenere l'equazione 
+Integrando ora la (\ref{eqn:Fequation}) sulla coordinata $q$, sarà possibile ottenere l'equazione 
 del moto del dislocamento $\xi$.
 
 \begin{equation}
@@ -102,17 +102,17 @@ del moto del dislocamento $\xi$.
 \end{equation}
 dove $S$ è definito come l'integrale della forza generalizzata $S = \int_0^q F(q',\tau)dq'$ e $\xi_c$ rappresenta il 
 dislocamento alla coordinata $q=0$.
-Per potere risolvere l'equazione differenziale espressa nella \ref{eqn:Sequation} ci occorrono
+Per potere risolvere l'equazione differenziale espressa nella (\ref{eqn:Sequation}) ci occorrono
 però delle condizioni iniziali per l'istante $\tau = 0$.
 
 \begin{equation}
     \label{eqn:initcond}
     \xi(q, 0) = -q + \frac{q^3}{6} + cq^4 + o(q^4) = \xi_{ZA}^{ini}
 \end{equation}
-in cui si assume c<\!<1. Questa condizione iniziale viene da \cite{zeldovich}, in cui si applica
+in cui si assume c<\!<1. Questa condizione iniziale viene dall'applicare
 un'espansione di Taylor al potenziale gravitazionale, sapendo che quest'ultimo, nell'approssimazione di Zel'dovich, 
-esatta in una dimensione, è collegato alla velocità, come evidente in \ref{eqn:zelsol}, dove si osserva che la 
-velocità non è altro che la derivata del potenziale. Proviamo dunque a espandere il potenziale
+esatta in una dimensione, è collegato alla velocità, come evidente in (\ref{eqn:zelsol}), dove si osserva che la 
+velocità non è altro che la derivata del potenziale (\cite{zeldovich}). Proviamo dunque a espandere il potenziale
 
 \begin{gather}
     \label{eqn:phiexp}
@@ -127,15 +127,15 @@ come mostrato nel capitolo precedente. Pertanto, nel momento in cui si adotta l'
 si ricerca il primo istante di shell-crossing, poniamo la derivata seconda del potenziale nulla. Si chiede dunque $\lambda'(q)=0$, 
 cioè $\phi'''(0)=0$. Pertanto è automatica la
 scelta $a_3 = 0$, che priva la derivata prima $\phi'(q)$, e con essa la velocità, della potenza quadratica.
-L'espansione proposta in \ref{eqn:phiexp} è quella proposta in \cite{rampf} e permette di disporre del termine di quarto grado 
-nella velocità, come espresso in \ref{eqn:initcond}, mentre in \cite{colombi} ci si ferma a gradi inferiori.
+L'espansione proposta in (\ref{eqn:phiexp}) è quella proposta in \cite{rampf} e permette di disporre del termine di quarto grado 
+nella velocità, come espresso in (\ref{eqn:initcond}), mentre in \cite{colombi} ci si ferma a gradi inferiori.
 
 Finchè non vi sono eventi di collisione, ossia nella regione di single-stream, non si verificano 
 sovrapposizioni tra coordinate euleriane generate da diversi antecedenti lagrangiani, ossia $x(q)\neq x'(q')$.
-Questo rende l'espressione di densità \ref{eqn:density} nulla, e con essa anche la forza generalizzata
-$F(x(q, \tau)$ e il suo integrale $S(x(q, \tau)$. Pertanto l'equazione \ref{eqn:Sequation} si riduce
+Questo rende l'espressione di densità (\ref{eqn:density}) nulla, e con essa anche la forza generalizzata
+$F(x(q, \tau)$ e il suo integrale $S(x(q, \tau)$. Pertanto l'equazione (\ref{eqn:Sequation}) si riduce
 a $\mathcal{R}_{\tau}[\xi(q, \tau)-\xi_c(\tau)] = 0$. Sfruttando inoltre la condizione del centro di 
-massa \ref{eqn:com}, imponiamo $\xi_c = 0$, recuperando così la soluzione di Zel'dovich.
+massa (\ref{eqn:com}), imponiamo $\xi_c = 0$, recuperando così la soluzione di Zel'dovich.
 
 \begin{equation}
     x_{ZA}(q, \tau) = q+ \tau \xi_{ZA}^{ini}
@@ -148,7 +148,7 @@ Infatti, ricordando la proprietà della delta di Dirac
     \label{eqn:dirac}
     \delta_D(f(x)) = \sum_i \frac{\delta_D(x-a_i)}{f'(a_i)}
 \end{equation}
-dove $\{a_i\}$ sono gli zeri di $f(x)$, si trova che la \ref{eqn:density} diventa
+dove $\{a_i\}$ sono gli zeri di $f(x)$, si trova che la (\ref{eqn:density}) diventa
 
 \begin{equation}
     \label{eqn:density_ZA}
@@ -162,7 +162,7 @@ Inoltre, grazie alla scelta delle condizioni iniziali, il primo shell crossing a
 
 \section{Evoluzione post-Zel'dovich}
 
-Dopo lo shell-crossing è necessario rinunciare alla soluzione analitica della \ref{eqn:Sequation} per 
+Dopo lo shell-crossing è necessario rinunciare alla soluzione analitica della (\ref{eqn:Sequation}) per 
 fare uso invece di un algoritmo iterativo, il cui primo ciclo adotterà come forza generalizzata la
 $F(x_{ZA}(q, \tau))$ calcolata sull'ultima $x_{ZA}$ ricavata dall'approssimazione di Zel'dovich.
 
@@ -172,7 +172,7 @@ $F(x_{ZA}(q, \tau))$ calcolata sull'ultima $x_{ZA}$ ricavata dall'approssimazion
 Per determinare $S_{ZA}(q, \tau)$ occorre cercare le condizioni per cui si cancella l'argomento 
 della delta di Dirac con cui è costruita la forza generalizzata. Svolgendo i calcoli, si trova
 che l'argomento della delta di Dirac si annulla per tre radici $q_1$, $q_2$ e $q_3$, per cui, 
-utilizzando la proprietà \ref{eqn:dirac}, è possibile riscrivere $F(x_{ZA}(q, \tau))$ come
+utilizzando la proprietà (\ref{eqn:dirac}), è possibile riscrivere $F(x_{ZA}(q, \tau))$ come
 
 \begin{equation}
     F(x_{ZA}(q, \tau)) = \partial_q x_{ZA}(q)\left[\frac{1}{\partial_q x(q_1)} + \frac{1}{\partial_q x(q_2)} + \frac{1}{\partial_q x(q_3)}\right]
@@ -200,14 +200,14 @@ della zona di multistreaming $x_{min}$.
 $S_{ZA}$ ci è necessaria per il primo ciclo del calcolo iterativo di $\xi_{PZA}$, ma occorre anche
 conoscere il valore della costante di integrazione $\xi_c(\tau)$. Per determinarla definiamo 
 $M(q, \tau) = \mathcal{R}_{\tau} \xi_c (\tau)- 3/2 S_{ZA}(q,\tau)$, da cui possiamo scrivere, 
-riordinando la \ref{eqn:Sequation} e integrando per $q \in [-\pi, \pi]$, la seguente.
+riordinando la (\ref{eqn:Sequation}) e integrando per $q \in [-\pi, \pi]$, la seguente.
 
 \begin{equation}
     \int_{-\pi}^{\pi} \mathcal{R}_{\tau}\xi_{PZA}(q', \tau)dq' = \int_{-\pi}^{\pi} M(q', \tau) dq'
 \end{equation}
-In tale equazione si può far uso della condizione \ref{eqn:com} per cancellare il membro di sinistra
+In tale equazione si può far uso della condizione (\ref{eqn:com}) per cancellare il membro di sinistra
 e ottenere quindi che l'integrale di $M$ deve essere nullo. Questo integrale risulta problematico
-per via della definiziona tratti di $S_{ZA}$ \ref{eqn:SZA}, per cui facciamo l'ipotesi forte 
+per via della definiziona tratti di $S_{ZA}$ (\ref{eqn:SZA}), per cui facciamo l'ipotesi forte 
 $\xi_c = \xi_1 + \xi_2 + \xi_3$ dove le $\{\xi_i\}$ sono soluzioni individuali delle tre regioni 
 di definizione, cioè le costanti di integrazione di ciascun tratto.
 
@@ -228,8 +228,8 @@ Questa stessa equazione, ripartita nei vari regimi, si traduce nel seguente grup
     \label{eqn:xi3}
     \mathcal{R}_{\tau} \xi_3(\tau) = - \Big \langle \frac{9}{2} q \Big \rangle = 36c (1-\frac{1}{\tau})\Big\rangle 
 \end{gather}
-La soluzione della \ref{eqn:xi1}, nel regime di single stream, è data da $\xi_1=0$, mentre \ref{eqn:xi2} 
-e \ref{eqn:xi3} richiedono l'utilizzo delle condizioni iniziali $\xi(\tau=1)=0$ e $\dot{\xi}(\tau=1)=0$.
+La soluzione della (\ref{eqn:xi1}), nel regime di single stream, è data da $\xi_1=0$, mentre (\ref{eqn:xi2}) 
+e (\ref{eqn:xi3}) richiedono l'utilizzo delle condizioni iniziali $\xi(\tau=1)=0$ e $\dot{\xi}(\tau=1)=0$.
 Si ottengono dunque delle soluzioni valide per $\xi_i$, che sommate danno luogo al valore della costante
 di integrazione $\xi_c$.
 
@@ -241,7 +241,7 @@ Si osserva che $\xi_c$, che si attiva solamente dopo il primo shell crossing, os
 ossia è interpretato come un boost dipendente dal tempo che non sarebbe prevedibile con l'appoggio
 della sola approssimazione di Zel'dovich.
 
-In \ref{fig:fig1} è rappresentato il moto della particelle nell'istante $\tau=1.002$, ovvero
+In (\ref{fig:fig1}) è rappresentato il moto della particelle nell'istante $\tau=1.002$, ovvero
 poco dopo il primo shell-crossing.
 
 \begin{center}
@@ -261,7 +261,7 @@ poco dopo il primo shell-crossing.
 	\end{figure}
 \end{center}
 
-Ricavata dunque una soluzione per $\xi_c$ è possibile tornare all'equazione \ref{eqn:Sequation} 
+Ricavata dunque una soluzione per $\xi_c$ è possibile tornare all'equazione (\ref{eqn:Sequation}) 
 e risolvere per $\xi_{PZA}$ utilizzando il metodo di variazione delle costanti su 
 $\xi_{PZA} = \lambda(\tau)\tau + \mu(\tau)\tau^{-3/2}$ adottando le condizioni iniziali 
 $\xi_{PZA}(\tau = 1) = \xi_{ZA}^{ini}$ e $\dot{\xi}_{PZA}=\xi_{ZA}^{ini}$. Su queste basi si 
@@ -278,7 +278,7 @@ ricava
 \end{equation}
 d0ve la definizione di $D(q, \tau, c)$ è stata fornita in precedenza, mentre 
 $f(q, \tau) = \frac{11}{20}q^4\tau -\frac{36}{5}q^4\left(\frac{2}{2-q^2}\right)^{3/2}\frac{3q^2-4}{(q^2-8)^2}\tau^{-\frac{3}{2}}$.
-La \ref{eqn:finale} fornisce quindi l'andamento complessivo del dislocamento $\xi$. In figura \ref{fig:fig2} è proposto un confronto
+La (\ref{eqn:finale}) fornisce quindi l'andamento complessivo del dislocamento $\xi$. In figura (\ref{fig:fig2}) è proposto un confronto
 tra previsione teorica e simulazione a N corpi.
 
 
@@ -299,9 +299,10 @@ tra previsione teorica e simulazione a N corpi.
 \end{center}
 
 \section{Singolarità nello spazio e nel tempo}
+\label{sec:sing}
 
 Nel precedente capitolo si è ottenuta infine l'equazione del dislocamento $\xi_{PZA}(q,\tau)$, definita in tre
-diverse regioni temporali. Tale equazione \ref{eqn:finale} presenta delle singolarità che è possibile classificare
+diverse regioni temporali. Tale equazione (\ref{eqn:finale}) presenta delle singolarità che è possibile classificare
 principalmente in due gruppi: singolarità di tipo (a), cioè quelle definite all'interno della regione temporale, e 
 singolarità di tipo (b), che invece emergono quando si cerca di imporre la continuità di $\xi_{PZA}$ attraverso
 le regioni di definizione. 
@@ -320,17 +321,17 @@ condizione di continuità, è sufficiente, come prima, porre $c$=0. Di nuovo esp
 di $\tau_{min}$ il dislocamento deve assomigliare a una funzione $()\tau-\tau_{min})^3 \theta(\tau-\tau_{min})$.
 Anche la derivata terza spaziale risulta essere discontinua
 Sia la prima singolarità di tipo (a) che quella di tipo (b) sono rappresentate nel pannello di sinistra della figura
-\ref{fig:fig2}, che riporta una soluzione con $c$=0.
+(\ref{fig:fig2}), che riporta una soluzione con $c$=0.
 
-Infine è presenta anche una terza singolarità, sempre di tipo (b), che viene dalla definizione di $\xi_c$ in \ref{eqn:xic}:
+Infine è presenta anche una terza singolarità, sempre di tipo (b), che viene dalla definizione di $\xi_c$ in (\ref{eqn:xic}):
 infatti si è osservato in precedenza che $\xi_c$ funge da boost che si attiva al primo shell-crossing entrando nella 
 regione di multistreaming, passando quindi da zero a un valore improvvisamente non nullo. Per questo motivo la particella,
 che inizialmente procede con velocità costante, acquista bruscamente un'accelerazione non nulla, secondo un andamento
-non olomorfo (analitico). Questa tipo di singolarità si può osservare nel terzo pannello di \ref{fig:fig2}, dove è
+non olomorfo (analitico). Questa tipo di singolarità si può osservare nel terzo pannello di (\ref{fig:fig2}), dove è
 raffigurato l'andamento di $\xi_{PZA}$ con $c$=0.1.
 
-Sempre in \ref{fig:fig2} è effettuata una comparazione tra i risultati analitici (linea continua) e una simulazione 
+Sempre in (\ref{fig:fig2}) è effettuata una comparazione tra i risultati analitici (linea continua) e una simulazione 
 a N corpi della dinamica (punti): il codice usato per la simulazione tratta il caso unidimensionale, è simplettico
 e si basa su un algoritmo che determina la forza di multistreaming, partendo da condizioni iniziali stabiliti con
-l'approssimazione di Zel'dovich, che governa il regime a single-stream, e tramite l'equazione \ref{eqn:com}.
+l'approssimazione di Zel'dovich, che governa il regime a single-stream, e tramite l'equazione (\ref{eqn:com}).
 Si può osservare che l'accordo tra previsione teorica e dati simulativi è eccellente.

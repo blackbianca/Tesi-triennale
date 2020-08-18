@@ -72,9 +72,9 @@ Il set di equazioni adatto all'approccio fluidodinamico è dato da
     \label{eqn:poisson}
     \laplacian_{\bm{r}}\Phi = 4\pi G \rho
 \end{equation}
-dove la \ref{eqn:continuità} è l'equazione di continuità che costituisce la conservazione
-della massa, la \ref{eqn:eulero} è l'equazione di Eulero e viene dalla conservazione del
-momento, mentre la \ref{eqn:poisson} rappresenta l'equazione di Poisson relativa
+dove la (\ref{eqn:continuità}) è l'equazione di continuità che costituisce la conservazione
+della massa, la (\ref{eqn:eulero}) è l'equazione di Eulero e viene dalla conservazione del
+momento, mentre la (\ref{eqn:poisson}) rappresenta l'equazione di Poisson relativa
 al potenziale gravitazionale $\Phi$.
 
 Poniamo inoltre $\rho = \rho_b + \delta\rho$, dove $\rho_b$ è la densità media di background
@@ -82,7 +82,7 @@ e $\delta\rho$ costituisce una deviazione da tale valore medio. $\Phi = \Phi_b +
 è la somma di un potenziale di background e un potenziale peculiare $\phi{'}$. Grazie a queste due 
 apposizioni possiamo separare l'equazione di Poisson, ottenendo un equazione nella sola coordinata
 comovente x.
-Possiamo riscrivere anche \ref{eqn:eulero} e \ref{eqn:poisson} nelle coordinate x, usando la
+Possiamo riscrivere anche (\ref{eqn:eulero}) e (\ref{eqn:poisson}) nelle coordinate x, usando la
 relazione
 
 \begin{equation}
@@ -123,12 +123,12 @@ zero e di primo ordine della densità nello spazio delle fasi $f(\bm{x}, \bm{p},
 Integrando ora l'equazione di Vlasov sul dominio del momento $\bm{p}$, si trova che l'ultimo termine
 dell'integrando rappresenta un'integrale di volume della forza $\partial f$/$\partial p$, che tramite
 il Teorema di Gauss si può riscrivere come un integrale su una superficie all'infinito, dove la forza
-si annulla. Utilizzando poi le definizioni \ref{eqn:rho} e \ref{eqn:vel} si ricava 
+si annulla. Utilizzando poi le definizioni (\ref{eqn:rho}) e (\ref{eqn:vel}) si ricava 
 \begin{equation}
     \frac{\partial}{\partial t}(a^3 \rho) + \frac{1}{a^2}\nabla_x \int d^3 p \bm{p} f = 0
 \end{equation}
-maneggiando opportunamente quest'ultima e utilizzando le definzioni fornite in \ref{eqn:rho} e \ref{eqn:vel}
-si arriva esattamente all'equazione di continuità \ref{eqn:continuità}.
+maneggiando opportunamente quest'ultima e utilizzando le definzioni fornite in (\ref{eqn:rho}) e (\ref{eqn:vel})
+si arriva esattamente all'equazione di continuità (\ref{eqn:continuità}).
 
 Se invece si moltiplica l'equazione di Vlasov per $\bm{p}$ per poi integrare di nuovo su tale variabile, 
 conviene lavorare sul termine i-esimo e operare un'integrazione per parti sempre sull'ultimo addendo dell'
@@ -139,7 +139,7 @@ integrando.
 \end{equation}
 
 Manipolando questa espressione e utilizzando l'equazione di continuità, si arriva proprio all'equazione di Eulero
-\ref{eqn:eulero}.
+(\ref{eqn:eulero}.
 
 Le equazioni della fluidodinamica rappresentano dunque i primi termini dello sviluppo dell'equazione di Vlasov,
 e perciò costituiscono una via più facilmente percorribile, offrendo la possibilità di giungere a delle soluzioni
@@ -148,8 +148,8 @@ analitiche altrimenti proibitive.
 
 \section{Approssimazione di Zel'dovich}
 
-A questo punto tuttavia conviene operare un ulteriore cambio di variabili sul set di equazioni ottenute \ref{eqn:continuitax},
-\ref{eqn:eulerox} e \ref{eqn:poissonx}. Per farlo si definisce meglio il fattore di scala per mezzo di un'ampiezza $a_{*}$ e
+A questo punto tuttavia conviene operare un ulteriore cambio di variabili sul set di equazioni ottenute (\ref{eqn:continuitax}),
+(\ref{eqn:eulerox}) e (\ref{eqn:poissonx}). Per farlo si definisce meglio il fattore di scala per mezzo di un'ampiezza $a_{*}$ e
 un tempo caratteristico $t_{*}$, in modo che $a(t) = a^{*}(t / t_{*})^{2/3}$. Ricordando inoltre $\rho = \rho_b + \delta\rho$ e 
 $\bm{v} = a \dot{\bm{x}}$, facciamo le seguenti sostituzioni
 
@@ -187,10 +187,10 @@ ottenendo così
 \end{equation}
 che è la soluzione linearizzata, valida per piccole deviazioni dalla densità di background, ovvero per $\delta < 1$.
 L'approssimazione di Zel'dovich sta nel considerare tale risultato legittimo anche oltre il regime di linearità, ossia 
-assumere la validità di \ref{eqn:zel} ovunque.
+assumere la validità di (\ref{eqn:zel}) ovunque.
 Si può inoltre osservare che in queste condizioni l'equazione di Poisson gravitazionale risulta disaccoppiata dalle
 altre due ed è utile per applicare le condizioni iniziali.
-La \ref{eqn:zel} descrive un moto rettilineo uniforme, in cui la particella è soggetta solamente alla propria inerzia
+La (\ref{eqn:zel}) descrive un moto rettilineo uniforme, in cui la particella è soggetta solamente alla propria inerzia
 senza perturbazioni gravitazionali esterne. Quindi se la posizione iniziale è descritta dalla coordinata lagrangiana
 $\bm{q}$, allora per ogni posizione euleriana $\bm{x}$ del moto varrà che 
 
@@ -202,7 +202,7 @@ Le traiettorie delle particelle, rettilinee e a velocità costante $u$, sono des
 \begin{equation}
     \bm{x}(\bm{q, a}) = \bm{q} + a u_0(\bm{q})
 \end{equation}
-Ma usando \ref{eqn:zelsol} si ricaverà
+Ma usando (\ref{eqn:zelsol}) si ricaverà
 
 \begin{equation}
     \label{eqn:zelmap}
@@ -316,7 +316,7 @@ azione di Eulero-Lagrange, scritta nelle coordinate comoventi $\bm{x}$ come
     S = \int_0^{t_0} dt \left[\frac{m_i a^2 \dot{\bm{x}}_i^2}{2} - \frac{Gm_i m_j}{a|\bm{x}_i-\bm{x}_j|}+\frac{2}{3}\pi G\rho_ba^2 m_i \bm{x}_i^2\right]
 \end{equation}
 dove $t_0$ rappresenta il tempo attuale, $\bm{x}_i$ è la traiettoria della i-esima particella e $\rho_b$
-è la densità media di background. Se denotiamo come $\mathcal{L}$ l'integrando di \ref{eqn:azione}, allora
+è la densità media di background. Se denotiamo come $\mathcal{L}$ l'integrando di (\ref{eqn:azione}), allora
 è possibile calcolare la variazione di azione e porla uguale a zero per cercare le orbite stazionarie.
 
 \begin{equation}
@@ -374,7 +374,7 @@ possa scrivere come il gradiente di un potenziale convesso $\Phi$.
 \end{equation}
 La convessità del potenziale assicura una relazione biunivoca tra coordinata lagrangiana e coordinata
 euleriana, ossia garantisce l'unicità evitando i fenomeni di multistreaming.
-Si osserva che nel caso dell'approssimazione di Zel'dovich, con l'equazione \ref{eqn:zelmap} che esplicita la 
+Si osserva che nel caso dell'approssimazione di Zel'dovich, con l'equazione (\ref{eqn:zelmap}) che esplicita la 
 mappa lagrangiana è possibile costruire il potenziale $\Phi$, che sarebbe dato da 
 $\Phi(\bm{q}, t) = \bm{q}^2/2 -a\phi_0(\bm{q}, t)$.
 Tuttavia è evidente che tale potenziale non è convesso ovunque, e proprio per questo l'approssimazione
@@ -392,7 +392,7 @@ Legendre-Fenchel.
 \begin{equation}
     \Theta(\bm{x}) = \max_q \{\bm{q}\cdot\bm{x}-\Phi(\bm{q})\} \qquad \Phi(\bm{q}) = \max_x \{\bm{x}\cdot\bm{q}-\Theta(\bm{x})\}
 \end{equation}
-A questo punto l'equazione \ref{eqn:masscons} diventa l'equazione di Monge-Ampere.
+A questo punto l'equazione (\ref{eqn:masscons}) diventa l'equazione di Monge-Ampere.
 
 \begin{equation}
     \det\left[\frac{\partial^2 \Theta (\bm{x}, t)}{\partial x_i \partial x_j}\right] = \frac{\rho(\bm{x})}{\rho_0}
@@ -408,11 +408,10 @@ $c(\bm{q}, \bm{x}) = |\bm{x}-\bm{q}|^2$, o meglio si cerca la minimizzazione del
 \end{equation}
 Si trova infatti che per ottenere la condizione $\delta I = 0$, $\bm{q}(\bm{x})$ deve essere il gradiente
 di una funzione di $\bm{x}$. I dettagli della trattazione sono reperibili in \cite{mohayaee} e \cite{matarrese}.
-Per risolvere l'equazione \ref{eqn:mongeampere} la si discretizza e si risolve il relativo problema di assegnazione 
+Per risolvere l'equazione (\ref{eqn:mongeampere}) la si discretizza e si risolve il relativo problema di assegnazione 
 tramite algoritmi numerici, come quelli presentati in \cite{mohayaee}, che permettano di preservare l'unicità
 delle soluzioni.
 
-aaa
 
 
 
