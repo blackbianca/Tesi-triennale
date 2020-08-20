@@ -177,6 +177,41 @@
     \field{year}{2002}
   \endentry
 
+  \entry{gurbatov}{article}{}
+    \name{author}{3}{}{%
+      {{hash=GS}{%
+         family={Gurbatov},
+         familyi={G\bibinitperiod},
+         given={S.},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=SA}{%
+         family={Saichev},
+         familyi={S\bibinitperiod},
+         given={A.},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=SS}{%
+         family={Shandarin},
+         familyi={S\bibinitperiod},
+         given={Sergei},
+         giveni={S\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{GSSASS1}
+    \strng{fullhash}{GSSASS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{G}
+    \field{sortinithash}{G}
+    \field{title}{Large-scale structure of the Universe. The Zeldovich
+  approximation and the adhesion model}
+    \field{volume}{55}
+    \field{journaltitle}{Physics-Uspekhi}
+    \field{month}{03}
+    \field{year}{2012}
+  \endentry
+
   \entry{mohayaee}{article}{}
     \name{author}{4}{}{%
       {{hash=MR}{%

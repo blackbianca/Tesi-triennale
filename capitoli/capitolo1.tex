@@ -280,8 +280,9 @@ dell'Universo primordiale. La grumosità della distrubuzione attuale della massa
 la formazione di strutture filiformi e oblate come i pancakes. Per poter rendere conto di questa transizione,
 sono possibili due tipi di atteggiamento: un \textit{forward approach}, che si basa sull'ipotizzare un 
 modello iniziale, presumibilmente a densità costante, ed eseguire una simulazione a N corpi sulle basi 
-della dinamica Newtoniana, e controllare il grado d'accordo tra l'output della simulazione e la 
-distrubuzione attuale delle galassie, per poi accettare o eventualmente rigettare il modello iniziale.
+della dinamica Newtoniana, e controllare il grado d'accordo statistico tra l'output della simulazione e la 
+distribuzione attuale delle galassie, per poi accettare o eventualmente rigettare il modello cosmologico proposto
+e formularne un altro.
 Tale approccio è praticabile solo tramite tecniche numeriche e non permette di formulare analiticamente
 il problema a causa del numero troppo elevato di gradi di libertà.
 
@@ -352,7 +353,9 @@ in altre parole, è un metodo di ricostruzione che non funziona nelle regioni di
 
 Infine il metodo MAK supera sia il problema della non unicità che affligge la ricostruzione di Peebles, 
 sia i limiti di validitò dell'algoritmo POTENT, rimanendo valido anche ben oltre il regime lineare euleriano.
-Occorre innanzitutto formulare un'equazione di conservazione della massa e prenderla a vincolo
+Occorre innanzitutto formulare un'equazione di conservazione della massa e prenderla a vincolo, o meglio in virtù
+di condizione al contorno in sostituzione delle velocità iniziali, che abbiamo detto essere per la maggior parte dei
+casi sconosciute.
 
 \begin{equation}
     \rho(\bm{x})d\bm{x} = \rho_0(\bm{q})d\bm{q}
@@ -365,7 +368,9 @@ Manipolando tale equazione di conservazione otterremo
     \det\left[\frac{\partial q_i}{\partial x_j}\right] = \frac{\rho(\bm{x})}{\rho_0(\bm{q})}
 \end{equation}
 dove il membro di destra dovrebbe essere noto: conosciamo infatti la posizione della particella
-e la densità del campo euleriano, e assumiamo inoltre una densità iniziale costante $\rho_0(\bm{q}) = \rho_0$-
+e la densità del campo euleriano, e assumiamo inoltre una densità iniziale costante $\rho_0(\bm{q}) = \rho_0$,
+spalleggiati dai dati raccolti sullo spettro della radiazione di fondo. Ipotizzare densità costante corrisponde 
+proprio a richiedere velocità peculiari tendenti a zero procedendo all'indietro nel tempo.
 Per risolvere l'equazione, si fa l'ipotesi che la mappa lagrangiana $\mathbb{M}: \bm{q} \mapsto \bm{x}$ si 
 possa scrivere come il gradiente di un potenziale convesso $\Phi$.
 
