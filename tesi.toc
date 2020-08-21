@@ -4,20 +4,20 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{Introduzione}{4}{chapter*.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {1}Il problema di ricostruzione}{5}{chapter.1}%
+\contentsline {chapter}{\numberline {1}Il problema di ricostruzione}{6}{chapter.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.1}Equazioni della fluidodinamica}{5}{section.1.1}%
+\contentsline {section}{\numberline {1.1}Equazioni della fluidodinamica}{6}{section.1.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.2}Approssimazione di Zel'dovich}{7}{section.1.2}%
+\contentsline {section}{\numberline {1.2}Approssimazione di Zel'dovich}{8}{section.1.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.3}Metodi di ricostruzione}{9}{section.1.3}%
+\contentsline {section}{\numberline {1.3}Metodi di ricostruzione}{10}{section.1.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {2}Tipi di singolarità nella trattazione Lagrangiana}{13}{chapter.2}%
+\contentsline {chapter}{\numberline {2}Tipi di singolarità nella trattazione Lagrangiana}{14}{chapter.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.1}Setup e scelta delle condizioni iniziali}{13}{section.2.1}%
+\contentsline {section}{\numberline {2.1}Setup e scelta delle condizioni iniziali}{14}{section.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.2}Evoluzione post-Zel'dovich}{15}{section.2.2}%
+\contentsline {section}{\numberline {2.2}Evoluzione post-Zel'dovich}{16}{section.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.3}Singolarità nello spazio e nel tempo}{18}{section.2.3}%
+\contentsline {section}{\numberline {2.3}Singolarità nello spazio e nel tempo}{19}{section.2.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Conclusioni}{20}{chapter*.11}%
+\contentsline {chapter}{Conclusioni}{21}{chapter*.12}%

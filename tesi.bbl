@@ -110,6 +110,34 @@
     \field{year}{2003}
   \endentry
 
+  \entry{cardin}{article}{}
+    \name{author}{1}{}{%
+      {{hash=CF}{%
+         family={Cardin},
+         familyi={C\bibinitperiod},
+         given={Franco},
+         giveni={F\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Unione Matematica Italiana}%
+    }
+    \strng{namehash}{CF1}
+    \strng{fullhash}{CF1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{C}
+    \field{sortinithash}{C}
+    \field{number}{3}
+    \field{pages}{327\bibrangedash 341}
+    \field{title}{Trasporto ottimo, sistemi viventi}
+    \field{volume}{2}
+    \field{journaltitle}{Matematica, Cultura e Società. Rivista dell'Unione
+  Matematica Italiana}
+    \field{month}{12}
+    \field{year}{2017}
+  \endentry
+
   \entry{colombi}{article}{}
     \name{author}{1}{}{%
       {{hash=CS}{%
@@ -339,6 +367,41 @@
     \field{journaltitle}{Rev. Mod. Phys.}
     \field{year}{1989}
     \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{yamada}{article}{}
+    \name{author}{3}{}{%
+      {{hash=YH}{%
+         family={Yamada},
+         familyi={Y\bibinitperiod},
+         given={Hiroyasu},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=TA}{%
+         family={Toth},
+         familyi={T\bibinitperiod},
+         given={Agota},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=NT}{%
+         family={Nakagaki},
+         familyi={N\bibinitperiod},
+         given={Toshiyuki},
+         giveni={T\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{YHTANT1}
+    \strng{fullhash}{YHTANT1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{Y}
+    \field{sortinithash}{Y}
+    \field{pages}{470\bibrangedash 470}
+    \field{title}{Intelligence: Maze-Solving by an Amoeboid Organism}
+    \field{volume}{407}
+    \field{journaltitle}{Nature}
+    \field{month}{09}
+    \field{year}{2000}
   \endentry
 \enddatalist
 \endinput
