@@ -17,7 +17,7 @@
 \section{Equazioni della fluidodinamica}
 
 
-Una delle ipotesi vertice della seguente trattazione è quella che il plasma primordiale fosse altamente omogeneo.
+Una delle ipotesi vertice della seguente trattazione è quella secondo cui il plasma primordiale fosse altamente omogeneo.
 Tale teoria è avallata dallo spettro della CMB (Cosmic Microwave Background), che risulta riprodurre la stessa
 isotropia, eccezion fatta per deboli fluttuazioni termiche che caratterizzavano lo stesso plasma primordiale.
 
@@ -34,26 +34,26 @@ Ci muoviamo innanzitutto dal modello cosmologico Einstein-De Sitter, che pone la
 e la costante cosmologica $\Lambda$ pari a 0 e prevede uno spazio composto sostanzialmente di materia
 oscura fredda (CDM).
 In tale cornice definiamo una mappa Lagrangiana $\mathbb{M}: \bm{q} \mapsto \bm{x}(\bm{q}, \tau)$ che connette la posizione
-iniziale alla posizione corrente x al tempo di scala $\tau$ $\propto$ $t^{\frac{2}{3}}$.
-Inoltre le coordinate x sono coordinate comoventi legate alle coordinate fisiche r dalla relazione
+iniziale lagrangiana $\bm{q}$ alla posizione corrente euleriana $\bm{x}$ al tempo cosmologico $\tau$ $\propto$ $t^{\frac{2}{3}}$.
+Inoltre le coordinate $\bm{x}$ sono coordinate comoventi legate alle coordinate fisiche $\bm{r}$ dalla relazione
 x = r/$a$, dove $a$ rappresenta il fattore cosmico di scala, che corrisponde a $\tau$ in un universo
 EdS.
-Definiamo infine le velocità $\bm{v} = a \dot{\bm{x}}$ e $\bm{w} = \dot{\bm{r}} = H \bm{r} + v$
+Definiamo infine le velocità $\bm{v} = a \dot{\bm{x}}$ e $\bm{w} = \dot{\bm{r}} = H \bm{r} + \bm{v}$.
 
-Per approcciare la dinamica di particelle non collidenti ("polvere"), definiamo una funzione $f(\bm{x}, \bm{p}, t)$ 
+Per approcciare la dinamica di particelle non collidenti (\textit{polvere}), definiamo una funzione $f(\bm{x}, \bm{p}, t)$ 
 che corrisponde alla densità degli stati nello spazio delle fasi. E' possibile quindi utilizzare il Teorema di 
 Liouville, che afferma che la densità sopra citata si conserva nell'evoluzione di un sistema conservativo: in
-effetti l'ipotesi di assenza di collisioni ci permette di soddisfare ai requisiti del teorema, e quindi 
+effetti l'ipotesi di assenza di collisioni ci permette di soddisfare i requisiti del teorema, e quindi 
 possiamo porre a zero la derivata totale della funzione densità, ricavando l'equazione di Vlasov.
 
 \begin{equation}
     \label{eqn:vlasov}
-    \frac{\partial f}{\partial t} + \dot{\bm{x}} \nabla_{\bm{x}}f + \dot{\bm{p}} \nabla_{\bm{p}}f  = 0
+    \frac{\partial f(\bm{x}, \bm{p},t)}{\partial t} + \dot{\bm{x}} \cdot \nabla_{\bm{x}}f(\bm{x}, \bm{p},t) + \dot{\bm{p}} \cdot \nabla_{\bm{p}}f(\bm{x}, \bm{p},t)  = 0
 \end{equation}
 
 L'equazione di Vlasov è molto difficile da risolvere analiticamente: adottiamo quindi un approccio 
 teorico semplificato, cioè la descizione Newtoniana di fluido: in particolare sposiamo l'ipotesi 
-di entropia costante e di assenza di termini di pressione dal momento che trattiamo la CDM come 
+di entropia costante e di assenza di termini di pressione, in accordo con la trattazione della CDM come 
 una polvere autogravitante e non collidente.
 
 Il set di equazioni adatto all'approccio fluidodinamico è dato da
@@ -82,7 +82,7 @@ e $\delta\rho$ costituisce una deviazione da tale valore medio. $\Phi = \Phi_b +
 è la somma di un potenziale di background e un potenziale peculiare $\phi{'}$. Grazie a queste due 
 apposizioni possiamo separare l'equazione di Poisson, ottenendo un equazione nella sola coordinata
 comovente x.
-Possiamo riscrivere anche (\ref{eqn:eulero}) e (\ref{eqn:poisson}) nelle coordinate x, usando la
+Possiamo riscrivere anche (\ref{eqn:continuità}) e (\ref{eqn:eulero}) nelle coordinate x, usando la
 relazione
 
 \begin{equation}
@@ -109,7 +109,7 @@ Si ricava dunque
 Le equazioni della fluidodinamica rappresentano in effetti uno sviluppo dell'equazione 
 di Vlasov fino al primo ordine. Per spiegare questo passaggio, osserviamo che la densità
 di massa e la velocità sono associate rispettivamente al momento di aspettazione di ordine 
-zero e di primo ordine della densità nello spazio delle fasi $f(\bm{x}, \bm{p}, t)$.
+zero e di ordine uno della densità nello spazio delle fasi $f(\bm{x}, \bm{p}, t)$.
 
 \begin{equation}
     \label{eqn:rho}
@@ -118,16 +118,16 @@ zero e di primo ordine della densità nello spazio delle fasi $f(\bm{x}, \bm{p},
 
 \begin{equation}
     \label{eqn:vel}
-    \bm{v}(\bm{x}, t) = \frac{m}{a^3}\frac{\int d^3p \bm{p}f(\bm{x}, \bm{p}, t)}{\int d^3p f(\bm{x}, \bm{p}, t)}
+    \bm{v}(\bm{x}, t) = \frac{m}{a^3}\frac{\int d^3p \cdot \bm{p}f(\bm{x}, \bm{p}, t)}{\int d^3p f(\bm{x}, \bm{p}, t)}
 \end{equation}
 Integrando ora l'equazione di Vlasov sul dominio del momento $\bm{p}$, si trova che l'ultimo termine
 dell'integrando rappresenta un'integrale di volume della forza $\partial f$/$\partial p$, che tramite
 il Teorema di Gauss si può riscrivere come un integrale su una superficie all'infinito, dove la forza
-si annulla. Utilizzando poi le definizioni (\ref{eqn:rho}) e (\ref{eqn:vel}) si ricava 
+si annulla. Utilizzando poi la definizione (\ref{eqn:rho}) si ricava 
 \begin{equation}
-    \frac{\partial}{\partial t}(a^3 \rho) + \frac{1}{a^2}\nabla_x \int d^3 p \bm{p} f = 0
+    \frac{\partial}{\partial t}(a^3 \rho) + \frac{1}{a^2}\nabla_x \int d^3 p \cdot \bm{p} f = 0.
 \end{equation}
-maneggiando opportunamente quest'ultima e utilizzando le definzioni fornite in (\ref{eqn:rho}) e (\ref{eqn:vel})
+Maneggiando opportunamente quest'ultima e utilizzando anche la (\ref{eqn:vel})
 si arriva esattamente all'equazione di continuità (\ref{eqn:continuità}).
 
 Se invece si moltiplica l'equazione di Vlasov per $\bm{p}$ per poi integrare di nuovo su tale variabile, 
@@ -150,7 +150,7 @@ analitiche altrimenti proibitive.
 
 A questo punto tuttavia conviene operare un ulteriore cambio di variabili sul set di equazioni ottenute (\ref{eqn:continuitax}),
 (\ref{eqn:eulerox}) e (\ref{eqn:poissonx}). Per farlo si definisce meglio il fattore di scala per mezzo di un'ampiezza $a_{*}$ e
-un tempo caratteristico $t_{*}$, in modo che $a(t) = a^{*}(t / t_{*})^{2/3}$. Ricordando inoltre $\rho = \rho_b + \delta\rho$ e 
+un tempo caratteristico $t_{*}$, in modo che $a(t) = a_{*}(t / t_{*})^{2/3}$. Ricordando inoltre $\rho = \rho_b + \delta\rho$ e 
 $\bm{v} = a \dot{\bm{x}}$, facciamo le seguenti sostituzioni
 
 \begin{gather}
@@ -224,7 +224,7 @@ da cui
 \begin{equation}
     \eta(\bm{x}(\bm{q}, a), a) = (1 + \delta_0(\bm{q}))\det\left(\frac{\partial q}{\partial x}\right) 
 \end{equation}
-Ma supponendo che nella configurazione iniizale la perturbazione di energia sia nulla $\delta_0 = 0$
+Ma supponendo che nella configurazione iniizale la perturbazione di energia sia nulla $\delta_0 = 0 \quad \forall \bm{q}$
 e contemporaneamente utilizzando le proprietà del determinante, si potrà scrivere anche
 
 \begin{equation}
@@ -242,18 +242,17 @@ Nel sistema di riferimento opportuno tale tensore ha forma
 diagonale, con i tre autovalori $\lambda_1(\bm{q})$, $\lambda_2(\bm{q})$ e $\lambda_3(\bm{q})$, dipendenti dalle
 coordinate iniziali. Questi governano la deformazione locale della materia lungo i tre assi ortogonali identificati
 dagli autovettori. Si può dimostrare che nell'ipotesi in cui il potenziale $\phi_0$ sia gaussiano come previsto
-dal meccanismo di inflazione, allora nel almeno uno dei tre autovalori del tensore di deformazione è positivo 
-nel 92$\%$ dei casi.
+dal meccanismo di inflazione, allora nel 92$\%$ dei casi almeno uno dei tre autovalori del tensore di deformazione è positivo.
 Ora, riscrivendo il rapporto di densità $\eta$
 
 \begin{multline}
-    \eta(\bm{x}(\bm{q}, a), a) = \left[\det\left(\frac{\partial x}{\partial q}\right)\right]^{-1} = \left[\det\left( \mathbb{I}- a D \right)\right]^{-1} = \\
+    \eta(\bm{x}(\bm{q}, a), a) = \left[\det\left(\frac{\partial x}{\partial q}\right)\right]^{-1} = \left[\det\left( \mathbb{I}- a D \right)\right]^{-1}
     = \frac{1}{(1-a\lambda_1(\bm{q}))(1-a\lambda_2(\bm{q}))(1-a\lambda_3(\bm{q}))}
 \end{multline}
 
 A questo punto, è evidente che, supponendo che $\lambda_1(\bm{q})$ sia l'autovalore maggiore, allora il tempo 
 $\bar{a}=1/\lambda_1(\bm{q})$ rappresenta la prima criticità, in quanto la quantità $\eta$ diverge e con essa la 
-densità. Questo tipo di evento è detto \textit{shell-crossing} o \textit{caustica} ed è rappresenta il 
+densità. Questo tipo di evento è detto \textit{shell-crossing} o \textit{caustica} ed rappresenta il 
 fenomeno che si registra quando due particelle con diverse coordinate lagrangiane iniziali 
 $\bm{q}_1$ e $\bm{q}_2$ confluiscono nella stessa coordinata di campo $\bm{x}$, dando luogo a densità
 infinita. 
@@ -262,22 +261,23 @@ una sola coordinata euleriana possono corrispondere più coordinate iniziali. A 
 di tale biunivocità, la matrice Jacobiana $\partial x/\partial q$ risulta essere mal definita.
 Le caustiche delimitano le zone del cosiddetto \textit{multistreaming}, regioni entro le quali non è
 più possibile ritracciare le particelle all'indietro, in quanto non sappiamo come si sono comportate
-negli eventi di shell-crossing. Le strutture di materia che si formano sono detti \textit{pancakes},
+negli eventi di shell-crossing. Le strutture di materia che si formano sono dette \textit{pancakes},
 strutture oblate che si sviluppano su un piano, nel senso che la grumosità si sviluppa 
-sostanzialmente in una oppure due direzioni. Queste strutture saranno l'opportuna sede la formazione
+sostanzialmente in una oppure due direzioni. Queste strutture saranno l'opportuna sede della formazione
 delle galassie.
 
 Nel regime di single-stream l'approssimazione di Zel'dovich è opportuna, in quanto costitusice 
 un modello non accelerato dove le particelle procedono imperturbate lungo una traiettoria rettilinea
- e a velocità costante. Tuttavia a partire dal primo shell-crossing l'approssimazione perde di validità, 
-in quanto non prevede effetti di accelerazione gravitazionale esercitata dalle particelle vicine, che 
-modificherebbe il cammino della particella in modo sensibile. 
+ e a velocità costante. Tuttavia a partire dal primo shell-crossing, ovvero di fronte alle prime collisioni,
+l'approssimazione perde di validità, 
+in quanto non prevede gli effetti dell'accelerazione gravitazionale esercitata dalle particelle vicine, che 
+modificherebbe in modo sensibile il cammino dell'oggetto in esame. 
 
 \section{Metodi di ricostruzione}
 \label{sec:metodi}
 
 Come anticipato all'inizio del capitolo, l'alta uniformità della CMB è una prova forte dell'omogeneità 
-dell'Universo primordiale. La grumosità della distrubuzione attuale della massa si spiega invece con 
+dell'Universo primordiale. La grumosità della distribuzione attuale della massa si spiega invece con 
 la formazione di strutture filiformi e oblate come i pancakes. Per poter rendere conto di questa transizione,
 sono possibili due tipi di atteggiamento: un \textit{forward approach}, che si basa sull'ipotizzare un 
 modello iniziale, presumibilmente a densità costante, ed eseguire una simulazione a N corpi sulle basi 
@@ -303,7 +303,7 @@ unicità.
 		\centering
 		\includegraphics[scale=0.5, angle=0]{rec.png}
         \caption{Esempio di ricostruzione senza unicità. La densità nel grafico superiore potrebbe essere stata generata
-        sia dalla mappa lagrangiana in grassetto che da quella tratteggiata. FIgura tratta da \cite{matarrese}}
+        sia dalla mappa lagrangiana in grassetto che da quella tratteggiata. Figura tratta da \cite{matarrese}}
 		\label{fig:rec}
 	\end{figure}
 \end{center}
