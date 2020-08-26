@@ -200,19 +200,19 @@ $\bm{q}$, allora per ogni posizione euleriana $\bm{x}$ del moto varrà che
 Le traiettorie delle particelle, rettilinee e a velocità costante $u$, sono descritte da
 
 \begin{equation}
-    \bm{x}(\bm{q, a}) = \bm{q} + a u_0(\bm{q})
+    \bm{x}(\bm{q}, a) = \bm{q} + a \bm{u}_0(\bm{q})
 \end{equation}
 Ma usando (\ref{eqn:zelsol}) si ricaverà
 
 \begin{equation}
     \label{eqn:zelmap}
-    \bm{x}(\bm{q, a}) = \bm{q} - a \nabla\phi_0
+    \bm{x}(\bm{q}, a) = \bm{q} - a \nabla\phi_0
 \end{equation}
 
 Alla fine di questi passaggi si è in grado di identificare la mappa $\mathbb{M}$ che collega le coordinate lagrangiane 
 iniziali con quelle finali euleriane. 
 
-A questo punto saremmo in grado di risolvere l'equazione di continuità semplicemente come un'equazione a variabili
+A questo punto saremmo in grado di risolvere l'equazione di Eulero semplicemente come un'equazione a variabili
 separabili, trovando quindi la forma di $\eta$. Tuttavia la via più semplice risulta invece dall'impostare la 
 conservazione della massa dei singoli elementi fluidi.
 
@@ -353,7 +353,7 @@ recuperano le corrette condizioni iniziali delle regiorni di attuale altà densi
 in altre parole, è un metodo di ricostruzione che non funziona nelle regioni di multistreaming.
 
 Infine il metodo MAK supera sia il problema della non unicità che affligge la ricostruzione di Peebles, 
-sia i limiti di validitò dell'algoritmo POTENT, rimanendo valido anche ben oltre il regime lineare euleriano.
+sia i limiti di validità dell'algoritmo POTENT, rimanendo valido anche ben oltre il regime lineare euleriano.
 Occorre innanzitutto formulare un'equazione di conservazione della massa e prenderla a vincolo, o meglio in virtù
 di condizione al contorno in sostituzione delle velocità iniziali, che abbiamo detto essere per la maggior parte dei
 casi sconosciute.
