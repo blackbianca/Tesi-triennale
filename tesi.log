@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7400 64-bit) (preloaded format=pdflatex 2020.8.22)  26 AUG 2020 16:42
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7400 64-bit) (preloaded format=pdflatex 2020.8.22)  27 AUG 2020 14:11
 entering extended mode
 **"c:/Users/User/Desktop/UniPD/Università/III anno/Tesi/tesi/tesi.tex"
 ("c:/Users/User/Desktop/UniPD/Università/III anno/Tesi/tesi/tesi.tex"
@@ -831,7 +831,41 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
 
 
-{C:/Users/User/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <c:/Users/User/Desktop/UniPD/Università/III anno/Tesi/tesi/unipd_logo.png>]) [1
+{C:/Users/User/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <c:/Users/User/Desktop/UniPD/Università/III anno/Tesi/tesi/unipd_logo.png>])
+*geometry* verbose mode - [ newgeometry ] result:
+* driver: pdftex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(85.35826pt, 455.24411pt, 56.9055pt)
+* v-part:(T,H,B)=(56.9055pt, 731.23584pt, 56.9055pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=455.24411pt
+* \textheight=731.23584pt
+* \oddsidemargin=13.08827pt
+* \evensidemargin=13.08827pt
+* \topmargin=-47.23828pt
+* \headheight=12.0pt
+* \headsep=19.8738pt
+* \topskip=11.0pt
+* \footskip=27.46295pt
+* \marginparwidth=53.0pt
+* \marginparsep=7.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+ [1
+
 
 
 
@@ -866,7 +900,12 @@ File: cmb.png Graphic file (type png)
 <use cmb.png>
 Package pdftex.def Info: cmb.png  used on input line 27.
 (pdftex.def)             Requested size: 293.97256pt x 133.24748pt.
- [6
+
+Overfull \hbox (0.171pt too wide) in paragraph at lines 43--48
+[]\T1/cmr/m/n/10.95 Per ap-proc-cia-re la di-na-mi-ca di par-ti-cel-le non col-li-den-ti (\T1/cmr/m/it/10.95 pol-ve-re\T1/cmr/m/n/10.95 ), de-fi-nia-mo una fun-zio-ne $\OML/cmm/m/it/10.95 f\OT1/cmr/m/n/10.95 (\OML/cmm/b/it/10.95 x\OML/cmm/m/it/10.95 ; \OML/cmm/b/it/10.95 p\OML/cmm/m/it/10.95 ; t\OT1/cmr/m/n/10.95 )$
+ []
+
+[6
 
  <c:/Users/User/Desktop/UniPD/Università/III anno/Tesi/tesi/cmb.png>] [7] [8] [9]
 <rec.png, id=186, 590.205pt x 626.34pt>
@@ -888,33 +927,34 @@ Package pdftex.def Info: peebles.png  used on input line 335.
 Capitolo 2.
 ("c:/Users\User\Desktop\UniPD\Università\III anno\Tesi\tesi\capitoli/capitolo2.tex" [14
 
-] [15] [16]
-<fig1.png, id=300, 556.32843pt x 649.67719pt>
+] [15] [16] [17]
+<fig1.png, id=310, 556.32843pt x 649.67719pt>
 File: fig1.png Graphic file (type png)
 <use fig1.png>
-Package pdftex.def Info: fig1.png  used on input line 250.
+Package pdftex.def Info: fig1.png  used on input line 253.
 (pdftex.def)             Requested size: 278.16353pt x 324.8378pt.
- [17]
-Overfull \hbox (41.35689pt too wide) in paragraph at lines 278--283
-\T1/cmr/m/n/10.95 d0ve la de-fi-ni-zio-ne di $\OML/cmm/m/it/10.95 D\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 q; ; c\OT1/cmr/m/n/10.95 )$ \T1/cmr/m/n/10.95 � sta-ta for-ni-ta in pre-ce-den-za, men-tre $\OML/cmm/m/it/10.95 f\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 q; \OT1/cmr/m/n/10.95 ) = []\OML/cmm/m/it/10.95 q[] \OMS/cmsy/m/n/10.95   []\OML/cmm/m/it/10.95 q[] [][] [][]$\T1/cmr/m/n/10.95 .
- []
-
-<fig2.png, id=318, 1347.53438pt x 479.54156pt>
+ [18 <c:/Users/User/Desktop/UniPD/Università/III anno/Tesi/tesi/fig1.png>]
+<fig2.png, id=326, 1347.53438pt x 479.54156pt>
 File: fig2.png Graphic file (type png)
 <use fig2.png>
-Package pdftex.def Info: fig2.png  used on input line 288.
+Package pdftex.def Info: fig2.png  used on input line 296.
 (pdftex.def)             Requested size: 471.6441pt x 167.84206pt.
-[18 <c:/Users/User/Desktop/UniPD/Università/III anno/Tesi/tesi/fig1.png>]) [19 <c:/Users/User/Desktop/UniPD/Università/III anno/Tesi/tesi/fig2.png>] [20] ("c:/Users\User\Desktop\UniPD\Università\III anno\Tesi\tesi\capitoli/conclusioni.tex") [21
+
+Overfull \hbox (16.4pt too wide) in paragraph at lines 296--304
+ [][] 
+ []
+
+[19 <c:/Users/User/Desktop/UniPD/Università/III anno/Tesi/tesi/fig2.png>]) [20] ("c:/Users\User\Desktop\UniPD\Università\III anno\Tesi\tesi\capitoli/conclusioni.tex") [21
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 113.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 114.
  [22
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 113.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 114.
  ("c:/Users\User\Desktop\UniPD\Università\III anno\Tesi\tesi\tesi.aux")
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 113.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 113.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 114.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 114.
 Package rerunfilecheck Info: File `tesi.out' has not changed.
 (rerunfilecheck)             Checksum: 0C68F8AD1F0217C39897C3D4796E5B5E;710.
 Package logreq Info: Writing requests to 'tesi.run.xml'.
@@ -922,17 +962,17 @@ Package logreq Info: Writing requests to 'tesi.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 19915 strings out of 480896
- 334212 string characters out of 2898648
- 811323 words of memory out of 3000000
+ 19916 strings out of 480896
+ 334227 string characters out of 2898648
+ 810323 words of memory out of 3000000
  35319 multiletter control sequences out of 15000+200000
  559002 words of font info for 92 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 50i,12n,51p,1210b,1520s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 50i,12n,51p,1210b,1522s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\User\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1000.pk> <C:\Users\User\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0900.pk> <C:\Users\User\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecsl0900.pk> <C:\Users\User\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1000.pk> <C:\Users\User\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1000.pk> <C:\Users\User\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1095.pk> <C:\Users\User\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1095.pk> <C:\Users\User\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1095.pk> <C:\Users\User\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx2488.pk> <C:\Users\User\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1728.pk> <C:\Users\User\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1440.pk> <C:\Users\User\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx2074.pk><C:/Users/User/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmib10.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cmextra/cmmib8.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/euler/eusm10.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on "c:/Users\User\Desktop\UniPD\Università\III anno\Tesi\tesi\tesi.pdf" (23 pages, 3603255 bytes).
+Output written on "c:/Users\User\Desktop\UniPD\Università\III anno\Tesi\tesi\tesi.pdf" (23 pages, 3603527 bytes).
 PDF statistics:
- 860 PDF objects out of 1000 (max. 8388607)
- 121 named destinations out of 1000 (max. 500000)
+ 861 PDF objects out of 1000 (max. 8388607)
+ 122 named destinations out of 1000 (max. 500000)
  121 words of extra memory for PDF output out of 10000 (max. 10000000)
 

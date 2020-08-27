@@ -7,16 +7,19 @@
     - come si posizionano i tempi tau comin e comax rispetto alla linea temporale, o rispetto a tau = 1?
         sono entrambi dopo l'istante tau = 1, perchè sono in shell crossing credo
 
-
 \end{comment}
-
 
 
 \section{Setup e scelta delle condizioni iniziali}
 
 In cosmologia le caustiche, che nascono da una singolarità nella trattazione di fluido esposta nel precedente
 capitolo, rappresentano in realtà il processo fondamentale della formazione di strutture a grande scala 
-nell'universo. Al primo shell-crossing le particelle affrontano il \textit{collasso gravitazionale
+nell'universo. In assenza di questo tipo di singolarità, la materia dell'universo riprodurrebbe in ultimo una
+ripartizione omogenea, in coincidenza con il raggiungimento della massima entropia. Tuttavia l'esistenza di queste
+divergenze impedisce il conseguimento dell'equilibrio termico, detto in cosmologia \textit{morte termica dell'Universo},
+in quanto corrisponderebbe a uno stato ove non sono più possibili scambi di energia. 
+
+Al primo shell-crossing le particelle affrontano invece il \textit{collasso gravitazionale
 secondario}, per cui il numero di collisioni aumenta sostanzialmente, e la trattazione si fa delicata. 
 ne consegue che la forma oblata del pancake non è l'unica forma che si 
 registra: infatti nel contesto di una trattazione nonlineare della dinamica gravitazionale con l'approssimazione
@@ -26,10 +29,11 @@ e bidimensionale in \cite{arnold}.
 Tuttavia la varietà di strutture che può emergere a seguito del collasso gravitazionale non possono essere previste 
 da un modello che include l'approssimazione di Zel'dovich, la quale si basa sull'ipotesi di velocità costante.
 In effetti si è spiegato nel primo capitolo che ZA risulta essere una soluzione esatta solamente nel caso 
-unidimensionale, e in ogni caso valida esclusivamente fino al primo shell-crossing, dove le equazioni del
+unidimensionale, e in generale valida esclusivamente fino al primo shell-crossing, dove le equazioni del
 fluido falliscono. \'E necessario quindi tornare all'equazione di riferimento, ossia all'equazione di Vlasov 
 (\ref{eqn:vlasov}), anche limitandosi in prima battuta al caso unidimensionale, dal momento che gli 
 shell-crossing si manifestano, almeno nella loro fase iniziale, come fenomeni unidimensionali.
+
 
 Inquadriamo l'analisi in un universo EdS, dove $\tau = a$ come accennato in precedenza, quando abbiamo anche
 fornito la definizione $u(x(q, \tau), \tau) = \partial_a x(q, \tau) = \partial_{\tau}(q, \tau) = \dot{x}(q, \tau)$.
@@ -51,7 +55,7 @@ dove $\delta_D$ è una delta di Dirac che dà contributo quando due particelle p
 posizioni iniziali $q$ e $q'$ collidono nella stessa posizione euleriana $x$.
 
 Si osserva ora che tale set di equazioni gode di invarianza rispetto a trasformazioni di 
-Galileo della forma $x \mapsto x + \zeta(\tau)$: possiamo sfruttare al presenza di questa 
+Galileo della forma $x \mapsto x + \zeta(\tau)$: possiamo sfruttare questa 
 simmetria per imporre una condizione al centro di massa. Per scriverla definiamo il dislocamento
 lagrangiano $\xi(q, \tau):= x(q, \tau) - q$.
 
@@ -60,7 +64,7 @@ lagrangiano $\xi(q, \tau):= x(q, \tau) - q$.
     \int_{\mathbb{T}}\xi(q', \tau) dq' = 0
 \end{equation}
 Se tale condizione non fosse rispettata significherebbe che esiste un certa direzione
-privilegiata di moto delle particelle, incompatibilmente con l'assenza di forze esterne.
+privilegiata di moto delle particelle, incompatibilmente con l'ipotesi di assenza di forze esterne.
 
 A questo punto si procede prendendo la divergenza di (\ref{eqn:cont_new}) e inserendovi 
 (\ref{eqn:poisson_new}), ottenendo
@@ -133,7 +137,7 @@ nella velocità, come espresso in (\ref{eqn:initcond}), mentre in \cite{colombi}
 Finchè non vi sono eventi di collisione, ossia nella regione di single-stream, non si verificano 
 sovrapposizioni tra coordinate euleriane generate da diversi antecedenti lagrangiani, ossia $x(q)\neq x'(q')$.
 Questo rende l'espressione di densità (\ref{eqn:density}) nulla, e con essa anche la forza generalizzata
-$F(x(q, \tau)$ e il suo integrale $S(x(q, \tau)$. Pertanto l'equazione (\ref{eqn:Sequation}) si riduce
+$F(x(q, \tau)$ e il suo integrale $S(x(q, \tau)$. Pertanto  in regime di single-stream l'equazione (\ref{eqn:Sequation}) si riduce
 a $\mathcal{R}_{\tau}[\xi(q, \tau)-\xi_c(\tau)] = 0$. Sfruttando inoltre la condizione del centro di 
 massa (\ref{eqn:com}), imponiamo $\xi_c = 0$, recuperando così la soluzione di Zel'dovich.
 
@@ -154,10 +158,9 @@ dove $\{a_i\}$ sono gli zeri di $f(x)$, si trova che la (\ref{eqn:density}) dive
     \label{eqn:density_ZA}
     \delta(x_{ZA})= \int dq' \delta_D[x(q, \tau) - x(q', \tau)] - 1 = \int dq' \frac{\delta_D(q' - q)}{\partial_q x_{ZA}(q, \tau)} - 1 = \frac{1}{\partial_q x_{ZA}}-1
 \end{equation}
-per cui si è chiariato perché la densità diventa infinita quando $\partial_q x_{ZA} = 0$.
+per cui si è chiarito perché la densità diventa infinita quando $\partial_q x_{ZA} = 0$.
 
-Inoltre, grazie alla scelta delle condizioni iniziali, il primo shell crossing avviene a $\bar{\tau}=1$.
-
+Inoltre, grazie alla scelta delle condizioni iniziali, il primo shell crossing è posto a $\bar{\tau}=1$.
 
 
 \section{Evoluzione post-Zel'dovich}
@@ -277,7 +280,12 @@ ricava
     \end{cases}
 \end{equation}
 d0ve la definizione di $D(q, \tau, c)$ è stata fornita in precedenza, mentre 
-$f(q, \tau) = \frac{11}{20}q^4\tau -\frac{36}{5}q^4\left(\frac{2}{2-q^2}\right)^{3/2}\frac{3q^2-4}{(q^2-8)^2}\tau^{-\frac{3}{2}}$.
+
+
+\begin{equation}
+    f(q, \tau) = \frac{11}{20}q^4\tau -\frac{36}{5}q^4\left(\frac{2}{2-q^2}\right)^{3/2}\frac{3q^2-4}{(q^2-8)^2}\tau^{-\frac{3}{2}}.
+\end{equation}
+
 La (\ref{eqn:finale}) fornisce quindi l'andamento complessivo del dislocamento $\xi$. In figura (\ref{fig:fig2}) è proposto un confronto
 tra previsione teorica e simulazione a N corpi.
 
