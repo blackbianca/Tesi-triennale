@@ -16,21 +16,21 @@ In cosmologia le caustiche, che nascono da una singolarità nella trattazione di
 capitolo, rappresentano in realtà il processo fondamentale della formazione di strutture a grande scala 
 nell'universo. In assenza di questo tipo di singolarità, la materia dell'universo riprodurrebbe in ultimo una
 ripartizione omogenea, in coincidenza con il raggiungimento della massima entropia. Tuttavia l'esistenza di queste
-divergenze impedisce il conseguimento dell'equilibrio termico, detto in cosmologia \textit{morte termica dell'Universo},
+divergenze di densità impedisce il conseguimento dell'equilibrio termico, detto in cosmologia \textit{morte termica dell'Universo},
 in quanto corrisponderebbe a uno stato ove non sono più possibili scambi di energia. 
 
 Al primo shell-crossing le particelle affrontano invece il \textit{collasso gravitazionale
 secondario}, per cui il numero di collisioni aumenta sostanzialmente, e la trattazione si fa delicata. 
-ne consegue che la forma oblata del pancake non è l'unica forma che si 
+Ne consegue che la forma oblata del pancake non è l'unica forma che si 
 registra: infatti nel contesto di una trattazione nonlineare della dinamica gravitazionale con l'approssimazione
-di Zel'dovich si incontrano una serie di strutture scrupolosamente classificate per i casi semplici unidimensionale
+di Zel'dovich si incontrano una serie di strutture, scrupolosamente classificate per i casi semplici unidimensionale
 e bidimensionale in \cite{arnold}.
 
-Tuttavia la varietà di strutture che può emergere a seguito del collasso gravitazionale non possono essere previste 
+Tuttavia la varietà di strutture che può emergere a seguito del collasso gravitazionale non può essere prevista
 da un modello che include l'approssimazione di Zel'dovich, la quale si basa sull'ipotesi di velocità costante.
 In effetti si è spiegato nel primo capitolo che ZA risulta essere una soluzione esatta solamente nel caso 
 unidimensionale, e in generale valida esclusivamente fino al primo shell-crossing, dove le equazioni del
-fluido falliscono. \'E necessario quindi tornare all'equazione di riferimento, ossia all'equazione di Vlasov 
+fluido falliscono. \'E necessario quindi fare un passo indietro e tornare all'equazione di riferimento, ossia all'equazione di Vlasov 
 (\ref{eqn:vlasov}), anche limitandosi in prima battuta al caso unidimensionale, dal momento che gli 
 shell-crossing si manifestano, almeno nella loro fase iniziale, come fenomeni unidimensionali.
 
@@ -64,7 +64,7 @@ lagrangiano $\xi(q, \tau):= x(q, \tau) - q$.
     \int_{\mathbb{T}}\xi(q', \tau) dq' = 0
 \end{equation}
 Se tale condizione non fosse rispettata significherebbe che esiste un certa direzione
-privilegiata di moto delle particelle, incompatibilmente con l'ipotesi di assenza di forze esterne.
+privilegiata per il moto delle particelle, incompatibilmente con l'ipotesi di assenza di forze esterne.
 
 A questo punto si procede prendendo la divergenza di (\ref{eqn:cont_new}) e inserendovi 
 (\ref{eqn:poisson_new}), ottenendo
@@ -79,8 +79,7 @@ Sostituendo $\nabla_x = \partial_x q \nabla_q$, si ottiene
     \label{eqn:progress}
     \nabla_q \left[ \tau^2 \partial^2_{\tau} + \frac{3}{2}\tau \partial_{\tau} \right] x = -\frac{3}{2}\frac{\partial x}{\partial q}\delta(x(q,\tau))
 \end{gather}
-A questo punto definiamo la funzione $F(x(q, \tau))$ come una forza "efficace" di multistreaming, utilizzando 
-la definizione della densità (\ref{eqn:density}). Nel dettaglio, $F(x(q, \tau)) = (\partial_q x) \int \delta_D[x(q, \tau)-x(q', \tau)]dq' -1$.
+A questo punto definiamo la funzione $F(x(q, \tau))$ come una forza "efficace" di multistreaming. Nel dettaglio, $F(x(q, \tau)) = (\partial_q x) \int \delta_D[x(q, \tau)-x(q', \tau)]dq' -1$.
 Ma allora il secondo membro della (\ref{eqn:progress}) si può scrivere come
 
 \begin{equation}
@@ -128,7 +127,7 @@ velocità non è altro che la derivata del potenziale (\cite{zeldovich}). Provia
 dove $a_i = (1/i!) \phi^{(i)}(0)$.
 La derivata seconda del potenziale è tuttavia esprimibile tramite gli autovalori $\lambda(q)$ del tensore di deformazione,
 come mostrato nel capitolo precedente. Pertanto, nel momento in cui si adotta l'ipotesi di massimo per tale autovalore, cioè
-si ricerca il primo istante di shell-crossing, poniamo la derivata seconda del potenziale nulla. Si chiede dunque $\lambda'(q)=0$, 
+si ricerca il primo istante di shell-crossing, poniamo a zero la derivata dell'autovalore. Si chiede dunque $\lambda'(0)=0$, 
 cioè $\phi'''(0)=0$. Pertanto è automatica la
 scelta $a_3 = 0$, che priva la derivata prima $\phi'(q)$, e con essa la velocità, della potenza quadratica.
 L'espansione proposta in (\ref{eqn:phiexp}) è quella proposta in \cite{rampf} e permette di disporre del termine di quarto grado 
@@ -145,7 +144,7 @@ massa (\ref{eqn:com}), imponiamo $\xi_c = 0$, recuperando così la soluzione di 
     x_{ZA}(q, \tau) = q+ \tau \xi_{ZA}^{ini}
 \end{equation}
 Sappiamo che tale soluzione risulta valida solamente fino al primo shell-crossing, momento in cui si verifica
-la condizione $\partial_q x_{ZA} = 0$, che causa invece la divergenza della densità prima nulla.
+la condizione $\partial_q x_{ZA} = 0$, che causa invece la divergenza della densità fino a quel momento nulla.
 Infatti, ricordando la proprietà della delta di Dirac
 
 \begin{equation}
@@ -165,7 +164,7 @@ Inoltre, grazie alla scelta delle condizioni iniziali, il primo shell crossing �
 
 \section{Evoluzione post-Zel'dovich}
 
-Dopo lo shell-crossing è necessario rinunciare alla soluzione analitica della (\ref{eqn:Sequation}) per 
+Dopo lo shell-crossing è inevitabile rinunciare alla soluzione analitica della (\ref{eqn:Sequation}) per 
 fare uso invece di un algoritmo iterativo, il cui primo ciclo adotterà come forza generalizzata la
 $F(x_{ZA}(q, \tau))$ calcolata sull'ultima $x_{ZA}$ ricavata dall'approssimazione di Zel'dovich.
 
@@ -195,7 +194,7 @@ per coefficienti $c$ piccoli, il seguente risultato.
 
 dove $D(q, \tau, c) = 24 - 3q^2 -42/\tau + 24cq(3-1^2-3/\tau)$, mentre i due tempi che separano 
 i tre diversi andamenti sono dati da $\tau_{com} = 8/(8-q^2-5cq^3)$ e $\tau_{min} = 2/(2-q^2-8cq^3)$.
-Tramite questi tempi sono definite le coordinate lagrangiane $q_{max}$ e $q_{comax}$, che sono le 
+Tramite questi istanti sono definite le coordinate lagrangiane $q_{max}$ e $q_{comax}$, che sono le 
 coordinate lagrangiane associate alla posizione euleriana massima $x_{max}$ che delimita l'estremo
 superiore della zona di multistreaming, e $q_{min}$ e $q_{comin}$, associate all'altro estremo 
 della zona di multistreaming $x_{min}$. 
@@ -210,7 +209,7 @@ riordinando la (\ref{eqn:Sequation}) e integrando per $q \in [-\pi, \pi]$, la se
 \end{equation}
 In tale equazione si può far uso della condizione (\ref{eqn:com}) per cancellare il membro di sinistra
 e ottenere quindi che l'integrale di $M$ deve essere nullo. Questo integrale risulta problematico
-per via della definiziona tratti di $S_{ZA}$ (\ref{eqn:SZA}), per cui facciamo l'ipotesi forte 
+per via della definizione a tratti di $S_{ZA}$ (\ref{eqn:SZA}), per cui facciamo l'ipotesi forte 
 $\xi_c = \xi_1 + \xi_2 + \xi_3$ dove le $\{\xi_i\}$ sono soluzioni individuali delle tre regioni 
 di definizione, cioè le costanti di integrazione di ciascun tratto.
 
@@ -221,6 +220,8 @@ ma dato che $\xi_c$ è indipendente da $q$ la stessa equazione si può riscriver
 \begin{equation}
     \mathcal{R}_{\tau} \xi_c(\tau) = \Big\langle \frac{3}{2}S_{ZA}(q, \tau) \Big\rangle
 \end{equation}
+dove le parentesi angolari simboleggiano una media pesata del termine sul dominio delle $q$.
+
 Questa stessa equazione, ripartita nei vari regimi, si traduce nel seguente gruppo di equazioni
 
 \begin{gather}
@@ -232,7 +233,7 @@ Questa stessa equazione, ripartita nei vari regimi, si traduce nel seguente grup
     \mathcal{R}_{\tau} \xi_3(\tau) = - \Big \langle \frac{9}{2} q \Big \rangle = 36c (1-\frac{1}{\tau})\Big\rangle 
 \end{gather}
 La soluzione della (\ref{eqn:xi1}), nel regime di single stream, è data da $\xi_1=0$, mentre (\ref{eqn:xi2}) 
-e (\ref{eqn:xi3}) richiedono l'utilizzo delle condizioni iniziali $\xi(\tau=1)=0$ e $\dot{\xi}(\tau=1)=0$.
+e (\ref{eqn:xi3}) richiedono l'utilizzo delle condizioni iniziali $\xi_{1,2}(\tau=1)=0$ e $\dot{\xi}_{1,2}(\tau=1)=0$.
 Si ottengono dunque delle soluzioni valide per $\xi_i$, che sommate danno luogo al valore della costante
 di integrazione $\xi_c$.
 
@@ -240,7 +241,7 @@ di integrazione $\xi_c$.
     \label{eqn:xic}
     \xi_c(\tau)= -\frac{18c}{5}\left(10+8\tau^{-\frac{2}{3}}-\frac{15}{\tau}-3\tau\right)
 \end{equation}
-Si osserva che $\xi_c$, che si attiva solamente dopo il primo shell crossing, ossia a $\tau=1$,
+Si osserva che $\xi_c$ si attiva solamente dopo il primo shell crossing, ossia a $\tau=1$,
 ossia è interpretato come un boost dipendente dal tempo che non sarebbe prevedibile con l'appoggio
 della sola approssimazione di Zel'dovich.
 
@@ -295,7 +296,7 @@ tra previsione teorica e simulazione a N corpi.
 		\centering
 		\includegraphics[scale=0.35, angle=0]{fig2.png}
         \caption{Confronto tra predizione teorica (linea continua) e simulazione a N corpi (punti).
-        Il pannello di sinistra raffigura l'accelerazione $\ddot{\xi_{PZA}}$ per $c$=0, in cui è possibile 
+        Il pannello di sinistra raffigura l'accelerazione $\ddot{\xi}_{PZA}$ per $c$=0, in cui è possibile 
         visualizzare alcuni punti a derivata discontinua che rivelano le singolarità fisiche, ben riprodotte 
         anche dall'andamento della simulazione. Il pannello centrale raffigura le orbite nello spazio delle fasi 
         $(x, v)$ sempre con $c$=0. Il pannello di destra invece raffigura l'improvviso valore non nullo di $\xi_{PZA}$
