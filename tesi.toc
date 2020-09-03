@@ -21,5 +21,3 @@
 \contentsline {section}{\numberline {2.3}Singolarità nello spazio e nel tempo}{19}{section.2.3}%
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{Conclusioni}{21}{chapter*.12}%
-\babel@toc {british}{}
-\babel@toc {italian}{}

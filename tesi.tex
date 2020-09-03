@@ -2,7 +2,7 @@
 
 \usepackage[pdftex]{graphicx} %per poter inserire le figure
 \usepackage[utf8]{inputenc}
-\usepackage[T1]{fontenc}
+\usepackage{csquotes}
 \usepackage{float}
 \usepackage[italian]{babel}
 \usepackage{listings}
@@ -38,6 +38,10 @@
 \fontsize{9}{11}\selectfont
 }
 \fancyhf{}
+
+\renewcommand*{\finalnamedelim}{%
+  \ifnumgreater{\value{liststop}}{2}{\finalandcomma}{}%
+  \addspace\&\space}
 
 
 \fancyhead[LE,RO]{\changefont \slshape \rightmark} %section
@@ -111,9 +115,8 @@
     \renewbibmacro{in:}{}
     \DeclareFieldFormat{pages}{#1}
 
-    \begin{otherlanguage}{british}
-        \printbibliography
-    \end{otherlanguage}
+    \printbibliography
+    
 
 
 \end{document}
