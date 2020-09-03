@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7400 64-bit) (preloaded format=pdflatex 2020.8.22)  2 SEP 2020 13:52
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7400 64-bit) (preloaded format=pdflatex 2020.8.22)  3 SEP 2020 19:09
 entering extended mode
 **"c:/Users/User/Desktop/UniPD/Università/III anno/Tesi/tesi/tesi.tex"
 ("c:/Users/User/Desktop/UniPD/Università/III anno/Tesi/tesi/tesi.tex"
@@ -689,7 +689,10 @@ Package biblatex Warning: 'babel/polyglossia' detected but 'csquotes' missing.
 
 \@quotelevel=\count444
 \@quotereset=\count445
-("c:/Users\User\Desktop\UniPD\Università\III anno\Tesi\tesi\tesi.aux")
+("c:/Users\User\Desktop\UniPD\Università\III anno\Tesi\tesi\tesi.aux" ("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex/generic/babel/locale/en\babel-british.tex" ("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex/generic/babel/locale/en\babel-english-unitedkingdom.tex"
+Package babel Info: Importing basic data for british
+(babel)             from babel-en-GB.ini. Reported on input line 11.
+)))
 \openout1 = `tesi.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 63.
@@ -805,13 +808,7 @@ Package biblatex Info: Data encoding 'utf8' specified.
 
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'tesi.bbl' found.
- ("c:/Users\User\Desktop\UniPD\Università\III anno\Tesi\tesi\tesi.bbl"
-
-Package biblatex Warning: BibTeX reported the following issues
-(biblatex)                with 'zeldovich':
-(biblatex)                - Invalid format of field 'month'.
-
-)
+ ("c:/Users\User\Desktop\UniPD\Università\III anno\Tesi\tesi\tesi.bbl")
 Package biblatex Info: Reference section=0 on input line 63.
 Package biblatex Info: Reference segment=0 on input line 63.
  ("c:/Users\User\Desktop\UniPD\Università\III anno\Tesi\tesi\frontmatter/frontespizio.tex"
@@ -819,7 +816,7 @@ Package biblatex Info: Reference segment=0 on input line 63.
 File: unipd_logo.png Graphic file (type png)
 <use unipd_logo.png>
 Package pdftex.def Info: unipd_logo.png  used on input line 6.
-(pdftex.def)             Requested size: 73.07556pt x 32.7796pt.
+(pdftex.def)             Requested size: 224.83601pt x 100.855pt.
 LaTeX Font Info:    Trying to load font information for U+msa on input line 26.
  ("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
@@ -872,30 +869,39 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
 ] [2
 
-] ("c:/Users\User\Desktop\UniPD\Università\III anno\Tesi\tesi\tesi.toc")
+] ("c:/Users\User\Desktop\UniPD\Università\III anno\Tesi\tesi\tesi.toc"
+Package biblatex Info: Trying to load language 'british'...
+Package biblatex Info: ... file 'british.lbx' found.
+ ("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex/latex/biblatex/lbx\british.lbx"
+File: british.lbx 2019/12/01 v3.14 biblatex localization (PK/MW)
+Package biblatex Info: Trying to load language 'english'...
+Package biblatex Info: ... file 'english.lbx' found.
+ ("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex/latex/biblatex/lbx\english.lbx"
+File: english.lbx 2019/12/01 v3.14 biblatex localization (PK/MW)
+)))
 \tf@toc=\write5
 \openout5 = `tesi.toc'.
 
  [3
 
 ] ("c:/Users\User\Desktop\UniPD\Università\III anno\Tesi\tesi\capitoli/introduzione.tex"
-<caustica.png, id=82, 1236.11812pt x 604.50844pt>
+<caustica.png, id=83, 1236.11812pt x 604.50844pt>
 File: caustica.png Graphic file (type png)
 <use caustica.png>
-Package pdftex.def Info: caustica.png  used on input line 13.
+Package pdftex.def Info: caustica.png  used on input line 15.
 (pdftex.def)             Requested size: 309.02878pt x 151.12674pt.
  [4
 
  <c:/Users/User/Desktop/UniPD/Università/III anno/Tesi/tesi/caustica.png>]
-<yamada.png, id=102, 941.76843pt x 441.14813pt>
+<yamada.png, id=103, 941.76843pt x 441.14813pt>
 File: yamada.png Graphic file (type png)
 <use yamada.png>
-Package pdftex.def Info: yamada.png  used on input line 52.
+Package pdftex.def Info: yamada.png  used on input line 53.
 (pdftex.def)             Requested size: 282.5327pt x 132.34546pt.
 ) [5 <c:/Users/User/Desktop/UniPD/Università/III anno/Tesi/tesi/yamada.png>]
 Capitolo 1.
 ("c:/Users\User\Desktop\UniPD\Università\III anno\Tesi\tesi\capitoli/capitolo1.tex"
-<cmb.png, id=115, 587.94656pt x 266.49562pt>
+<cmb.png, id=116, 587.94656pt x 266.49562pt>
 File: cmb.png Graphic file (type png)
 <use cmb.png>
 Package pdftex.def Info: cmb.png  used on input line 27.
@@ -908,7 +914,7 @@ Overfull \hbox (0.171pt too wide) in paragraph at lines 43--48
 [6
 
  <c:/Users/User/Desktop/UniPD/Università/III anno/Tesi/tesi/cmb.png>] [7] [8] [9]
-<rec.png, id=187, 590.205pt x 626.34pt>
+<rec.png, id=188, 590.205pt x 626.34pt>
 File: rec.png Graphic file (type png)
 <use rec.png>
 Package pdftex.def Info: rec.png  used on input line 304.
@@ -918,7 +924,7 @@ LaTeX Font Info:    Trying to load font information for U+eus on input line 321.
  ("C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts\ueus.fd"
 File: ueus.fd 2013/01/14 v3.01 Euler Script
 )
-<peebles.png, id=197, 478.78876pt x 481.8pt>
+<peebles.png, id=198, 478.78876pt x 481.8pt>
 File: peebles.png Graphic file (type png)
 <use peebles.png>
 Package pdftex.def Info: peebles.png  used on input line 335.
@@ -928,13 +934,13 @@ Capitolo 2.
 ("c:/Users\User\Desktop\UniPD\Università\III anno\Tesi\tesi\capitoli/capitolo2.tex" [14
 
 ] [15] [16] [17]
-<fig1.png, id=310, 556.32843pt x 649.67719pt>
+<fig1.png, id=311, 556.32843pt x 649.67719pt>
 File: fig1.png Graphic file (type png)
 <use fig1.png>
 Package pdftex.def Info: fig1.png  used on input line 254.
 (pdftex.def)             Requested size: 278.16353pt x 324.8378pt.
  [18 <c:/Users/User/Desktop/UniPD/Università/III anno/Tesi/tesi/fig1.png>]
-<fig2.png, id=325, 1347.53438pt x 479.54156pt>
+<fig2.png, id=326, 1347.53438pt x 479.54156pt>
 File: fig2.png Graphic file (type png)
 <use fig2.png>
 Package pdftex.def Info: fig2.png  used on input line 297.
@@ -947,14 +953,14 @@ Overfull \hbox (16.4pt too wide) in paragraph at lines 297--305
 [19 <c:/Users/User/Desktop/UniPD/Università/III anno/Tesi/tesi/fig2.png>]) [20] ("c:/Users\User\Desktop\UniPD\Università\III anno\Tesi\tesi\capitoli/conclusioni.tex") [21
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 114.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 119.
  [22
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 114.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 119.
  ("c:/Users\User\Desktop\UniPD\Università\III anno\Tesi\tesi\tesi.aux")
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 114.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 114.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 119.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 119.
 Package rerunfilecheck Info: File `tesi.out' has not changed.
 (rerunfilecheck)             Checksum: 0C68F8AD1F0217C39897C3D4796E5B5E;710.
 Package logreq Info: Writing requests to 'tesi.run.xml'.
@@ -962,17 +968,17 @@ Package logreq Info: Writing requests to 'tesi.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 19916 strings out of 480896
- 334227 string characters out of 2898648
- 811323 words of memory out of 3000000
- 35319 multiletter control sequences out of 15000+200000
+ 20099 strings out of 480896
+ 339080 string characters out of 2898648
+ 853092 words of memory out of 3000000
+ 35489 multiletter control sequences out of 15000+200000
  559002 words of font info for 92 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 50i,12n,51p,1210b,1522s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 50i,12n,51p,1210b,3766s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\User\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1000.pk> <C:\Users\User\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0900.pk> <C:\Users\User\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecsl0900.pk> <C:\Users\User\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1000.pk> <C:\Users\User\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1000.pk> <C:\Users\User\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1095.pk> <C:\Users\User\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1095.pk> <C:\Users\User\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1095.pk> <C:\Users\User\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx2488.pk> <C:\Users\User\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1728.pk> <C:\Users\User\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1440.pk> <C:\Users\User\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx2074.pk><C:/Users/User/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmib10.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cmextra/cmmib8.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/euler/eusm10.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on "c:/Users\User\Desktop\UniPD\Università\III anno\Tesi\tesi\tesi.pdf" (23 pages, 3611060 bytes).
+Output written on "c:/Users\User\Desktop\UniPD\Università\III anno\Tesi\tesi\tesi.pdf" (23 pages, 3613882 bytes).
 PDF statistics:
- 864 PDF objects out of 1000 (max. 8388607)
+ 872 PDF objects out of 1000 (max. 8388607)
  122 named destinations out of 1000 (max. 500000)
  121 words of extra memory for PDF output out of 10000 (max. 10000000)
 

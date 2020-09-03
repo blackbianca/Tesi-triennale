@@ -30,7 +30,7 @@
 \usepackage{multirow}
 \usepackage{setspace}
 \usepackage{verbatim}
-\usepackage[backend=bibtex]{biblatex}
+\usepackage[backend=bibtex,sorting=none]{biblatex}
 \addbibresource{bibliografia.bib}
 %\usepackage{cite}
 
@@ -76,10 +76,10 @@
     
 	    
     \chapter*{Abstract}
-    La tesi è dedicata allo studio del fenomeno matematico delle caustiche, che in cosmologia trova applicazione
-    nella distribuzione delle masse galattiche, caratterizzata da strutture disomogenee.
+    La tesi è dedicata allo studio della patologia matematica delle caustiche, che in cosmologia emergono
+    nel calcolo della distribuzione delle masse galattiche, caratterizzata da strutture disomogenee.
 
-    Nella prima parte si affronta il problema della reconstruction in generale, con una panoramica alle 
+    Nella prima parte si affronta il problema della reconstruction in generale, con una panoramica sulle 
     metodologie applicate in letteratura. Nella seconda parte ci si addentra nel fenomeno dello 
     shell-crossing nel caso di collisioni unidimensionali tra particelle, lavorando sulle singolarità
     che possono emergere ed offrendone una classificazione.
@@ -106,9 +106,14 @@
     \input{capitoli/conclusioni.tex}
 
     %\bibliography{bibliografia} 
-    %\bibliographystyle{ieeetr}
+    %\bibliographystyle{unsrt}
     \nocite{*}
-    \printbibliography
+    \renewbibmacro{in:}{}
+    \DeclareFieldFormat{pages}{#1}
+
+    \begin{otherlanguage}{british}
+        \printbibliography
+    \end{otherlanguage}
 
 
 \end{document}

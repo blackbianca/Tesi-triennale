@@ -34,7 +34,7 @@ Ci muoviamo innanzitutto dal modello cosmologico Einstein-De Sitter, che pone la
 e la costante cosmologica $\Lambda$ pari a 0 e prevede uno spazio composto sostanzialmente di materia
 oscura fredda (CDM).
 In tale cornice definiamo una mappa Lagrangiana $\mathbb{M}: \bm{q} \mapsto \bm{x}(\bm{q}, \tau)$ che connette la posizione
-iniziale lagrangiana $\bm{q}$ alla posizione corrente euleriana $\bm{x}$ al tempo cosmologico $\tau$ $\propto$ $t^{\frac{2}{3}}$.
+iniziale lagrangiana $\bm{q}$ alla posizione corrente euleriana $\bm{x}$ al tempo cosmologico $\tau$ $\propto$ $t^{2/3}$.
 Inoltre le coordinate $\bm{x}$ sono coordinate comoventi legate alle coordinate fisiche $\bm{r}$ dalla relazione
 x = r/$a$, dove $a$ rappresenta il fattore cosmico di scala, che corrisponde a $\tau$ in un universo
 EdS.
@@ -80,7 +80,7 @@ al potenziale gravitazionale $\Phi$.
 Poniamo inoltre $\rho = \rho_b + \delta\rho$, dove $\rho_b$ è la densità media di background
 e $\delta\rho$ costituisce una deviazione da tale valore medio. $\Phi = \Phi_b + \phi{'}$ invece
 è la somma di un potenziale di background e un potenziale peculiare $\phi{'}$. Grazie a queste due 
-apposizioni possiamo separare l'equazione di Poisson, ottenendo un equazione nella sola coordinata
+apposizioni possiamo separare l'equazione di Poisson, ottenendo un'equazione nella sola coordinata
 comovente x.
 Possiamo riscrivere anche (\ref{eqn:continuità}) e (\ref{eqn:eulero}) nelle coordinate x, usando la
 relazione
@@ -170,7 +170,7 @@ la nuova forma
 \end{gather}
 dove la derivata $D/Da$ si dice \textit{derivata convettiva}.
 Ora usiamo il fatto che in un universo EdS linearizzato, la soluzione \textit{growing mode} è data complessivamente
-da  $\delta \propto t^{\frac{2}{3}}$, $\bm{v} \propto t^{\frac{1}{3}}$ e $\phi = const$. Con questi andamenti, è
+da  $\delta \propto t^{2/3}$, $\bm{v} \propto t^{1/3}$ e $\phi = const$. Con questi andamenti, è
 evidente che la nuova coordinata di velocità $\bm{u} = \bm{v} / (a\dot{a}) \approx const$, dal momento che sia 
 $\bm{v}$ che $a\dot{a} \propto t^{2/3} \cdot t^{-1/3}$ hanno lo stesso andamento $t^{1/3}$.
 
@@ -197,7 +197,7 @@ $\bm{q}$, allora per ogni posizione euleriana $\bm{x}$ del moto varrà che
 \begin{equation}
     \bm{u}(\bm{x}, a) = \bm{u}_0(\bm{q})
 \end{equation}
-Le traiettorie delle particelle, rettilinee e a velocità costante $u$, sono descritte da
+Le traiettorie delle particelle, rettilinee e a velocità costante $\bm{u}$, sono descritte da
 
 \begin{equation}
     \bm{x}(\bm{q}, a) = \bm{q} + a \bm{u}_0(\bm{q})
@@ -246,15 +246,15 @@ dal meccanismo di inflazione, allora nel 92$\%$ dei casi almeno uno dei tre auto
 Ora, riscrivendo il rapporto di densità $\eta$
 
 \begin{multline}
-    \eta(\bm{x}(\bm{q}, a), a) = \left[\det\left(\frac{\partial x}{\partial q}\right)\right]^{-1} = \left[\det\left( \mathbb{I}- a D \right)\right]^{-1}
+    \eta(\bm{x}(\bm{q}, a), a) = \left[\det\left(\frac{\partial x}{\partial q}\right)\right]^{-1} = \left[\det\left( \mathbb{I}- a D \right)\right]^{-1} \\
     = \frac{1}{(1-a\lambda_1(\bm{q}))(1-a\lambda_2(\bm{q}))(1-a\lambda_3(\bm{q}))}
 \end{multline}
 
 A questo punto, è evidente che, supponendo che $\lambda_1(\bm{q})$ sia l'autovalore maggiore, allora il tempo 
 $\bar{a}=1/\lambda_1(\bm{q})$ rappresenta la prima criticità, in quanto la quantità $\eta$ diverge e con essa la 
-densità. Questo tipo di evento è detto \textit{shell-crossing} o \textit{caustica} ed rappresenta il 
+densità. Questo tipo di evento è detto \textit{caustica} e rappresenta il 
 fenomeno che si registra quando due particelle con diverse coordinate lagrangiane iniziali 
-$\bm{q}_1$ e $\bm{q}_2$ confluiscono nella stessa coordinata di campo $\bm{x}$, dando luogo a densità
+$\bm{q}_1$ e $\bm{q}_2$ confluiscono nella stessa coordinata di campo $\bm{x}$ (\textit{shell-crossing}), dando luogo a densità
 infinita. 
 Tale divergenza è racchiusa nella mancata biunivocità della mappa $\mathbb{M}^{-1}$, dal momento che a 
 una sola coordinata euleriana possono corrispondere più coordinate iniziali. A causa della mancanza
@@ -309,7 +309,7 @@ unicità.
 \end{center}
 
 
-Una via percorribile è rappresentata dal problema variazionale come fu formulato da Peebels in \cite{peebles}.
+Una via percorribile è rappresentata dal problema variazionale come fu formulato da Peebels  (\cite{peebles}).
 Anzichè risolvere le equazioni del moto, è possibile cercare i punti stazionari della corrispondente
 azione di Eulero-Lagrange, scritta nelle coordinate comoventi $\bm{x}$ come
 
@@ -348,7 +348,7 @@ perde l'unicità della soluzione, come accennato in precedenza.
 
 Oltre all'approccio variazionale appena esposto, un'opzione valida è la ricostruzione POTENT, che si basa
 sul rintracciare il campo potenziale della velocità integrando le componenti radiali della velocità.
-Questo metodo regge solamente in regime euleriano lineare $|(\rho-\rho_b)/\rho_b|\leq 1$, pertanto non 
+Questo metodo regge solamente in regime euleriano lineare $|(\rho-\rho_b)/\rho_b|\leq 1$, pertanto non si
 recuperano le corrette condizioni iniziali delle regiorni di attuale altà densità, in quanto non lineari:
 in altre parole, è un metodo di ricostruzione che non funziona nelle regioni di multistreaming.
 
@@ -391,7 +391,7 @@ consistente.
 Sarà invece possibile identificare un potenziale convesso e recuperare quindi l'unicità solamente con una proposta 
 alternativa all'approssimazione di Zel'dovich, ossia il modello di adesione, che prevede l'aggiunta di 
 termini di interazione gravitazionale.
-Se $\Phi$ esiste ed è convesso sarà definita convessa anche la mappa inversa $\Theta(\bm{x}, t)$ tale caustiche
+Se $\Phi$ esiste ed è convesso sarà definita convessa anche la mappa inversa $\Theta(\bm{x}, t)$ tale che
 $\bm{q} = \nabla_x \Theta$. La relazione tra $\Phi$ e $\Theta$ è stabilita dalle trasformazioni di
 Legendre-Fenchel.
 
@@ -405,7 +405,7 @@ A questo punto l'equazione (\ref{eqn:masscons}) diventa l'equazione di Monge-Amp
 \end{equation}
 Solo recentemente si è scoperto che la soluzione a tale equazione è equivalente alla soluzione unica
 di un problema di trasporto ottimo, in particolare il problema di trasporto di massa di Monge-Kantorovich,
-in cui si cerca quale relazione tra $\bm{q}$ e $\bm{x}$ minimizza la la funzione quadratica di costo 
+in cui si cerca quale relazione tra $\bm{q}$ e $\bm{x}$ minimizza la funzione quadratica di costo 
 $c(\bm{q}, \bm{x}) = |\bm{x}-\bm{q}|^2$, o meglio si cerca la minimizzazione del funzionale I.
 
 \begin{equation}

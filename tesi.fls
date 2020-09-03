@@ -188,6 +188,12 @@ INPUT C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex\latex\biblatex\biblate
 INPUT C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex\latex\biblatex\biblatex.cfg
 INPUT c:\Users\User\Desktop\UniPD\Università\III anno\Tesi\tesi\tesi.aux
 INPUT c:\Users\User\Desktop\UniPD\Università\III anno\Tesi\tesi\tesi.aux
+INPUT C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex\generic\babel\locale\en\babel-british.tex
+INPUT C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex\generic\babel\locale\en\babel-british.tex
+INPUT C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex\generic\babel\locale\en\babel-british.tex
+INPUT C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex\generic\babel\locale\en\babel-english-unitedkingdom.tex
+INPUT C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex\generic\babel\locale\en\babel-english-unitedkingdom.tex
+INPUT C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex\generic\babel\locale\en\babel-en-GB.ini
 OUTPUT c:\Users\User\Desktop\UniPD\Università\III anno\Tesi\tesi\tesi.aux
 INPUT C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex\context\base\mkii\supp-pdf.mkii
 INPUT C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex\context\base\mkii\supp-pdf.mkii
@@ -266,6 +272,10 @@ INPUT C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\jknappen\ec\ecbx
 INPUT c:\Users\User\Desktop\UniPD\Università\III anno\Tesi\tesi\tesi.toc
 INPUT c:\Users\User\Desktop\UniPD\Università\III anno\Tesi\tesi\tesi.toc
 INPUT C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\jknappen\ec\ecbx1095.tfm
+INPUT C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex\latex\biblatex\lbx\british.lbx
+INPUT C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex\latex\biblatex\lbx\british.lbx
+INPUT C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex\latex\biblatex\lbx\english.lbx
+INPUT C:\Users\User\AppData\Local\Programs\MiKTeX 2.9\tex\latex\biblatex\lbx\english.lbx
 OUTPUT c:\Users\User\Desktop\UniPD\Università\III anno\Tesi\tesi\tesi.toc
 INPUT c:\Users\User\Desktop\UniPD\Università\III anno\Tesi\tesi\capitoli\introduzione.tex
 INPUT c:\Users\User\Desktop\UniPD\Università\III anno\Tesi\tesi\capitoli\introduzione.tex
