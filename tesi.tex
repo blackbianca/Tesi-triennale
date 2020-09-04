@@ -15,7 +15,6 @@
 \usepackage{tabularx}
 \usepackage{indentfirst}
 %\usepackage{enumitem}
-\usepackage{hyperref}
 \usepackage{booktabs}
 \usepackage{afterpage}
 \usepackage{subfig}
@@ -30,6 +29,7 @@
 \usepackage{multirow}
 \usepackage{setspace}
 \usepackage{verbatim}
+
 \usepackage[backend=bibtex,sorting=none]{biblatex}
 \addbibresource{bibliografia.bib}
 %\usepackage{cite}
@@ -37,6 +37,7 @@
 \newcommand{\changefont}{%
 \fontsize{9}{11}\selectfont
 }
+
 \fancyhf{}
 
 \renewcommand*{\finalnamedelim}{%
@@ -44,12 +45,14 @@
   \addspace\&\space}
 
 
-\fancyhead[LE,RO]{\changefont \slshape \rightmark} %section
-\fancyhead[RE,LO]{\changefont \slshape } %chapter
+\fancyhead[R]{\changefont \slshape \MakeUppercase \rightmark} %section
+%\fancyhead[RE,LO]{\changefont \slshape } %chapter
 \fancyfoot[C]{\changefont \thepage} %footer
 
 \pagestyle{fancy}
 
+
+%\renewcommand{\sectionmark}[1]{\markright{#1}}
 
 %\title{
 
@@ -93,6 +96,7 @@
     \tableofcontents
 
     \chapter*{Introduzione}
+    \sectionmark{Introduzione}
     \addcontentsline{toc}{chapter}{Introduzione}
     \input{capitoli/introduzione.tex}
 
